@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import Hero from '../components/Hero'
 import HeroSlider from '../components/HeroSlider';
 import AiModals from '../components/AiModals';
-
+import Cards from '../components/Cards';
 
 
 const Home = () => {
@@ -19,12 +19,13 @@ const Home = () => {
                     
                     {/* SLIDER Section */}
                    <HeroSlider/>
+                  
                     {/* Section */}
 
                 </div>
                 {/* AiModal Section */}
                 <AiModals/>
-
+                <Cards/>
                 {/* Bootstrap JS (with Popper) */}
             </>
 
