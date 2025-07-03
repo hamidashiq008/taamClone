@@ -8,7 +8,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid  rgba(255, 255, 255, .32);
   transition: all 0.3s ease-in-out;
   height: 100%;
   display: flex;
@@ -17,10 +17,10 @@
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: unset;
+  background: rgba(255, 255, 255, 0.05);
+  /* border-color: rgba(255, 255, 255, 0.2); */
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
 }
 
 .icon {
@@ -29,7 +29,7 @@
 }
 
 .card:hover .icon {
-  transform: scale(1.1);
+  transform: unset;
 }
 
 .title {

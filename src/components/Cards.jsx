@@ -93,9 +93,9 @@ const Cards = () => {
       <div className="integrate-in-minutes-container">
         <div className="inner-wrapper">
           <div className=" text-center justify-content-centermt-5">
-          <h3 className="fw-bold display-6 mb-3">Integrate in Minutes</h3>
+          <h3 className="fw-bold display-6 mb-3" style={{fontFamily:'inter'}}>Integrate in Minutes</h3>
           <p
-            style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9" }}
+            style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9" ,fontFamily:'inter',fontSize:'15px'}}
             className="mx-auto  mb-5"
           >
             Add Taam AI to your stack with just 3 lines of code — no
