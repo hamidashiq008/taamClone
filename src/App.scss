@@ -1,69 +1,137 @@
-@import"./scss/_bootstrap.scss";
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "./scss/_bootstrap.scss";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./scss/AiAgentsSection.scss";
 
 * {
   padding: 0;
   margin: 0;
 }
+:root {
+  --btnGradientColor: linear-gradient(
+    to right,
+    rgba(255, 77, 66, 1),
+    rgba(204, 51, 204, 1),
+    rgba(128, 0, 255, 1),
+    rgba(51, 102, 255, 1),
+    rgba(0, 204, 255, 1)
+  );
+}
 
 body {
   background-color: black !important;
   color: white !important;
+  background-image: url("../public/hero-bg-img.png");
+  background-size: 100%;
+  // background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .header-container {
   max-width: 880px;
   margin: 0 auto;
-  padding-top: 40px;
-.navbar-nav{
-  .nav-item{
-    & a{
-      color: white;
+  padding: 40px 0 15px;
+
+  .navbar-nav {
+    .nav-item {
+      & a {
+        color: white;
+      }
+    }
+  }
+
+  .login-btn {
+    //   background-image: url(../public/login_bg.png);
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    // }
+    background-image: var(--btnGradientColor);
+    padding: 5px 15px !important;
+    border: none !important;
+  }
+
+  .header-navbar-collapse {
+    .navbar-nav {
+      backdrop-filter: blur(40px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 33px;
+      // display: flex;
+      opacity: 1;
+      margin: 0 auto;
+      padding: 0 20px;
     }
   }
 }
-}
 
 .hero-section {
-
   .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 96px 32px 64px;
+    padding: 84px 32px 64px;
 
     .hero-right-img {
       width: 100%;
-
+      // min-height: 567px;
+      height: 100%;
+      & img {
+        min-height: 567px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .start-free-btn {
+      background-image: var(--btnGradientColor);
+      color: white;
+      border: none;
+    }
+    .features-btn {
+      color: white;
+      padding: 6px 20px;
+    }
+    .badge-inner-wrapper {
+      backdrop-filter: blur(40px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 33px;
+      opacity: 1;
+      display: inline-block;
+      padding: 2px 12px 2px 4px;
+      .feature-badge {
+        backdrop-filter: blur(40px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 33px;
+        opacity: 1;
+      }
     }
   }
 }
 
 .hero-background {
-  background-image: url('/images/hero-bg-img.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+  // background-image: url("../public/hero-bg-img.png");
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // color: white;
 }
-
-
 
 .hero-slider {
   .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px 96px;
+    padding: 0 32px 192px;
 
     .ticker-wrap {
       width: 100%;
       overflow: hidden;
       padding: 10px 0;
       position: relative;
-
-      .ticker {
+      .hero-slider-header {
+        margin-bottom: 32px;
+      }
+      .ticker,
+      .swipper {
         display: flex;
         width: max-content;
-        animation: ticker-scroll 20s linear infinite;
 
         .ticker-content {
           display: flex;
@@ -71,26 +139,29 @@ body {
 
           .img-wrapper {
             display: inline-block;
-            max-height: 50px;
+            max-height: 40px;
             height: 100%;
             max-width: 180px;
             width: 100%;
-            & img{
-            height: 100%;
-            width: 100%;
 
+            & img {
+              height: 100%;
+              width: 100%;
             }
           }
         }
       }
 
-
+      .ticker {
+        animation: ticker-scroll 60s linear infinite;
+      }
+      .swipper {
+        animation: swipper-scroll 60s linear infinite;
+      }
     }
-
-
   }
 }
-
+// HeroSlider Key Frame
 @keyframes ticker-scroll {
   0% {
     transform: translateX(-50%);
@@ -100,9 +171,102 @@ body {
     transform: translateX(0%);
   }
 }
+@keyframes swipper-scroll {
+  0% {
+    transform: translateX(0%);
+  }
 
-.models-container {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.black-and-white-text {
+  background: linear-gradient(to right, #ffffff, #555555, #222222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  line-height: 3rem;
+  letter-spacing: -2px;
+  padding: 20px;
+}
+.ai-modals-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 96px 32px;
+  padding: 0 32px 96px;
+  .dot-container {
+    display: flex;
+    gap: 8px; /* space between dots */
+    padding: 10px;
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+
+    .red {
+      background-color: #ff5f56;
+    }
+
+    .yellow {
+      background-color: #ffbd2e;
+    }
+
+    .green {
+      background-color: #27c93f;
+    }
+  }
+
+  .ai-modal-box {
+    background-color: rgb(19 19 21);
+    border: 1px solid rgb(255 255 255 / 10%);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .heading-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.ai-modal-slider {
+  .hero-container {
+    max-width: unset;
+    padding: unset;
+  }
+  .ticker-content {
+    display: flex;
+    gap: 5px;
+    & span {
+      padding: 8px 16px;
+      border: 1px solid rgb(255 255 255 / 32%);
+      border-radius: 8px;
+      color: #919191;
+    }
+  }
+  .ticker-wrap {
+    padding: 10px 0 0 !important;
+  }
+}
+.slider-holder-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px !important;
+}
+
+.integrate-in-minutes-container {
+  max-width: 1200px !important;
+  padding: 96px 32px !important;
+  margin: 0 auto;
+  background-image: url("../../public/sky-dot-bg-img.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.ai-agents-section {
+  .container {
+    max-width: 1200px !important;
+    padding: 96px 32px !important;
+    margin: 0 auto;
+  }
 }
