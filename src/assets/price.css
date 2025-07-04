@@ -1,6 +1,7 @@
 body {
     background-image: unset;
 }
+.pricing-wrapper{
 .pricing-title {
   text-align: center;
   font-weight: 600;
@@ -152,4 +153,6 @@ ul li::before {
 
 .checkbox strong {
   color: #fafafa;
+}
+
 }

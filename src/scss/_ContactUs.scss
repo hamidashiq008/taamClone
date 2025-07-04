@@ -5,16 +5,19 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-& h1{
-    font-size: 90px;
-}
+
+    & h1 {
+        font-size: 90px;
+    }
+
     .breadcrumb {
+
         & a,
-        & span{
-            
-                color: #4b5563;
-                font-size: 14px;
-                margin-bottom: 10px;
+        & span {
+
+            color: #4b5563;
+            font-size: 14px;
+            margin-bottom: 10px;
         }
     }
 
@@ -23,55 +26,62 @@
         border: none;
         padding: 24px 20px;
         gap: 16px;
-        & h5{
+
+        & h5 {
             font-size: 22px;
-            color: #090F1D ;
+            color: #090F1D;
 
         }
-        & p{
+
+        & p {
             font-size: 18px;
             color: #3c424b;
 
         }
-        & a{
+
+        & a {
             font-size: 14px;
-            color: #090F1D ;
+            color: #090F1D;
             font-weight: 500;
         }
 
     }
-    .form-card{
+
+    .form-card {
         padding: 24px 32px 39px;
+
         & input,
         & select,
-        & textarea{
-            padding: 16px 20px ;
+        & textarea {
+            padding: 16px 20px;
             border-radius: 1rem;
             color: #9ca3af;
         }
-        & textarea{
-            padding: 16px 20px 32px; 
+
+        & textarea {
+            padding: 16px 20px 32px;
         }
+
         & input::placeholder,
-        & textarea::placeholder{
+        & textarea::placeholder {
             color: #9ca3af;
         }
-        .btn{
+
+        .btn {
             width: fit-content;
             padding: 16px 64px !important;
-        font-size: 18px;
-        border: none;
+            font-size: 18px;
+            border: none;
         }
     }
 
 
-.footer-links{
-    & ul{  
-
-        & li::before{
-
-            content: unset !important;
+  
+}
+  .footer-links {
+        .heading-div {
+            font-size: 18px !important;
+            font-weight: 600 !important;
         }
+
     }
-}
-}
