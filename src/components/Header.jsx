@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom';
 import logoImg from '../../public/logo.svg';
+
+
 const Header = () => {
     return (
         <div>
@@ -8,11 +10,9 @@ const Header = () => {
                 <div className="header-container">
                     <nav className="navbar navbar-expand-lg p-0">
                         <div className="container-fluid">
-                            {/* Logo */}
                             <div className="img-wrapper">
                                 <img src={logoImg} alt="Logo" />
                             </div>
-                            {/* Navbar Toggle Button (for mobile) */}
                             <button
                                 className="navbar-toggler"
                                 type="button"
@@ -24,12 +24,11 @@ const Header = () => {
                             >
                                 <span className="navbar-toggler-icon" />
                             </button>
-                            {/* Nav Links */}
-                            <div
-                                className="collapse navbar-collapse header-navbar-collapse"
-                                id="navbarSupportedContent"
-                            >
+
+                            <div className="collapse navbar-collapse header-navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                    {/* Dropdown: Models */}
                                     <li className="nav-item dropdown">
                                         <a
                                             className="nav-link dropdown-toggle"
@@ -42,37 +41,28 @@ const Header = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Action
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/models/action">Action</NavLink>
                                             </li>
                                             <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Another action
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/models/another">Another action</NavLink>
                                             </li>
+                                            <li><hr className="dropdown-divider" /></li>
                                             <li>
-                                                <hr className="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Something else here
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/models/something">Something else</NavLink>
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">
-                                            Docs
-                                        </a>
+                                        <NavLink className="nav-link" to="/docs">Docs</NavLink>
                                     </li>
-                                   
+
                                     <li className="nav-item">
-                                        <a className="nav-link disabled" aria-disabled="true">
-                                            Pricing
-                                        </a>
+                                        <NavLink className="nav-link" to="/pricing">Pricing</NavLink>
                                     </li>
-                                     <li className="nav-item dropdown">
+
+                                    {/* Dropdown: Resources */}
+                                    <li className="nav-item dropdown">
                                         <a
                                             className="nav-link dropdown-toggle"
                                             href="#"
@@ -84,45 +74,30 @@ const Header = () => {
                                         </a>
                                         <ul className="dropdown-menu">
                                             <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Action
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/resources/action">Action</NavLink>
                                             </li>
                                             <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Another action
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/resources/another">Another action</NavLink>
                                             </li>
+                                            <li><hr className="dropdown-divider" /></li>
                                             <li>
-                                                <hr className="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Something else here
-                                                </a>
+                                                <NavLink className="dropdown-item" to="/resources/something">Something else</NavLink>
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li className="nav-item">
-                                        <a className="nav-link disabled" aria-disabled="true">
-                                            Contact Us
-                                        </a>
+                                        <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
                                     </li>
                                 </ul>
-                                {/* Search Form */}
-                              
-                            </div>
-                              <form className="d-flex" role="search">
-                                    {/* <input
-                                        className="form-control me-2"
-                                        type="search"
-                                        placeholder="Search"
-                                        aria-label="Search"
-                                    /> */}
-                                    <button className="btn text-white login-btn" type="submit">
+
+                                {/* Login Button */}
+                                <form className="d-flex" role="search">
+                                    <NavLink className="btn text-white login-btn" to="/login">
                                         Login
-                                    </button>
+                                    </NavLink>
                                 </form>
+                            </div>
                         </div>
                     </nav>
                 </div>
