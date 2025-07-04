@@ -24,9 +24,9 @@ const Hero = () => {
                 without the complexity.
               </p>
               <div className="buttons d-flex gap-2">
-                <button className="btn start-free-btn">Start Free</button>
+                <button className="btn start-free-btn rounded-lg">Start Free</button>
                 <button className="btn btn-outline-secondary features-btn">
-                  See All Features
+                  See All Features <i className="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>
