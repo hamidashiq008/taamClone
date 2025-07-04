@@ -1,5 +1,5 @@
 import React from "react";
-
+import AiAgentBoxSlider from "./AiAgentBoxSlider";
 const AiAgentsSection = () => {
   return (
     <section className="ai-agents-section text-white">
@@ -33,7 +33,7 @@ const AiAgentsSection = () => {
                 <i className="bi bi-lightning-charge-fill text-warning"></i>
               </div>
 
-              <div className="chat-box">
+              <div className="chat-box ">
                 <p className="text-white heading">
                   ✨ What’s the best model for summarizing legal documents?
                 </p>
@@ -103,13 +103,14 @@ const AiAgentsSection = () => {
           </div>
           <div className="col-md-7">
             <div className="custom-card h-100">
-              <p className=" mb-2 heading-para">Ready Agentic AI Solutions</p>
+              <p className=" mb-2 heading-para">Intelligent time management</p>
               <p className="small mb-4 description-para">
-                Supercharge AI applications with global large language models,
-                RAG pipelines, tools, agent strategies, and more.
+                Manage your AI usage like a pro. Visualize time spent across
+                agents, endpoints, and models—so you can optimize latency,
+                throughput, and productivity.
               </p>
-              <div className="first-icon-circle icon-circle mb-3">
-                <i className="bi bi-lightning-charge-fill text-warning"></i>
+              <div className="third-icon-circle icon-circle mb-3">
+                <i className="bi bi-lightning-charge-fill third-icon"></i>
               </div>
 
               <div className="chat-box">
@@ -137,37 +138,21 @@ const AiAgentsSection = () => {
             </div>
           </div>
           <div className="col-md-5">
-            <div className="custom-card h-100">
-              <p className=" mb-2 heading-para">Ready Agentic AI Solutions</p>
+            <div className="custom-card slider-holder h-100">
+              <p className=" mb-2 heading-para">Seamless integrations</p>
               <p className="small mb-4 description-para">
                 Supercharge AI applications with global large language models,
                 RAG pipelines, tools, agent strategies, and more.
               </p>
-              <div className="first-icon-circle icon-circle mb-3">
-                <i className="bi bi-lightning-charge-fill text-warning"></i>
+              <div className=" fourth-icon-circle icon-circle mb-3">
+                <i className="bi bi-lightning-charge-fill fourt-icon"></i>
               </div>
-
-              <div className="chat-box">
-                <p className="text-white heading">
-                  ✨ What’s the best model for summarizing legal documents?
-                </p>
-                <p className=" description">
-                  The Ai Explain . What’s the best model for summarizing legal
-                  documents.{" "}
-                </p>
-
-                <div className="d-flex gap-2 mt-3 btns-wrapper ">
-                  <button className="btn btn-outline-light btn-sm">
-                    Add details
-                  </button>
-                  <button className="btn btn-outline-light btn-sm">
-                    Suggest something else
-                  </button>
-                </div>
-                <hr className="my-4" />
-                <p className="mt-3 ask-question small ">
-                  Ask another question ➝
-                </p>
+              {/* <AiAgentBoxSlider /> */}
+              <div className=" badge">
+                <p className="m-0">connected</p>
+              </div>
+              <div className="mt-5">
+                <AiAgentBoxSlider />
               </div>
             </div>
           </div>
