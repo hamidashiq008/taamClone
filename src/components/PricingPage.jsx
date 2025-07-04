@@ -2,10 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import "../assets/price.css";
 
-<<<<<<< HEAD
- 
-=======
->>>>>>> 162e2032af0ed7714e4b58c4803804c2e8762980
 const PricingPage = () => {
   return (
     <div className="bg-black">
