@@ -26,7 +26,7 @@
 }
 
 .custom-card {
-  // background-color: #121212;
+  background-color: #121212;
   border: 1px solid #2a2a2a;
   border-radius: 16px;
   padding: 64px 56px;
@@ -51,7 +51,7 @@
 }
 
 .chat-box {
-  // background: linear-gradient(to bottom, #1a1a1a, #111);
+  background: linear-gradient(to bottom, #1a1a1a, #111);
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #333;
@@ -63,11 +63,11 @@
   padding: 15px;
   border: 1px solid #444;
   border-radius: 10px;
-  & ul{
-    list-style-color: white ;
-    & li{
-      color: #8F8F8E;
-      &::marker{
+  & ul {
+    list-style-color: white;
+    & li {
+      color: #8f8f8e;
+      &::marker {
         color: white;
       }
     }
@@ -100,6 +100,20 @@
 .second-icon-circle::before {
   background-color: #3c8d58;
   left: 10px;
+}
+.third-icon-circle::before {
+  background-color: rgb(145 101 197);
+  left: 10px;
+}
+.third-icon {
+  color: rgb(145 101 197);
+}
+.fourth-icon-circle::before {
+  background-color: rgb(76 143 230);
+  left: 10px;
+}
+.fourt-icon {
+  color: rgb(76 143 230);
 }
 
 .chat-box {
@@ -135,5 +149,42 @@
   }
   .references-box {
     margin-left: 3rem;
+  }
+}
+.slider-holder {
+  padding: 64px 10px !important;
+  .hero-container {
+    padding: 0 !important;
+  }
+}
+.ai-agent-box-slider {
+  .ticker,
+  .swipper {
+    gap: 20px;
+
+    .ticker-content {
+      gap: 20px;
+      & div {
+        padding: 13px;
+        border: 3px solid #474444;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+.slider-holder {
+  .badge {
+    border: none;
+    background-color: transparent !important;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    & p {
+      display: inline-flex;
+      margin: 0 auto;
+      padding: 12px;
+      border-radius: 20px;
+      border: 1px solid #333;
+    }
   }
 }
