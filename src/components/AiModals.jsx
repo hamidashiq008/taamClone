@@ -1,5 +1,11 @@
 import React from "react";
 import AiModalSlider from "./AiModalSlider";
+import Dashboad1 from '../assets/dashboad1.png';
+import Dashboad2 from '../assets/dashboad2.png';
+
+import Dashboad3 from '../assets/dashboad3.png';
+
+import Dashboad4 from '../assets/dashboad4.png';
 
 const AiModals = () => {
   return (
@@ -40,7 +46,7 @@ const AiModals = () => {
             <div className="col-md-12">
               <div className="ai-modal-box h-100 shadow">
                 <img
-                  src="/dashboad1.png"
+                  src={Dashboad1}
                   className="img-fluid mb-3 rounded"
                   alt="API Logs"
                 />
@@ -62,7 +68,7 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-              src="/dashboad2.png"
+              src={Dashboad2}
               className="img-fluid mb-3 rounded"
               alt="AI Models"
             />
@@ -76,7 +82,7 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-              src="/dashboad3.png"
+               src={Dashboad3}
               className="img-fluid mb-3 rounded"
               alt="Monitoring"
             />
@@ -90,7 +96,7 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-              src="/dashboad4.png"
+                src={Dashboad4}
               className="img-fluid mb-3 rounded"
               alt="Analytics"
             />
