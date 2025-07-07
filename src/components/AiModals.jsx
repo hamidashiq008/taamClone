@@ -81,11 +81,7 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-<<<<<<< HEAD
-              src={Dashboad3}
-=======
                src={Dashboad4}
->>>>>>> 990a71dc43c94ade36fe8750e76e5cda0c41b92e
               className="img-fluid mb-3 rounded"
               alt="Monitoring"
             />
@@ -99,11 +95,7 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-<<<<<<< HEAD
-              src={Dashboad4}
-=======
                 src={Dashboad3}
->>>>>>> 990a71dc43c94ade36fe8750e76e5cda0c41b92e
               className="img-fluid mb-3 rounded"
               alt="Analytics"
             />
