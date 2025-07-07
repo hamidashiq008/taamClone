@@ -57,9 +57,9 @@ const AiModals = () => {
                 </p>
               </div>
             </div>
-             <div className="col-md-12">
+            <div className="col-md-12">
               <div className="ai-modal-box h-100 shadow px-0 m-0">
-               <AiModalSlider/>
+                <AiModalSlider />
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const AiModals = () => {
             />
             <h5>200+ AI Models with one API</h5>
             <p className="text-secondary small m-0">
-             Seamlessly connect, manage, and harmonize various AI tools and AI models to work together with a single, secure and unified AI API.
+              Seamlessly connect, manage, and harmonize various AI tools and AI models to work together with a single, secure and unified AI API.
             </p>
           </div>
         </div>
@@ -82,13 +82,13 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-               src={Dashboad3}
+              src={Dashboad3}
               className="img-fluid mb-3 rounded"
               alt="Monitoring"
             />
             <h5>Real-Time Monitoring</h5>
             <p className="text-secondary small m-0">
-            Easily track and monitor API usage with Taam Cloud. Gain insights into request volume, error rates, and performance metrics — all in one centralized dashboard.
+              Easily track and monitor API usage with Taam Cloud. Gain insights into request volume, error rates, and performance metrics — all in one centralized dashboard.
             </p>
           </div>
         </div>
@@ -96,13 +96,13 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
-                src={Dashboad4}
+              src={Dashboad4}
               className="img-fluid mb-3 rounded"
               alt="Analytics"
             />
             <h5>Usage Analytics</h5>
             <p className="text-secondary  m-0">
-             Gain full visibility into your API consumption, credit balance, and model performance — all in one smart dashboard.
+              Gain full visibility into your API consumption, credit balance, and model performance — all in one smart dashboard.
             </p>
           </div>
         </div>
