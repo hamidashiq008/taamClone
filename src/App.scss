@@ -287,7 +287,7 @@
 
  .integrate-in-minutes-container {
    max-width: 1200px !important;
-   padding: 96px 32px !important;
+   padding: 96px 32px;
    margin: 0 auto;
    background-image: url("./assets/sky-dot-bg-img.png") !important;
    background-size: cover !important;
@@ -302,3 +302,35 @@
      margin: 0 auto;
    }
  }
+ 
+ @media only screen and (max-width: 767px) {
+  .navbar-toggler {
+  background-color: #fff  !important;
+ }
+  /* Your mobile styles here */
+  .hero-section .hero-container {
+    padding: 30px 30px 65px;
+  }
+  .hero-section .hero-container .badge-inner-wrapper .feature-badge {
+    display: block;
+  }
+  .hero-section .hero-container .hero-right-img img {
+    min-height: 350px;
+  }
+  .hero-slider .hero-container {
+    padding: 0 32px 75px;
+  }
+  .integrate-in-minutes-container {
+    padding: 0px 30px  !important;
+  }
+  pre code {
+    font-size: 8px !important;
+    padding: 0px !important;
+  }
+  .mobile-code {
+    margin-bottom: 50px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+}

@@ -102,7 +102,7 @@ const Cards = () => {
             restructuring, no delays, just instant power.
           </p>
         </div>
-        <div style={boxStyle}>
+        <div style={boxStyle} className="mobile-code">
           <pre className="tokyo-night-dark" style={{ margin: 0 }}>
             <code
               className="hljs"
@@ -130,7 +130,7 @@ const Cards = () => {
         <div className="code-cards-container">
           <Row>
             {features.map((feature, index) => (
-              <Col key={index} md={4}>
+              <Col key={index} md={4} className="mb-3 lg:mb-0">
                 <div className={styles.card}>
                   <div className={styles.icon}>{feature.icon}</div>
                   <h3 className={styles.title}>{feature.title}</h3>
