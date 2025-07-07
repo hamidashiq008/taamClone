@@ -95,9 +95,26 @@ main().catch(console.error);`;
     <section className={styles.cards} style={{ padding: "0px" }}>
       <div className="integrate-in-minutes-container">
         <div className="inner-wrapper">
+<<<<<<< HEAD
           <div className="text-center justify-content-center mt-5">
             <h3 className="fw-600 display-6 mb-3">Integrate in Minutes</h3>
             <p
+=======
+          <div className=" text-center justify-content-centermt-5">
+          <h3 className="fw-bold display-6 mb-3" style={{fontFamily:'inter'}}>Integrate in Minutes</h3>
+          <p
+            style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9" ,fontFamily:'inter',fontSize:'15px'}}
+            className="mx-auto  mb-5"
+          >
+            Add Taam AI to your stack with just 3 lines of code — no
+            restructuring, no delays, just instant power.
+          </p>
+        </div>
+        <div style={boxStyle} className="mobile-code">
+          <pre className="tokyo-night-dark" style={{ margin: 0 }}>
+            <code
+              className="hljs"
+>>>>>>> 95c1162b9dc6823704f7ff7897c52e8ed084fa70
               style={{
                 maxWidth: "100%",
                 width: "360px",
@@ -125,6 +142,7 @@ main().catch(console.error);`;
                 whiteSpace: "pre",
                 wordSpacing: "normal",
                 wordBreak: "normal",
+<<<<<<< HEAD
                 overflowWrap: "normal",
                 borderRadius: "8px"
               }}>
@@ -145,6 +163,29 @@ main().catch(console.error);`;
               ))}
             </Row>
           </div>
+=======
+                wordWrap: "normal",
+                borderRadius: "8px",
+              }}
+            >
+              {code}
+            </code>
+          </pre>
+        </div>
+        <div className="code-cards-container">
+          <Row>
+            {features.map((feature, index) => (
+              <Col key={index} md={4} className="mb-3 lg:mb-0">
+                <div className={styles.card}>
+                  <div className={styles.icon}>{feature.icon}</div>
+                  <h3 className={styles.title}>{feature.title}</h3>
+                  <p className={styles.description}>{feature.description}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+>>>>>>> 95c1162b9dc6823704f7ff7897c52e8ed084fa70
         </div>
       </div>
     </section>
