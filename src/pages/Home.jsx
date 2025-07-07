@@ -13,19 +13,12 @@ const Home = () => {
       <>
         <div className="hero-background">
           <Header />
-          {/* HERO Section */}
           <Hero />
-
-          {/* SLIDER Section */}
           <HeroSlider />
-
-          {/* Section */}
         </div>
-        {/* AiModal Section */}
         <AiModals />
         <Cards />
         <AiAgentsSection />
-        {/* Bootstrap JS (with Popper) */}
       </>
     </div>
   );

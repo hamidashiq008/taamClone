@@ -56,6 +56,7 @@
   padding: 20px;
   border: 1px solid #333;
   margin-top: 30px;
+  background: radial-gradient(17% 12.83167535066605% at 49.99996793939629% -7.039230309757727e-11%, rgba(255, 150, 75, 0.7) 0%, var(--token-6baedbc3-30f2-40bc-9f77-86e02fea1a25, rgb(52, 50, 50)) 100%);
 }
 
 .references-box {
@@ -63,10 +64,13 @@
   padding: 15px;
   border: 1px solid #444;
   border-radius: 10px;
+
   & ul {
     list-style-color: white;
+
     & li {
       color: #8f8f8e;
+
       &::marker {
         color: white;
       }
@@ -75,10 +79,11 @@
 }
 
 .heading-para {
-  font-size: 18px !important ;
+  font-size: 18px !important;
   color: white !important;
   text-align: center;
 }
+
 .description-para {
   font-size: 15px !important;
   color: #adadad !important;
@@ -93,25 +98,33 @@
   position: relative;
   top: 35px;
 }
+
 .first-icon-circle::before {
   background-color: #ffc107;
   left: 8px;
+  background: linear-gradient(180.00000044209082deg, #373a3a00, #f4b674 68.39456644144144%, #fff);
+  width: 1px;
 }
+
 .second-icon-circle::before {
   background-color: #3c8d58;
   left: 10px;
 }
+
 .third-icon-circle::before {
   background-color: rgb(145 101 197);
   left: 10px;
 }
+
 .third-icon {
   color: rgb(145 101 197);
 }
+
 .fourth-icon-circle::before {
   background-color: rgb(76 143 230);
   left: 10px;
 }
+
 .fourt-icon {
   color: rgb(76 143 230);
 }
@@ -120,10 +133,14 @@
   .heading {
     font-size: 15px;
   }
+
   .description {
-    color: #adadad !important;
-    font-size: 13px !important;
+    min-height: 46px;
+    font-size: 14px !important;
+    color: #a1a1a1 !important;
+    padding-right: 35px;
   }
+
   .btns-wrapper {
     & button {
       border-radius: 20px;
@@ -133,37 +150,46 @@
       font-size: 12px !important;
     }
   }
+
   .ask-question {
     color: #b4b4b4;
     margin-bottom: 0 !important;
   }
 }
+
 .chat-box-second {
   border: none;
   padding-top: 0;
+
   .heading {
     border: 1px solid #333;
     padding: 8px 16px;
     border-radius: 20px;
     display: inline-flex;
   }
+
   .references-box {
     margin-left: 3rem;
   }
 }
+
 .slider-holder {
   padding: 64px 10px !important;
+
   .hero-container {
     padding: 0 !important;
   }
 }
+
 .ai-agent-box-slider {
+
   .ticker,
   .swipper {
     gap: 20px;
 
     .ticker-content {
       gap: 20px;
+
       & div {
         padding: 13px;
         border: 3px solid #474444;
@@ -172,6 +198,7 @@
     }
   }
 }
+
 .slider-holder {
   .badge {
     border: none;
@@ -179,6 +206,7 @@
     text-align: center;
     width: 100%;
     margin-top: 10px;
+
     & p {
       display: inline-flex;
       margin: 0 auto;
