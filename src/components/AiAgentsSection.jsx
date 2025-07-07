@@ -126,7 +126,6 @@ const AiAgentsSection = () => {
               </div>
 
               <div className="chat-box">
-                <div style={{borderBottomWidth: '1px', borderColor: 'rgba(255, 255, 255, 0.3)', borderLeftWidth: '1px', borderRightWidth: '1px', borderStyle: 'solid', borderTopWidth: '1px', filter: 'blur(2px)', borderRadius: '16px', opacity: 1}}></div>
                 <p className="text-white heading">
                   ✨ What’s the best model for summarizing legal documents?
                 </p>

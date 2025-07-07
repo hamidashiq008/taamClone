@@ -26,7 +26,7 @@
 }
 
 .custom-card {
-  background-color: #121212;
+  background-color: #1212127d;
   border: 1px solid #2a2a2a;
   border-radius: 16px;
   padding: 64px 56px;
@@ -36,7 +36,7 @@
 
 .custom-card:hover {
   border-color: #444;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a6b;
 }
 
 .icon-circle {
@@ -51,12 +51,11 @@
 }
 
 .chat-box {
-  background: linear-gradient(to bottom, #1a1a1a, #111);
+  // background: linear-gradient(to bottom, #1a1a1a, #111);
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #333;
   margin-top: 30px;
-  background: radial-gradient(17% 12.83167535066605% at 49.99996793939629% -7.039230309757727e-11%, rgba(255, 150, 75, 0.7) 0%, var(--token-6baedbc3-30f2-40bc-9f77-86e02fea1a25, rgb(52, 50, 50)) 100%);
 }
 
 .references-box {
