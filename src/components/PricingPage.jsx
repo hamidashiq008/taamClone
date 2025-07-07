@@ -13,11 +13,11 @@ const PricingPage = () => {
         </div>
         
         <div className="pricing-cards">
-            <div className="card card-1">
-                <div className="card-header">
+            <div className="adjutst-bg-card card card-1 adjust-border">
+                <div className="card-header border-0">
                     <h2 className="text-white">Developer</h2>
                     <p className="text-white py-3 card-description-detail">Get started with fast inference, reliability, and no daily rate limits</p>
-                    <div className="price"><span className="text-white pricing-title">$0</span>  <span className="text-white fs-5">/ month</span></div>
+                    <div className="price"><span className="text-white pricing-title">$0</span>  <span className="text-white months ms-2">/  month</span></div>
                 </div>
                 
                 <div className="features">
@@ -31,11 +31,11 @@ const PricingPage = () => {
                 <a href="#" className="btn btn-outline">Try Now</a>
             </div>
             
-            <div className="card card-2">
-                <div className="card-header">
-                    <h2 className="text-white">Pro</h2>
+            <div className="adjutst-bg-card card card-2 adjust-border1">
+                <div className="card-header border-0">
+                    <h2 className="pro-text">Pro</h2>
                     <p className="text-white py-3 card-description-detail">Suitable for small team and projects</p>
-                    <div className="price"><span className="text-white pricing-title">$15 </span> <span className="text-white">/ month</span> <span className="discount">-20%</span></div>
+                    <div className="price"><span className="text-white pricing-title">$15 </span> <span className="text-white months ms-2">/  month</span> <span className="discount">-20%</span></div>
                 </div>
                 
                 <div className="features">
@@ -53,11 +53,11 @@ const PricingPage = () => {
                 <div className="addon">[All workflow & advance + $8 / month]</div>
             </div>
             
-            <div className="card card-3">
-                <div className="card-header">
+            <div className="adjutst-bg-card card card-3 adjust-border2">
+                <div className="card-header border-0">
                     <h2 className="text-white">Enterprise</h2>
                     <p className="text-white py-3 card-description-detail">For organizations with custom needs and advanced security</p>
-                    <div className="price-enterprise text-white my-4">Custom</div>
+                    <div className="price-enterprise text-white mb-4 mt-0">Custom</div>
                 </div>
                 
                 <div className="features">
