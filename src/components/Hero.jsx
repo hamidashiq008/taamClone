@@ -14,7 +14,9 @@ const Hero = () => {
                   <span className=" feature-badge badge  text-light me-2">
                     New Feature
                   </span>
+                  <span>
                   Test All AI models in Playground
+                  </span>
                 </div>
               </div>
               <h1 className="mb-3">One API 300+ AI Models Uptime 99%</h1>

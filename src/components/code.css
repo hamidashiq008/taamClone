@@ -1,0 +1,7 @@
+.tokyo-night-dark .hljs-attr, .tokyo-night-dark .hljs-char.escape_, .tokyo-night-dark .hljs-keyword, .tokyo-night-dark .hljs-name, .tokyo-night-dark .hljs-operator {
+    color: rgb(187, 154, 247);
+}
+
+.tokyo-night-dark .hljs-addition, .tokyo-night-dark .hljs-bullet, .tokyo-night-dark .hljs-quote, .tokyo-night-dark .hljs-string, .tokyo-night-dark .hljs-symbol {
+    color: rgb(158, 206, 106);
+}

@@ -6,26 +6,26 @@ import HeroSlider from "../components/HeroSlider";
 import AiModals from "../components/AiModals";
 import Cards from "../components/Cards";
 import AiAgentsSection from "../components/AiAgentsSection";
+import BGImage from '../assets/hero-bg-img.png';
 
+
+import Services from '../components/ServicesSection'
 const Home = () => {
   return (
     <div>
       <>
         <div className="hero-background">
+          <div className="main-bg-image" style={{overflow: 'hidden', position: 'absolute', top: '0', left: '0', right: '0', zIndex: '-1'}}>
+            <img src={BGImage} alt="" />
+          </div>
           <Header />
-          {/* HERO Section */}
           <Hero />
-
-          {/* SLIDER Section */}
           <HeroSlider />
-
-          {/* Section */}
         </div>
-        {/* AiModal Section */}
         <AiModals />
         <Cards />
         <AiAgentsSection />
-        {/* Bootstrap JS (with Popper) */}
+        <Services />
       </>
     </div>
   );

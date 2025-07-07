@@ -1,5 +1,9 @@
 import React from "react";
 import AiAgentBoxSlider from "./AiAgentBoxSlider";
+import Typewriter from 'typewriter-effect';
+
+
+
 const AiAgentsSection = () => {
   return (
     <section className="ai-agents-section text-white">
@@ -38,8 +42,16 @@ const AiAgentsSection = () => {
                   ✨ What’s the best model for summarizing legal documents?
                 </p>
                 <p className=" description">
-                  The Ai Explain . What’s the best model for summarizing legal
-                  documents.{" "}
+                  <Typewriter
+                    options={{
+                      strings: [`The Ai Explain. What's the best model for summarizing legal documents.`],
+                      autoStart: true,
+                      loop: true,
+                      delay: 20,
+                      deleteSpeed: 0,
+                      pause: 1500
+                    }}
+                  />
                 </p>
 
                 <div className="d-flex gap-2 mt-3 btns-wrapper ">

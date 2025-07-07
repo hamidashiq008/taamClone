@@ -11,10 +11,9 @@ const AiModals = () => {
   return (
     <section
       className="ai-modals-container  text-white"
-      style={{ backgroundColor: "#000" }}
     >
       <div className=" mb-5">
-        <h2 className="fw-bold display-6">
+        <h2 className="fw-600 display-6">
           200+ AI Models with a Single Unified AI API
         </h2>
         <p className="text-secondary mx-auto">
@@ -82,7 +81,11 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
+<<<<<<< HEAD
               src={Dashboad3}
+=======
+               src={Dashboad4}
+>>>>>>> 990a71dc43c94ade36fe8750e76e5cda0c41b92e
               className="img-fluid mb-3 rounded"
               alt="Monitoring"
             />
@@ -96,7 +99,11 @@ const AiModals = () => {
         <div className="col-md-6 col-lg-4">
           <div className="ai-modal-box h-100 shadow">
             <img
+<<<<<<< HEAD
               src={Dashboad4}
+=======
+                src={Dashboad3}
+>>>>>>> 990a71dc43c94ade36fe8750e76e5cda0c41b92e
               className="img-fluid mb-3 rounded"
               alt="Analytics"
             />
