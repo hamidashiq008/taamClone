@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Cards.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CodeBg from '../assets/Code-bg.png';
+import './code.css';
+
+
 
 const Cards = () => {
   const features = [
@@ -49,11 +52,10 @@ const Cards = () => {
         "Build AI Agents That Can Use 1000+ Tools With Taam's Model Context Protocol Client",
     },
   ];
-
   const boxStyle = {
     maxWidth: "100%",
     height: "100%",
-    background: "#1a1b26",
+    background: "rgb(26 27 38 / 68%)",
     borderRadius: "8px",
     overflow: "hidden",
     width: "800px",
@@ -61,51 +63,16 @@ const Cards = () => {
     marginBottom: "100px",
   };
 
-  const code = `import { TaamCloud } from 'taam-cloud';
-
-// Initialize the client
-const client = new TaamCloud({
-  apiKey: process.env.TAAM_API_KEY
-});
-
-async function main() {
-  // Chat completion
-  const chatResponse = await client.chat.completions.create({
-    model: "gpt-4-turbo",
-    messages: [
-      {role: "system", content: "You are a helpful assistant."},
-      {role: "user", content: "What is artificial intelligence?"}
-    ]
-  });
-  
-  console.log(chatResponse.choices[0].message.content);
-  
-  // Generate embeddings
-  const embeddingResponse = await client.embeddings.create({
-    model: "text-embedding-3-small",
-    input: "Represent this text as an embedding vector"
-  });
-  
-  console.log(embeddingResponse.data[0].embedding.slice(0, 5)); 
-}
-
-main().catch(console.error);`;
 
   return (
     <section className={styles.cards} style={{ padding: "0px" }}>
       <div className="integrate-in-minutes-container">
         <div className="inner-wrapper">
-          <div className="text-center justify-content-center mt-5">
+          <div className=" text-center justify-content-center mt-5">
             <h3 className="fw-600 display-6 mb-3">Integrate in Minutes</h3>
             <p
-              style={{
-                maxWidth: "100%",
-                width: "360px",
-                color: "#d9d9d9",
-                fontFamily: 'Inter',
-                fontSize: '15px'
-              }}
-              className="mx-auto mb-5"
+              style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9", fontFamily: 'inter', fontSize: '15px' }}
+              className="mx-auto  mb-5"
             >
               Add Taam AI to your stack with just 3 lines of code — no
               restructuring, no delays, just instant power.
@@ -113,22 +80,31 @@ main().catch(console.error);`;
           </div>
           <div style={boxStyle}>
             <pre className="tokyo-night-dark" style={{ margin: 0 }}>
-              <code className="hljs" style={{
-                margin: "0px",
-                padding: "30px",
-                overflowX: "auto",
-                display: "block",
-                lineHeight: 1.5,
-                fontVariantLigatures: "none",
-                fontFamily: "Menlo, monospace",
-                fontSize: "15px",
-                whiteSpace: "pre",
-                wordSpacing: "normal",
-                wordBreak: "normal",
-                overflowWrap: "normal",
-                borderRadius: "8px"
-              }}>
-                {code}
+              <code
+                className="hljs"
+                style={{
+                  color: "rgb(154, 165, 206)",
+                  margin: 0,
+                  padding: "30px",
+                  overflowX: "auto",
+                  display: "block",
+                  lineHeight: 1.5,
+                  fontVariantLigatures: "none",
+                  fontFamily: "Menlo, monospace",
+                  fontSize: "15px",
+                  whiteSpace: "pre",
+                  wordSpacing: "normal",
+                  wordBreak: "normal",
+                  wordWrap: "normal",
+                  borderRadius: "8px",
+                }}
+              >
+                <div>
+                  <span>{`import { TaamCloud } `} </span>
+                  <span class="hljs-keyword">from </span>
+                  <span class="hljs-string">'taam-cloud'</span>
+                  <span>{`;`}</span>
+                </div>
               </code>
             </pre>
           </div>

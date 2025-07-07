@@ -44,7 +44,7 @@ const AiAgentsSection = () => {
                 <p className=" description">
                   <Typewriter
                     options={{
-                      strings: [`The Ai Explain . What's the best model for summarizing legal documents.`],
+                      strings: [`The Ai Explain. What's the best model for summarizing legal documents.`],
                       autoStart: true,
                       loop: true,
                       delay: 20,

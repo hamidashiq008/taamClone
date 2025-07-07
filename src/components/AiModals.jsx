@@ -11,7 +11,6 @@ const AiModals = () => {
   return (
     <section
       className="ai-modals-container  text-white"
-      style={{ backgroundColor: "#000" }}
     >
       <div className=" mb-5">
         <h2 className="fw-600 display-6">
