@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react'
-import Header from './Header'
-import FeatureHeroImg from "../assets/FeatureHeroImg.png";
-import CpuImg from "../assets/cpu.png";
-import gatewayImg1 from "../assets/gateway1.png";
-import gatewayImg2 from "../assets/gateway2.png";
-import gatewayImg3 from "../assets/gateway3.png";
-import img1 from "../assets/circleAnimationImg1.svg";
-import img2 from "../assets/circleAnimationImg2.svg";
-import img3 from "../assets/circleAnimationImg3.svg";
-import img4 from "../assets/circleAnimationImg4.svg";
-import img5 from "../assets/circleAnimationImg5.svg";
-import img6 from "../assets/circleAnimationImg6.svg";
-import img7 from "../assets/circleAnimationImg7.svg";
-import img8 from "../assets/circleAnimationImg8.svg";
-import img9 from "../assets/centerAnimation.png";
+import Header from '../components/Header'
+import FeatureHeroImg from "../assets/images/FeatureHeroImg.png";
+import CpuImg from "../assets/images/cpu.png";
+import gatewayImg1 from "../assets/images/gateway1.png";
+import gatewayImg2 from "../assets/images/gateway2.png";
+import gatewayImg3 from "../assets/images/gateway3.png";
+import img1 from "../assets/images/circleAnimationImg1.svg";
+import img2 from "../assets/images/circleAnimationImg2.svg";
+import img3 from "../assets/images/circleAnimationImg3.svg";
+import img4 from "../assets/images/circleAnimationImg4.svg";
+import img5 from "../assets/images/circleAnimationImg5.svg";
+import img6 from "../assets/images/circleAnimationImg6.svg";
+import img7 from "../assets/images/circleAnimationImg7.svg";
+import img8 from "../assets/images/circleAnimationImg8.svg";
+import img9 from "../assets/images/centerAnimation.png";
 
 
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "./Cards.module.css";
+import styles from "../assets/css/Cards.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CodeBg from '../assets/Code-bg.png';
-import './code.css';
+import CodeBg from '../assets/images/Code-bg.png';
+import '../assets/css/code.css';
 
 
 

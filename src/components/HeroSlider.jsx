@@ -1,11 +1,11 @@
 import React from "react";
 
-import silderImg1 from "../assets/slider1.svg";
-import silderImg2 from "../assets/slider2.svg";
-import silderImg3 from "../assets/slider3.svg";
-import silderImg4 from "../assets/slider4.svg";
-import silderImg5 from "../assets/slider5.svg";
-import silderImg6 from "../assets/slider6.svg";
+import silderImg1 from "../assets/images/slider1.svg";
+import silderImg2 from "../assets/images/slider2.svg";
+import silderImg3 from "../assets/images/slider3.svg";
+import silderImg4 from "../assets/images/slider4.svg";
+import silderImg5 from "../assets/images/slider5.svg";
+import silderImg6 from "../assets/images/slider6.svg";
 const HeroSlider = () => {
   return (
     <div>

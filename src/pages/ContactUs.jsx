@@ -7,8 +7,6 @@ const ConatactUs = () => {
   return (
     <div>
       <Header />
-
-
       <div className="contact-page">
         <div className="container py-5">
 
@@ -84,8 +82,6 @@ const ConatactUs = () => {
           </div>
         </div>
       </div>
-
-
       <div className="container footer-links text-white py-5">
         <div className="row">
           {/* Resources */}

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
-import "../assets/price.css";
-import CardImage1 from "../assets/pricing.avif";
+import CardImage1 from "../assets/images/pricing.avif";
+import '../assets/css/price.css'
 
 const PricingPage = () => {
   return (
