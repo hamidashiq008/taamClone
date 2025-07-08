@@ -1,6 +1,9 @@
  @use "./scss/AiAgent" as *;
  @use "./scss/ContactUs" as *;
  @use "./scss/Features" as *;
+ @use "./scss/Blogs" as *;
+
+ @use "./scss/Observability" as *;
 
  * {
    padding: 0;
@@ -1950,6 +1953,12 @@
  .arrow.open {
    transform: rotate(-45deg);
    /* Up arrow (open) */
+ }
+
+ .navbar-expand-lg .navbar-nav .dropdown-menu {
+   position: absolute;
+   background: #272727;
+   border: 1px solid #737171;
  }
 
  .landing-container {

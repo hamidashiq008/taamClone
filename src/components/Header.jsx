@@ -60,17 +60,17 @@ const Header = () => {
                       <li>
                         <NavLink
                           className="dropdown-item"
-                          to="/resources/action"
+                          to="/Blogs"
                         >
-                          Action
+                          Blogs
                         </NavLink>
                       </li>
                       <li>
                         <NavLink
                           className="dropdown-item"
-                          to="/resources/another"
+                          to="/Observability"
                         >
-                          Another action
+                          Observability
                         </NavLink>
                       </li>
                       <li>

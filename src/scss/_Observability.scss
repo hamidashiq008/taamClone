@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+.observability-page-wrapper {
+    .container {
+        max-width: 1200px !important;
+        padding: 96px 32px !important;
+
+        .hero-heading {
+            font-size: 40px;
+            letter-spacing: -2px;
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+            margin-bottom: 20px;
+            color: #D9D9D9;
+            font-weight: 500;
+        }
+
+        .hero-desc {
+            max-width: 690px;
+            margin: 0 auto;
+            margin-bottom: 64px;
+            color: #D9D9D9;
+        }
+
+        .custom-row {
+            // gap: 20px !important;
+
+            --bs-gutter-x: 20px;
+        }
+
+        .card-2,
+        .card-1 {
+            padding: 20px;
+            border-radius: 20px;
+
+            .img-wrapper {
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & h4 {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 30px 0 20px;
+            }
+
+            & p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .subscribe-btn {
+                background: linear-gradient(90deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
+                color: white;
+                padding: 7px 56px;
+
+                border: none;
+                border-radius: 12px;
+                // font-weight: 500;
+                font-size: 14px;
+
+                gap: 10px;
+                transition: all 0.3s ease;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(8px);
+                cursor: pointer;
+            }
+
+            .subscribe-btn:hover {
+                // transform: translateY(-2px);
+                background: linear-gradient(90deg, #0f2027, #2c5364, #654ea3);
+
+            }
+        }
+
+        .card-2 {
+            background: linear-gradient(90deg, rgb(32, 156, 255) 0%, rgb(104, 224, 207) 100%);
+
+        }
+
+        .card-1 {
+            background: linear-gradient(90deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
+        }
+
+
+
+    }
+
+    .aiStack {
+        .top-heading-area {
+            & h2 {
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            & p {
+                font-size: 18px;
+                margin-bottom: 64px;
+            }
+        }
+
+        .aiStackRow {
+            --bs-gutter-x: 20px;
+            --bs-gutter-y: 20px;
+
+            .col-inner {
+                background-color: #131315;
+                padding: 20px;
+                border-radius: 20px;
+
+                & h4 {
+                    font-size: 24px;
+
+                }
+
+                & p {
+                    font-size: 14px;
+                    color: #919191;
+                }
+            }
+        }
+    }
+
+    .gate-way-section {
+        position: relative;
+        // z-index: -2333;
+        overflow: hidden;
+
+        .gate-way-container {
+            max-width: 1000px !important;
+            width: 100% !important;
+            padding: 56px 0 !important;
+            position: relative;
+            z-index: 3;
+
+            .top-intro {
+                font-size: 14px;
+                color: #2463EB;
+            }
+
+            .cards-main-wrapper {
+                padding: 12px 12px 16px;
+                background-color: rgb(19 19 21);
+                border-radius: 24px;
+
+                .img-wrapper {
+                    width: 100%;
+                    max-height: 200px;
+                    height: 100%;
+                    border-radius: 16px;
+                    border: 1px solid rgb(107 107 107 / 55%);
+                    margin-bottom: 24px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+            }
+
+            .text-purple {
+                color: #a259ff;
+
+            }
+
+            .top-heading {
+                font-family: 600;
+                max-width: 400px;
+                width: 100%;
+                text-align: left;
+                color: #121215;
+            }
+
+            .top-desc {
+                // font-size: ;
+                max-width: 300px;
+                width: 100%;
+                text-align: left;
+                font-weight: 500;
+                color: #868686 !important;
+            }
+
+            .styled-text {
+                margin-bottom: 8px;
+            }
+
+            .desc-text {
+                margin-bottom: 0;
+            }
+
+            .heading-tile {
+                font-size: 28px;
+            }
+
+            .desc-text {
+                font-size: 16px;
+            }
+
+            .updates-section {
+                .modal-updates {
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+
+                .names {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .backgroundGradient {
+            background: linear-gradient(248.832deg, rgb(230, 232, 255) 3.32847%, rgb(249, 251, 255) 13.2119%, rgb(219, 241, 254) 31.5433%, rgb(233, 241, 252) 46.8152%, rgb(250, 229, 244) 62.2985%, rgb(243, 229, 246) 78.9068%, rgb(240, 236, 251) 100%);
+            filter: blur(97px);
+            flex: 0 0 auto;
+            height: 486px;
+            left: -200px;
+            position: absolute;
+            top: 13px;
+            width: 821px;
+            // z-index: -1;
+            transform: rotate(45deg);
+        }
+
+    }
+
+    .aiModalSection {
+        padding: 96px 0 0;
+
+
+
+    }
+
+    .getStarted{
+      .container{
+        padding: 80px 0 !important;
+          & h3{
+            font-size: 30px;
+            color: #D9D9D9;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        & p{
+            font-size: 18px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+          .subscribe-btn {
+                background: linear-gradient(90deg, rgb(46 64 63) 0%, rgb(67 50 75) 100%);
+                color: white;
+                margin: 0 auto;
+                display: flex;
+                padding: 7px 56px;
+
+                border: none;
+                border-radius: 12px;
+                // font-weight: 500;
+                font-size: 14px;
+
+                gap: 10px;
+                transition: all 0.3s ease;
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(8px);
+                cursor: pointer;
+            }
+
+            .subscribe-btn:hover {
+                // transform: translateY(-2px);
+                background: linear-gradient(90deg, #0f2027, #2c5364, #654ea3);
+
+            }
+      }
+    }
+}
