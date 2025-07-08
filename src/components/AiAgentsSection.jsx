@@ -42,16 +42,7 @@ const AiAgentsSection = () => {
                   ✨ What’s the best model for summarizing legal documents?
                 </p>
                 <p className=" description">
-                  <Typewriter
-                    options={{
-                      strings: [`The Ai Explain. What's the best model for summarizing legal documents.`],
-                      autoStart: true,
-                      loop: true,
-                      delay: 20,
-                      deleteSpeed: 0,
-                      pause: 1500
-                    }}
-                  />
+              npm 
                 </p>
 
                 <div className="d-flex gap-2 mt-3 btns-wrapper ">

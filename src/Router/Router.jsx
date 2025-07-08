@@ -8,6 +8,7 @@ import Features from '../pages/Features';
 import Downloads from '../pages/Downloads';
 import Blogs from '../pages/Blogs';
 
+import Observability from '../pages/Observability';
 const CustomRouter = () => {
     return (
         <Routes>
@@ -18,6 +19,7 @@ const CustomRouter = () => {
             <Route path="/download" element={<Downloads />} />
             <Route path="/Blogs" element={<Blogs />} />
 
+            <Route path="/Observability" element={<Observability />} />
 
         </Routes>
     )
