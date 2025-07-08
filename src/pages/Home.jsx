@@ -7,6 +7,7 @@ import AiModals from "../components/AiModals";
 import Cards from "../components/Cards";
 import AiAgentsSection from "../components/AiAgentsSection";
 import BGImage from '../assets/hero-bg-img.png';
+import FaqSection from '../components/FAQSection';
 
 
 import Services from '../components/ServicesSection'
@@ -26,6 +27,7 @@ const Home = () => {
         <Cards />
         <AiAgentsSection />
         <Services />
+        <FaqSection />
       </>
     </div>
   );
