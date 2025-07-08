@@ -244,8 +244,10 @@
         }
         & p{
             font-size: 18px;
-            margin-bottom: 24px;
+            margin-bottom: 24px !important;
             text-align: center;
+            margin: 0 auto;
+            width: 650px;
         }
           .subscribe-btn {
                 background: linear-gradient(90deg, rgb(46 64 63) 0%, rgb(67 50 75) 100%);
@@ -273,4 +275,8 @@
             }
       }
     }
+}
+.code-parent {
+    background-color: #d8e0e7;
+    border-radius: 20px;
 }
