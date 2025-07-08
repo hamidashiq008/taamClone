@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
-import FeatureHeroImg from "../assets/download.webp";
-import FaqSection from './FAQSection';
+import Header from "../components/Header";
+import FeatureHeroImg from "../assets/images/download.webp";
+import FaqSection from '../components/FAQSection';
 
 const Downloads = () => {
   

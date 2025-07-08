@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Pricing from "../components/PricingPage";
+import Pricing from "../pages/PricingPage";
 import { Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
-import ContactUs from "../components/ContactUs";
-import Features from '../components/Features';
-import Downloads from '../components/Downloads';
+import ContactUs from "../pages/ContactUs";
+import Features from '../pages/Features';
+import Downloads from '../pages/Downloads';
 const CustomRouter = () => {
     return (
         <Routes>

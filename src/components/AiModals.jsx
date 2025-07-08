@@ -1,11 +1,11 @@
 import React from "react";
 import AiModalSlider from "./AiModalSlider";
-import Dashboad1 from '../assets/dashboad1.png';
-import Dashboad2 from '../assets/dashboad2.png';
+import Dashboad1 from '../assets/images/dashboad1.png';
+import Dashboad2 from '../assets/images/dashboad2.png';
 
-import Dashboad3 from '../assets/dashboad3.png';
+import Dashboad3 from '../assets/images/dashboad3.png';
 
-import Dashboad4 from '../assets/dashboad4.png';
+import Dashboad4 from '../assets/images/dashboad4.png';
 
 const AiModals = () => {
   return (

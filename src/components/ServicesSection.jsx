@@ -1,15 +1,15 @@
 import React from 'react';
-import './ServicesSection.css';
+import '../assets/css/ServicesSection.css';
 
-import Service1 from '../assets/service-1.png';
-import Service2 from '../assets/service-2.png';
-import Service3 from '../assets/service-3.png';
-import Service4 from '../assets/service-4.png';
+import Service1 from '../assets/images/service-1.png';
+import Service2 from '../assets/images/service-2.png';
+import Service3 from '../assets/images/service-3.png';
+import Service4 from '../assets/images/service-4.png';
 
-import Icon1 from '../assets/icon-1.png';
-import Icon2 from '../assets/icon-2.png';
-import Icon3 from '../assets/icon-3.png';
-import Icon4 from '../assets/icon-4.png';
+import Icon1 from '../assets/images/icon-1.png';
+import Icon2 from '../assets/images/icon-2.png';
+import Icon3 from '../assets/images/icon-3.png';
+import Icon4 from '../assets/images/icon-4.png';
 
 const ServicesSection = () => {
     return (

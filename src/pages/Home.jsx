@@ -4,13 +4,13 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import HeroSlider from "../components/HeroSlider";
 import AiModals from "../components/AiModals";
-import Cards from "../components/Cards";
+import Cards from "../components/CodeSection";
 import AiAgentsSection from "../components/AiAgentsSection";
-import BGImage from '../assets/hero-bg-img.png';
+import BGImage from '../assets/images/hero-bg-img.png';
 import FaqSection from '../components/FAQSection';
+import Services from '../components/ServicesSection';
 
 
-import Services from '../components/ServicesSection'
 const Home = () => {
   return (
     <div>
