@@ -6,12 +6,10 @@
 }
 
 .services-top-line {
-  background: linear-gradient(
-    270deg,
-    #dee0e300,
-    #dee0e3 23.783778285121056% 81.62159962697072%,
-    #dee0e300
-  );
+  background: linear-gradient(270deg,
+      #dee0e300,
+      #dee0e3 23.783778285121056% 81.62159962697072%,
+      #dee0e300);
   flex: none;
   height: 1px;
   overflow: hidden;
@@ -164,22 +162,29 @@
   }
 }
 
-.learn-more-button:hover {
-  padding: 8px 10px;
+.service-card:hover {
+  & .learn-more-button {
+    padding: 8px 10px;
+    justify-content: end;
 
-  & .arrow-container {
-    width: 100%;
-    transition: all ease-in 0.3s;
-    & svg {
-      transform: rotate(0deg);
-      transition: all ease-in-out 0.3s;
+    & .arrow-container {
+      width: 100%;
+      transition: all ease-in 0.1s;
+
+      & svg {
+        transform: rotate(0deg);
+        transition: all ease-in-out 0.1s;
+      }
+    }
+
+    & p {
+      display: none;
+      transition: all ease-in-out 0.1s;
     }
   }
-  & p {
-    display: none;
-    transition: all ease-in-out 0.3s;
-  }
 }
+
+
 
 .card-image {
   width: 100%;
@@ -196,6 +201,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
   .top-row,
   .bottom-row {
     flex-direction: column;

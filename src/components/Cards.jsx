@@ -52,6 +52,8 @@ const Cards = () => {
         "Build AI Agents That Can Use 1000+ Tools With Taam's Model Context Protocol Client",
     },
   ];
+
+
   const boxStyle = {
     maxWidth: "100%",
     height: "100%",
@@ -97,13 +99,144 @@ const Cards = () => {
                   wordBreak: "normal",
                   wordWrap: "normal",
                   borderRadius: "8px",
+                  opacity: '0.8',
                 }}
               >
-                <div>
+                <div className="d-flex">
                   <span>{`import { TaamCloud } `} </span>
-                  <span class="hljs-keyword">from </span>
-                  <span class="hljs-string">'taam-cloud'</span>
+                  <span className="hljs-keyword">from </span>
+                  <span className="hljs-string">'taam-cloud'</span>
                   <span>{`;`}</span>
+                </div>
+                <br />
+                <div className="d-flex">
+                  <span className="hljs-comment">// Initialize the client</span>
+                </div>
+                <div className="d-flex">
+                  <span className="hljs-keyword">const </span>
+                  <span className="hljs-variable constant_">client</span>
+                  <span>{` = `}</span>
+                  <span className="hljs-keyword">new </span>
+                  <span className="hljs-title class_">TaamCloud</span>
+                  <span>{`({`}</span>
+                </div>
+                <div className="d-flex">
+                  <span className='pl-20'>{`apiKey: process.env.TAAM_API_KEY`}</span>
+                </div>
+                <div className="d-flex">
+                  <span>{`});`}</span>
+                </div>
+                <br />
+                <div className="d-flex">
+                  <span>{`async `}</span>
+                  <span className="hljs-keyword">function </span>
+                  <span className="hljs-title">main</span>
+                  <span>{`() {`}</span>
+                </div>
+                <div className="pl-20">
+                  <span className="hljs-comment">// Chat completion</span>
+                  <div className="d-flex">
+                    <span className="hljs-keyword">const </span>
+                    <span className="hljs-variable constant_">chatResponse </span>
+                    <span>{`= await client.chat.completions.`}</span>
+                    <span className="hljs-title function_ invoke__">create</span>
+                    <span>{`({`}</span>
+                  </div>
+                  <div className="pl-20">
+                    <span className="hljs-attr">model</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"gpt-4-turbo"</span>
+                    <span>{`,`}</span>
+                  </div>
+                  <div className="pl-20">
+                    <span className="hljs-attr">messages</span>
+                    <span>{`: [`}</span>
+                  </div>
+                  <div className="pl-40">
+                    <span>{`{`}</span>
+                    <span className="hljs-attr">role</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"system"</span>
+                    <span>{`, `}</span>
+                    <span className="hljs-attr">content</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"You are a helpful assistant."</span>
+                    <span>{`},`}</span>
+                  </div>
+                  <div className="pl-40">
+                    <span>{`{`}</span>
+                    <span className="hljs-attr">role</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"user"</span>
+                    <span>{`, `}</span>
+                    <span className="hljs-attr">content</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"What is artificial intelligence?"</span>
+                    <span>{`}`}</span>
+                  </div>
+                  <div className="pl-20">
+                    <span>{`]`}</span>
+                  </div>
+                  <div>
+                    <span>{`});`}</span>
+                  </div>
+                  <br />
+                  <div>
+                    <span>{`console.`}</span>
+                    <span className="hljs-title function_ invoke__">log</span>
+                    <span>{`(chatResponse.choices[`}</span>
+                    <span className="hljs-number">0</span>
+                    <span>{`].message.content);`}</span>
+                  </div>
+                  <br />
+                  <div>
+                    <span className="hljs-comment">// Generate embeddings</span>
+                  </div>
+                  <div>
+                    <span className="hljs-keyword">const </span>
+                    <span className="hljs-variable constant_">embeddingResponse </span>
+                    <span>{`= await client.embeddings.`}</span>
+                    <span className="hljs-title function_ invoke__">create</span>
+                    <span>{`({`}</span>
+                  </div>
+                  <div className="pl-20">
+                    <span className="hljs-attr">model</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"text-embedding-3-small"</span>
+                    <span>{`,`}</span>
+                  </div>
+                  <div className="pl-20">
+                    <span className="hljs-attr">input</span>
+                    <span>{`: `}</span>
+                    <span className="hljs-string">"Represent this text as an embedding vector"</span>
+                  </div>
+                  <div>
+                    <span>{`)};`}</span>
+                  </div>
+                  <br />
+                  <div>
+                    <span>{`console.`}</span>
+                    <span className="hljs-title function_ invoke__">log</span>
+                    <span>{`(embeddingResponse.data[`}</span>
+                    <span className="hljs-number">0</span>
+                    <span>{`].embedding.`}</span>
+                    <span className="hljs-title function_ invoke__">slice</span>
+                    <span>{`(`}</span>
+                    <span className="hljs-number">0</span>
+                    <span>{`, `}</span>
+                    <span className="hljs-number">5</span>
+                    <span>{`));`}</span>
+                  </div>
+                </div>
+                <div>
+                  <span>{`}`}</span>
+                </div>
+                <br />
+                <div>
+                  <span className="hljs-title function_ invoke__">main</span>
+                  <span>{`().`}</span>
+                  <span className="hljs-keyword">catch</span>
+                  <span>{`(console.error);`}</span>
                 </div>
               </code>
             </pre>
