@@ -6,6 +6,8 @@ import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
 import Features from '../pages/Features';
 import Downloads from '../pages/Downloads';
+import Blogs from '../pages/Blogs';
+
 const CustomRouter = () => {
     return (
         <Routes>

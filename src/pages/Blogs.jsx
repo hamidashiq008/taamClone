@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header';
+import Header from '../components/Header';
 import ButtonBg from '../assets/buttonBg.png';
 import Blog1 from '../assets/blog1.png'
 import Blog2 from '../assets/blog2.png'

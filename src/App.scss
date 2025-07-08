@@ -1940,3 +1940,9 @@
    transform: rotate(-45deg);
    /* Up arrow (open) */
  }
+
+ .navbar-expand-lg .navbar-nav .dropdown-menu {
+   position: absolute;
+   background: #272727;
+   border: 1px solid #737171;
+ }
