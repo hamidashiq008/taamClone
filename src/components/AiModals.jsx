@@ -10,7 +10,7 @@ import Dashboad4 from '../assets/images/dashboad4.png';
 const AiModals = () => {
   return (
     <section
-      className="ai-modals-container  text-white"
+      className="ai-modals-container  text-white position-relative"
     >
       <div className=" mb-5">
         <h2 className="fw-600 display-6">

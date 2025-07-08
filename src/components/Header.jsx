@@ -8,7 +8,7 @@ const Header = () => {
       <header>
         <div className="header-container">
           <nav className="navbar navbar-expand-md p-0">
-            <div className="container-fluid" style={{maxWidth: 820}}>
+            <div className="container-fluid" style={{maxWidth: 840}}>
               <div className="img-wrapper">
                 <img src={logoImg} alt="Logo" />
               </div>
@@ -89,7 +89,7 @@ const Header = () => {
 
                 </ul>
                 <form className="d-flex" role="search">
-                  <NavLink className="btn text-white login-btn" to="/login">
+                  <NavLink className="text-white color-btn" to="/login">
                     Login
                   </NavLink>
                 </form>

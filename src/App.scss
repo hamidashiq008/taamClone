@@ -54,7 +54,7 @@
      .nav-item {
        & a {
          color: white;
-         padding: 6px 12px;
+         padding: 8px 12px;
 
          &:hover {
            color: #94d6d6;
@@ -64,11 +64,7 @@
      }
    }
 
-   .login-btn {
-     background-image: var(--btnGradientColor);
-     padding: 5px 15px !important;
-     border: none !important;
-   }
+
 
    .header-navbar-collapse {
      .navbar-nav {
@@ -139,7 +135,6 @@
    display: block;
    -webkit-user-select: none;
    margin: auto;
-   cursor: zoom-in;
    background-color: hsl(0, 0%, 90%);
    transition: background-color 300ms;
    width: 100%;
@@ -161,6 +156,7 @@
        overflow: hidden;
        padding: 10px 0;
        position: relative;
+       mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
 
        .hero-slider-header {
          margin-bottom: 32px;
@@ -197,11 +193,11 @@
        }
 
        .ticker {
-         animation: ticker-scroll 60s linear infinite;
+         animation: ticker-scroll 30s linear infinite;
        }
 
        .swipper {
-         animation: swipper-scroll 60s linear infinite;
+         animation: swipper-scroll 20s linear infinite;
        }
      }
    }
@@ -232,7 +228,7 @@
    background-image: linear-gradient(2998deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   font-size: 40px;
+   font-size: 41px;
    line-height: 3rem;
    letter-spacing: -2px;
    padding: 20px;
@@ -337,15 +333,11 @@
 
    /* Your mobile styles here */
    .hero-section .hero-container {
-     padding: 30px 30px 65px;
+     padding: 90px 28px 60px;
    }
 
    .hero-section .hero-container .badge-inner-wrapper .feature-badge {
      display: block;
-   }
-
-   .hero-section .hero-container .hero-right-img img {
-     min-height: 350px;
    }
 
    .hero-slider .hero-container {
@@ -367,6 +359,34 @@
 
    .section-title {
      font-size: 25px;
+   }
+ }
+
+ .hero-section h1 {
+   font-size: 50px;
+   font-weight: 600;
+   padding-right: 55px;
+ }
+
+ .hero-section {
+
+   & .text-section {
+     min-width: 370px;
+   }
+
+   & .hero-image {
+     padding-left: 75px;
+
+     & img {
+       display: block;
+       width: 100%;
+       height: 100%;
+       border-radius: inherit;
+       object-position: left center;
+       object-fit: cover;
+       min-width: 666px;
+       min-height: 567px;
+     }
    }
  }
 
@@ -2106,7 +2126,95 @@
  }
 
  .arrow-icon {
-   width: 16px;
-   height: 16px;
+   width: 18px;
+   height: 18px;
    fill: currentColor;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .color-btn {
+   background-image: var(--btnGradientColor);
+   padding: 6px 16px !important;
+   border: none !important;
+   color: #fff;
+   border-radius: 6px;
+   box-shadow: 0 0 6px 0 #272727;
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+
+   &:hover {
+     color: #ffffff7e;
+   }
+ }
+
+ .simple-btn {
+   background-color: #0000008c;
+   padding: 6px 16px !important;
+   border: 1px solid #7e7e7e !important;
+   color: #fff;
+   border-radius: 6px;
+   box-shadow: 0 0 6px 0 #272727;
+   font-size: 14px;
+   font-weight: 400;
+   text-decoration: none;
+
+   &:hover {
+     box-shadow: 0 0 6px 0 #ffffff7e;
+   }
+ }
+
+ .text-gray {
+   color: #b9b9b9 !important
+ }
+
+ .hero-section {
+   .whats-new-component {
+     display: flex;
+     align-items: center;
+     padding: 2px 4px;
+   }
+
+   .text-link {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: inherit;
+   }
+
+   .badge {
+     padding: 1px 10px;
+     margin-right: 1em;
+     transition: all ease-in-out 0.2s;
+   }
+
+   .label {
+     margin: 0;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 20px;
+
+     & p {
+       font-size: 12px;
+       letter-spacing: -0.02em;
+       line-height: 20px;
+       color: rgb(255 255 255);
+       margin-bottom: 0;
+       font-family: 'Inter';
+     }
+   }
+
+   .right-icon {
+     margin-left: auto;
+   }
+
+   .whats-new-component:hover {
+     .badge {
+       margin-right: 1.5em;
+       transition: all ease-in-out 0.2s;
+     }
+   }
  }
