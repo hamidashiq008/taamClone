@@ -37,7 +37,7 @@
  .header-container {
    max-width: 880px;
    margin: 0 auto;
-   padding: 40px 0 15px;
+   padding: 32px 0 16px;
 
    & .img-wrapper {
      max-width: 130px;
@@ -51,6 +51,12 @@
      .nav-item {
        & a {
          color: white;
+         padding: 6px 12px;
+
+         &:hover {
+           color: #94d6d6;
+           text-decoration: underline;
+         }
        }
      }
    }
@@ -69,7 +75,7 @@
        // display: flex;
        opacity: 1;
        margin: 0 auto;
-       padding: 0 20px;
+       padding: 0 10px;
      }
    }
  }
@@ -127,11 +133,18 @@
  }
 
  .hero-background {
-   // background-image: url("../public/hero-bg-img.png");
-   // background-size: cover;
-   // background-position: center;
-   // background-repeat: no-repeat;
-   // color: white;
+   display: block;
+   -webkit-user-select: none;
+   margin: auto;
+   cursor: zoom-in;
+   background-color: hsl(0, 0%, 90%);
+   transition: background-color 300ms;
+   width: 100%;
+   background: #000;
+   object-fit: cover;
+   object-position: top;
+   position: absolute;
+   z-index: 0;
  }
 
  .hero-slider {
@@ -1911,7 +1924,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 20px;
+   padding: 30px 20px 20px 20px;
  }
 
  .faq-answer {
@@ -1937,4 +1950,154 @@
  .arrow.open {
    transform: rotate(-45deg);
    /* Up arrow (open) */
+ }
+
+ .landing-container {
+   font-family: "Inter", sans-serif;
+   color: white;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem;
+ }
+
+ /* Original CTA Section Styles (unchanged) */
+ .cta-section {
+   margin-bottom: 4rem;
+ }
+
+ .cta-content {
+   text-align: center;
+ }
+
+ .cta-heading h3 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color: #d9d9d9;
+ }
+
+ .cta-description p {
+   font-size: 1.1rem;
+   margin-bottom: 2rem;
+   color: rgba(255, 255, 255, 0.8);
+ }
+
+ .cta-button-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .cta-button {
+   position: relative;
+   text-decoration: none;
+   display: inline-block;
+ }
+
+ .button-content {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.75rem 1.5rem;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(10px);
+   background-color: rgba(0, 0, 0, 0.4);
+   border-radius: 8px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1),
+     0 4px 4px rgba(0, 0, 0, 0.05),
+     0 1px 0 rgba(0, 0, 0, 0.05);
+ }
+
+ .button-content p {
+   font-size: 14px;
+   font-weight: 500;
+   margin: 0;
+ }
+
+ .button-icon svg {
+   width: 16px;
+   height: 16px;
+   fill: currentColor;
+ }
+
+ .button-glow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   border-radius: 10px;
+   filter: blur(10px);
+   opacity: 0.4;
+   z-index: -1;
+   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+ }
+
+ /* New Simplified Subscription Section Styles */
+ .simplified-subscription-section {
+   max-width: 890px;
+   margin: 3rem auto 0;
+   text-align: center;
+ }
+
+ .simplified-heading {
+   font-size: 20px;
+   margin-bottom: 1rem;
+   color: white;
+ }
+
+ .simplified-description {
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.7);
+   margin-bottom: 1.5rem;
+   line-height: 1.5;
+   text-align: left;
+ }
+
+ .simplified-input {
+   width: 100%;
+   padding: 8px 14px 10px;
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 8px;
+   color: white;
+   font-size: 14px;
+   text-align: left;
+ }
+
+ .simplified-input::placeholder {
+   color: rgba(255, 255, 255, 0.5);
+ }
+
+ .simplified-disclaimer {
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.6);
+   margin-bottom: 1.5rem;
+   line-height: 1.5;
+   text-align: left;
+ }
+
+ .simplified-subscribe-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   width: 50%;
+   padding: 8px 14px 10px;
+   background-color: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 8px;
+   color: white;
+   font-size: 14px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s ease;
+ }
+
+ .simplified-subscribe-button:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .arrow-icon {
+   width: 16px;
+   height: 16px;
+   fill: currentColor;
  }

@@ -7,8 +7,8 @@ const Header = () => {
     <div>
       <header>
         <div className="header-container">
-          <nav className="navbar navbar-expand-lg p-0">
-            <div className="container-fluid">
+          <nav className="navbar navbar-expand-md p-0">
+            <div className="container-fluid" style={{maxWidth: 820}}>
               <div className="img-wrapper">
                 <img src={logoImg} alt="Logo" />
               </div>
@@ -29,50 +29,14 @@ const Header = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  {/* Dropdown: Models */}
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Models
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <NavLink className="dropdown-item" to="/models/action">
-                          Action
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink className="dropdown-item" to="/models/another">
-                          Another action
-                        </NavLink>
-                      </li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li>
-                        <NavLink
-                          className="dropdown-item"
-                          to="/models/something"
-                        >
-                          Something else
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/Features">
-                      Features
+                    <NavLink className="nav-link" to="/">
+                      AI Gateway
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/download">
-                      Downloads
+                    <NavLink className="nav-link" to="/Features">
+                      Features
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -123,11 +87,6 @@ const Header = () => {
                     </ul>
                   </li>
 
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/contact">
-                      Contact Us
-                    </NavLink>
-                  </li>
                 </ul>
                 <form className="d-flex" role="search">
                   <NavLink className="btn text-white login-btn" to="/login">

@@ -4,7 +4,7 @@ import heroImg from "../assets/images/hero-img.png";
 const Hero = () => {
   return (
     <div>
-      <section className="hero-section ">
+      <section className="hero-section position-relative">
         <div className="hero-container">
           <div className="row align-items-center px-3">
             {/* Left Content */}
