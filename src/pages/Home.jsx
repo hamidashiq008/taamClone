@@ -9,6 +9,7 @@ import AiAgentsSection from "../components/AiAgentsSection";
 import BGImage from '../assets/images/hero-bg-img.png';
 import FaqSection from '../components/FAQSection';
 import Services from '../components/ServicesSection';
+import CTA from '../components/CTASection';
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         <AiAgentsSection />
         <Services />
         <FaqSection />
+        <CTA />
       </>
     </div>
   );
