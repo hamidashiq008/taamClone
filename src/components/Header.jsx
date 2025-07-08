@@ -96,9 +96,9 @@ const Header = () => {
                       <li>
                         <NavLink
                           className="dropdown-item"
-                          to="/resources/action"
+                          to="/Blogs"
                         >
-                          Action
+                          Blogs
                         </NavLink>
                       </li>
                       <li>

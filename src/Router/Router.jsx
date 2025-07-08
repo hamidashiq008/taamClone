@@ -6,6 +6,8 @@ import Home from "../pages/Home";
 import ContactUs from "../components/ContactUs";
 import Features from '../components/Features';
 import Downloads from '../components/Downloads';
+import Blogs from '../components/Blogs';
+
 const CustomRouter = () => {
     return (
         <Routes>
@@ -14,6 +16,8 @@ const CustomRouter = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/Features" element={<Features />} />
             <Route path="/download" element={<Downloads />} />
+            <Route path="/Blogs" element={<Blogs />} />
+
 
         </Routes>
     )
