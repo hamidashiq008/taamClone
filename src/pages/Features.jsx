@@ -36,7 +36,7 @@ const Features = () => {
         <div>
             <Header />
             <div className="features-page-content">
-                <div className="container">
+                <div className="container" data-aos="fade-up">
                     <section className="feature-hero-section">
                         <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
                         <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
