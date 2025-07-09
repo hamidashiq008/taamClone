@@ -10,7 +10,7 @@ import FaqSection from '../components/FAQSection';
 import Services from '../components/ServicesSection';
 import CTA from '../components/CTASection';
 import ContactUs from '../components/ContactUsSection';
-
+import Footer from '../components/Footer'
 import BGImage from '../assets/images/BG-Image-2.avif';
 
 const Home = () => {
@@ -27,6 +27,7 @@ const Home = () => {
       <FaqSection />
       <CTA />
       <ContactUs />
+      <Footer/>
     </>
   );
 };

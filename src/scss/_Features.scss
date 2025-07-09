@@ -130,6 +130,11 @@ body {
                                 font-size: 12px;
                                 text-align: left;
                                 color: #8F8F8D;
+                                height: 18px;
+                                position: relative;
+                                overflow: hidden;
+                                top: 0;
+                                bottom: unset;
                             }
 
                             .arrow-svg-wrapper svg {
@@ -205,14 +210,17 @@ body {
                     }
 
                     .center-image-wrapper {
-                        background-color: rgb(24, 24, 24);
-                        border: 1px solid rgb(54, 58, 58);
-                        padding: 8px;
-                        max-width: 121px;
-                        width: 100%;
-                        max-height: 121px;
-                        height: 100%;
-                        border-radius: 16px;
+
+                        .img-wrapper {
+                            background-color: rgb(24, 24, 24);
+                            border: 1px solid rgb(54, 58, 58);
+                            padding: 8px;
+                            max-width: 121px;
+                            width: 100%;
+                            max-height: 121px;
+                            height: 100%;
+                            border-radius: 16px;
+                        }
 
                         & img {
                             height: 100%;
@@ -472,3 +480,164 @@ body {
 
 
 }
+
+// Cards Animation
+.first-card-wrapper {
+
+    .content-wrapper {
+        cursor: default;
+    }
+
+    .bottom-desc {
+        position: relative;
+        height: 60px;
+        /* adjust as needed */
+    }
+
+    .inner-top-p,
+    .inner-bottom-p {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .inner-top-p {
+        top: 0;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .inner-bottom-p {
+        bottom: 0;
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    &:hover {
+        .inner-top-p {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        .inner-bottom-p {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .arrow-svg-wrapper {
+            .chev-right {
+                color: rgb(255, 255, 255) !important;
+                stroke: #ffffff !important;
+                // font-size: 30px;
+                stroke-width: 2px;
+            }
+        }
+    }
+
+
+}
+
+// .d1,
+// .d2,
+// .d3,
+// .d4,
+// .d5 {
+//     height: 0;
+//     width: 1px;
+//     position: absolute;
+//     background-color: rgba(94, 94, 94, 0.507);
+//     z-index: 0;
+//     transition: all ease-in-out 0.3s;
+// }
+
+// .d1 {
+
+//     left: 0;
+//     rotate: -45deg;
+//     top: -21px;
+// }
+
+// .d2 {
+
+//     right: 0;
+//     rotate: 45deg;
+//     top: -21px;
+// }
+
+// .d3 {
+
+//     left: -19px;
+//     rotate: 270deg;
+//     top: 7px;
+// }
+
+// .d4 {
+
+//     right: -19px;
+//     rotate: -90deg;
+//     top: 7px;
+// }
+
+// .d5 {
+
+
+//     left: 0;
+//     rotate: 180deg;
+//     top: -65px;
+//     margin: 0 auto;
+//     right: 0;
+
+
+// }
+
+// .center-badge,
+// .left,
+// .right,
+// .top-icon {
+//     position: relative;
+//     z-index: 99;
+//     background-color: black;
+
+// }
+
+// .center-image-wrapper {
+//     position: relative;
+//     z-index: 9;
+
+//     .img-wrapper {
+//         z-index: 9999;
+//         position: relative;
+//     }
+// }
+
+// .centered-card {
+
+
+
+//     &:hover {
+
+//         .d1 {
+//             height: 52px;
+//         }
+
+//         .d2 {
+//             height: 52px;
+//         }
+
+//         .d3 {
+//             height: 79px;
+//         }
+
+//         .d4 {
+//             height: 79px;
+//         }
+
+//         .d5 {
+
+//             height: 76px;
+
+
+//         }
+//     }
+// }

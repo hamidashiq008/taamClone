@@ -39,8 +39,8 @@ const Observability = () => {
                 <div className="col-md-6">
                   <div className="card-1 h-100">
                     <div className="code-wrapper">
-                      <div className="p-4  code-parent">
-                          <p>
+                      <div className=" code-parent">
+                        {/* <p>
                             <strong>User:</strong> What is artificial
                             intelligence?
                           </p>
@@ -50,7 +50,33 @@ const Observability = () => {
                             processes by machines, especially computer systems.
                             These processes include learning, reasoning, and
                             self-correction.
-                          </p>
+                          </p> */}
+                        <pre className="m-0">
+                        <code>
+        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
+        {` os \n`}
+
+        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>from</span>
+        {` taam_cloud `}
+        
+        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
+        {` TaamCloud\n\n`}
+
+
+        {`# Initialize the client\n`}
+        {`client = TaamCloud(api_key=`}
+        <span >os</span>
+        {`.environ.get("TAAM_API_KEY"))\n\n`}
+        {`# Chat completion\n`}
+        {`response = client.chat.create(\n`}
+        {`    model="gpt-4-turbo",\n`}
+        {`    messages=[\n`}
+        {`        {"role": "system", "content": "You are a helpful assistant."},\n`}
+        {`        {"role": "user", "content": "What is artificial intelligence?"}\n`}
+        {`    ]\n`}
+        {`)`}
+      </code>
+                        </pre>
                       </div>
                     </div>
                     <h4>Fast track development</h4>
@@ -289,7 +315,7 @@ const Observability = () => {
             </div>
           </section>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

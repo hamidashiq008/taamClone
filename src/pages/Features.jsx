@@ -82,11 +82,12 @@ const Features = () => {
                                                             <span>Model-3</span>
                                                         </div>
                                                         <div className="bottom-desc">
-                                                            Try our latest LLM model
+                                                            <p className='inner-top-p m-0'>TOP </p>
+                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
                                                         </div>
                                                     </div>
                                                     <div className="arrow-svg-wrapper">
-                                                        <IconChevronRight size={20} stroke={1} className='chevron' />
+                                                        <IconChevronRight size={20} stroke={1} className='chevron  chev-right' />
 
                                                     </div>
                                                 </div>
@@ -102,12 +103,13 @@ const Features = () => {
 
                                                             <span>new</span>
                                                         </div>
-                                                        <div className="bottom-desc">
-                                                            Try our latest LLM model
+                                                      <div className="bottom-desc">
+                                                            <p className='inner-top-p m-0'>TOP </p>
+                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
                                                         </div>
                                                     </div>
                                                     <div className="arrow-svg-wrapper">
-                                                        <IconChevronRight size={20} stroke={1} className='chevron' />
+                                                        <IconChevronRight size={20} stroke={1} className='chevron chev-right' />
 
                                                     </div>
                                                 </div>
@@ -175,7 +177,16 @@ const Features = () => {
                                                         <IconWaveSine size={20} stroke={1} className='' />
                                                     </div>
                                                     <div className="center-image-wrapper mb-2">
-                                                        <img src={CpuImg} alt="" />
+                                                        <div className='d1'></div>
+                                                        <div className='d2'></div>
+                                                        <div className='d3'></div>
+                                                        <div className='d4'></div>
+                                                        <div className='d5'></div>
+
+                                                        <div className="img-wrapper">
+                                                            
+<img src={CpuImg} alt="" />
+                                                        </div>
                                                     </div>
                                                     <div className="right icon mt-3">
                                                         <IconCode size={20} stroke={1} className='' />
