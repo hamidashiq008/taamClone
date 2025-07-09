@@ -8,6 +8,8 @@ import Blog4 from '../assets/blog4.png'
 import Blog5 from '../assets/blog5.png'
 import User1 from '../assets/user1.png'
 
+import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
+
 const Blogs = () => {
     return (
         <div>
@@ -17,10 +19,19 @@ const Blogs = () => {
                 <div className="container">
                     <h2 className='text-center hero-heading'>Explore and Learn AI With Taam AI Blogs</h2>
                     <p className='text-center hero-desc'>A collection of the latest insights, product enhancements, important bugfixes and more. </p>
-                    <div className="buttons-wrapper d-flex justify-content-center gap-4   ">
-                        <input type="email" placeholder='jane@taam.ai' />
-                        <button className='subscribe-btn' >Subscribe</button>
-
+                    <div className="d-flex gap-2 justify-content-center align-items-center">
+                        <input
+                            type="email"
+                            placeholder="jane@gmail.com"
+                            className="simplified-input flex-grow-1"
+                        />
+                        {/* <button className="simplified-subscribe-button">
+                                Subscribe
+                                <svg className="arrow-icon" viewBox="0 0 256 256" focusable="false">
+                                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                                </svg>
+                            </button> */}
+                        <SimpleButton text={'Subscribe'} />
                     </div>
                     <div className="border-line">
 

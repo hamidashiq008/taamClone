@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import CardImage1 from "../assets/images/pricing.avif";
 import '../assets/css/price.css'
+import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
 
 const PricingPage = () => {
   return (
@@ -82,11 +83,8 @@ const PricingPage = () => {
               </div>
             </div>
 
-            <div className="developer-wrapper w-50 mx-auto mt-3">
-               <a href="#" className="btn developer-btn text-white border p-1">
-                Try Now <i class="bi bi-arrow-right"></i>
-
-              </a>
+            <div className="d-flex justify-content-center mt-3">
+              <SimpleLink to={'/'} text={'Try Now'} className={'px-20 mx-auto'} />
             </div>
           </div>
 
@@ -138,13 +136,10 @@ const PricingPage = () => {
                 <span className="workflow">All workflow & advance</span>{" "}
                 <span className="addon-price">+ $8 / month</span>
               </div>
-              <div className="developer-wrapper w-50 mx-auto">
-               <a href="#" className="btn developer-btn text-white border p-1 my-4 lg:my-2">
-                Get Started <i class="bi bi-arrow-right"></i>
+              <div className="d-flex justify-content-center mt-4">
+                <SimpleLink to={'/'} text={'Get Started'} className={'px-20 mx-auto'} />
+              </div>
 
-              </a>
-            </div>
-              
             </div>
           </div>
 
@@ -176,11 +171,8 @@ const PricingPage = () => {
                 </div>
               </div>
             </div>
-           <div className="developer-wrapper w-50 mx-auto">
-               <a href="#" className="btn developer-btn text-white border p-1 my-2">
-                Get Started <i class="bi bi-arrow-right"></i>
-
-              </a>
+            <div className="d-flex justify-content-center mt-3">
+              <SimpleLink to={'/'} text={'Get Started'} className={'px-20 mx-auto'} />
             </div>
           </div>
         </div>

@@ -7,8 +7,8 @@ import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partial
 const Header = () => {
   return (
     <div>
-      <header>
-        <div className="header-container">
+      <header >
+        <div className="header-container" data-aos='fade-down'>
           <nav className="navbar navbar-expand-md p-0">
             <div className="container-fluid" style={{maxWidth: 840}}>
               <div className="img-wrapper">
