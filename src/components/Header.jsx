@@ -16,13 +16,8 @@ const Header = () => {
       <div className="header-container" data-aos="fade-down">
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
-            <div className="img-wrapper d-flex">
-              <div className="me-2">
-                <img src={logoImg} alt="Logo" width={30} height={30} />
-              </div>
-              <div>
-                <h5>TAAM AI</h5>
-              </div>
+            <div className="img-wrapper">
+              <img src={logoImg} alt="Logo" />
             </div>
             <button
               className="navbar-toggler"
