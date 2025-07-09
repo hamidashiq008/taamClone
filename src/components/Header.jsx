@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logoImg from "../assets/images/logo.svg";
 
+import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
+
 const Header = () => {
   return (
     <div>
@@ -89,9 +91,7 @@ const Header = () => {
 
                 </ul>
                 <form className="d-flex" role="search">
-                  <NavLink className="text-white color-btn" to="/login">
-                    Login
-                  </NavLink>
+                  <GradientLink text={'Start for free'} to="/login" />
                 </form>
                 {/* Login Button */}
               </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
+
 
 import heroImg from "../assets/images/hero-img.avif";
 const Hero = () => {
@@ -32,10 +34,8 @@ const Hero = () => {
                 without the complexity.
               </p>
               <div className="">
-                <button className="color-btn me-2">Start Free</button>
-                <button className="simple-btn">
-                  See All Features <i className="bi bi-arrow-right"></i>
-                </button>
+                <GradientButton text={'Start Free'} className={'me-2'} />
+                <SimpleButton text={'See All Features'} />
               </div>
             </div>
 

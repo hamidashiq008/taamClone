@@ -1,4 +1,5 @@
 import React from "react";
+import {SimpleButton} from '../Partials/CustomButton';
 
 const TaamAILanding = () => {
     return (
@@ -20,12 +21,13 @@ const TaamAILanding = () => {
                                 placeholder="jane@gmail.com"
                                 className="simplified-input flex-grow-1"
                             />
-                            <button className="simplified-subscribe-button">
+                            {/* <button className="simplified-subscribe-button">
                                 Subscribe
                                 <svg className="arrow-icon" viewBox="0 0 256 256" focusable="false">
                                     <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
                                 </svg>
-                            </button>
+                            </button> */}
+                            <SimpleButton text={'Subscribe'} />
                         </div>
 
                         <p className="simplified-disclaimer">
