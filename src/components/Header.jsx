@@ -12,8 +12,8 @@ const Header = () => {
   const location = useLocation(); // 👈 Get current route path
 
   return (
-    <header>
-      <div className="header-container">
+    <header >
+      <div className="header-container" data-aos='fade-down'>
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
             <div className="img-wrapper d-flex">
