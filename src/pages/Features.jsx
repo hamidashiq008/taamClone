@@ -15,7 +15,7 @@ import img7 from "../assets/images/circleAnimationImg7.svg";
 import img8 from "../assets/images/circleAnimationImg8.svg";
 import img9 from "../assets/images/centerAnimation.png";
 
-import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
+import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
 import {
     IconDatabase,
     IconCloudUpload,
@@ -24,7 +24,8 @@ import {
     IconCode,
     IconChevronRight,
     IconLoader,
-    IconCpu
+    IconCpu,
+    IconLink
 } from "@tabler/icons-react";
 const Features = () => {
 
@@ -101,7 +102,7 @@ const Features = () => {
 
                                                             <span>new</span>
                                                         </div>
-                                                      <div className="bottom-desc">
+                                                        <div className="bottom-desc">
                                                             <p className='inner-top-p m-0'>TOP </p>
                                                             <p className='inner-bottom-p m-0'>BOTTOM </p>
                                                         </div>
@@ -155,13 +156,17 @@ const Features = () => {
                                                     <IconFileText size={20} stroke={1} className='' />
 
                                                 </div>
-                                                <div className="center-icons center-icon-one d-flex justify-content-center gap-2 align-items-center">
+                                                <div className="center-icons d-flex justify-content-center gap-2 align-items-center">
                                                     <div className="left icon">
                                                         <IconWaveSine size={20} stroke={1} className='' />
                                                     </div>
-                                                    <div className="center-badge mt-2">
+                                                    <div className="center-badge center-badge-one mt-2">
                                                         <IconLoader size={15} stroke={1} className="loading-icon me-2" />
                                                         CONNECTIONG
+                                                    </div>
+                                                    <div className="center-badge center-badge-two mt-2">
+                                                        <IconLink size={15} stroke={1} className="loading-icon me-2" />
+                                                        CONNECTED
                                                     </div>
                                                     <div className="right icon">
                                                         <IconCode size={20} stroke={1} className='' />
@@ -170,22 +175,8 @@ const Features = () => {
 
 
                                                 </div>
-                                                     <div className="center-icons center-icon-two d-flex justify-content-center gap-2 align-items-center">
-                                                    <div className="left icon">
-                                                        <IconWaveSine size={20} stroke={1} className='' />
-                                                    </div>
-                                                    <div className="center-badge mt-2">
-                                                        <IconLoader size={15} stroke={1} className="loading-icon me-2" />
-                                                        CONNECTIONG
-                                                    </div>
-                                                    <div className="right icon">
-                                                        <IconCode size={20} stroke={1} className='' />
-                                                    </div>
 
-
-
-                                                </div>
-                                                <div className="d-flex justify-content-between gap-2 align-items-start  gap-3  ">
+                                                <div className="d-flex justify-content-center  align-items-start  gap-4 ">
                                                     <div className="left icon mt-3">
                                                         <IconWaveSine size={20} stroke={1} className='' />
                                                     </div>
@@ -197,8 +188,8 @@ const Features = () => {
                                                         <div className='d5'></div>
 
                                                         <div className="img-wrapper">
-                                                            
-<img src={CpuImg} alt="" />
+
+                                                            <img src={CpuImg} alt="" />
                                                         </div>
                                                     </div>
                                                     <div className="right icon mt-3">
@@ -221,18 +212,86 @@ const Features = () => {
                                                 Enhance productivity with AI that connects your systems and automates complex workflows.
                                             </p>
 
-                                            <div className="d-flex flex-wrap gap-2 pt-4">
-                                                <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Edit <span>  page.</span></span>
+                                            <div className="d-flex flex-wrap gap-2 pt-4 pills-wrapper">
+                                                <span className="badge first d-flex align-items-center">
+                                                    <div className="icons-wrapper" >
+                                                        <div className="first-icon d-block">
+                                                            <IconCode size={20} stroke={1} className='' />
+                                                        </div>
+                                                        <div className="second-icon  d-block">
+                                                            <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
+                                                        </div>
+                                                    </div>
+                                                    <div className="content d-flex">
+                                                        <div className="afterBefore">
+                                                            <div className="before">
+                                                                Edit
+                                                            </div>
+                                                            <div className="after">
+                                                                Edited
+                                                            </div>
+                                                        </div>
+                                                        <div className="spna-div">
+                                                            <span>  page.</span>
+                                                        </div>
+                                                    </div>
+                                                </span>
                                                 <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Transcribe <span>voiceclips.</span></span>
                                                 <div className="center-content d-flex gap-2  my-2">
                                                     <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Simplify <span>code.</span></span>
-                                                    <span className="badge">  <IconCode size={20} stroke={1} className='' /> Improve <span> slides.</span></span>
+                                                    {/* <span className="badge fourth">  <IconCode size={20} stroke={1} className='' /> Improve <span> slides.</span></span> */}
+                                                     <span className="badge first d-flex align-items-center">
+                                                    <div className="icons-wrapper" >
+                                                        <div className="first-icon d-block">
+                                                            <IconCode size={20} stroke={1} className='' />
+                                                        </div>
+                                                        <div className="second-icon  d-block">
+                                                            <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
+                                                        </div>
+                                                    </div>
+                                                    <div className="content d-flex">
+                                                        <div className="afterBefore">
+                                                            <div className="before">
+                                                                Improve
+                                                            </div>
+                                                            <div className="after">
+                                                                Improved
+                                                            </div>
+                                                        </div>
+                                                        <div className="spna-div">
+                                                            <span className='ms-2'>  slides.</span>
+                                                        </div>
+                                                    </div>
+                                                </span>
                                                     <div className="icon">
                                                         <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
                                                     </div>
 
                                                 </div>
-                                                <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Create <span> a podcast draft.</span></span>
+                                                {/* <span className="badge fifth">  <IconCode size={20} stroke={1} className='' /> Create <span> a podcast draft.</span></span> */}
+                                                 <span className="badge first d-flex align-items-center">
+                                                    <div className="icons-wrapper" >
+                                                        <div className="first-icon d-block">
+                                                            <IconCode size={20} stroke={1} className='' />
+                                                        </div>
+                                                        <div className="second-icon  d-block">
+                                                            <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
+                                                        </div>
+                                                    </div>
+                                                    <div className="content d-flex">
+                                                        <div className="afterBefore">
+                                                            <div className="before">
+                                                                Create
+                                                            </div>
+                                                            <div className="after">
+                                                                Created
+                                                            </div>
+                                                        </div>
+                                                        <div className="spna-div">
+                                                            <span className='ms-2'>  a podcast draft.</span>
+                                                        </div>
+                                                    </div>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -336,8 +395,9 @@ const Features = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="orbit-container">
+                                <div className="orbit-container ">
                                     <div className="orbit-center">
+                                <div className="gradient-bg"></div>
                                         <div className="center-object">
                                             <div className="img-wrapper">
                                                 <img src={img9} alt="" />

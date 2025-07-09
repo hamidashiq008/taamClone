@@ -193,7 +193,7 @@ body {
                     .icon {
                         border: 5px solid rgb(24, 24, 24);
                         display: inline-block;
-                        padding: 14px;
+                        padding: 14px 16px !important;
                         border-radius: 50%;
                     }
 
@@ -232,12 +232,12 @@ body {
                 }
 
                 .last-card {
-                    padding: 40px 20px;
+                    padding: 40px 15px;
 
                     .badge {
                         border: 1px solid rgb(35, 34, 34);
                         border-radius: 800px;
-                        padding: 9px 16px;
+                        padding: 8px 13px;
 
                         & span {
                             font-size: 12px;
@@ -402,6 +402,47 @@ body {
         height: 100%;
         margin: 0 auto;
         margin-top: 10px;
+
+
+
+
+
+
+
+
+
+    }
+
+    .gradient-bg {
+        background: radial-gradient(circle at 30% 30%,
+                rgba(255, 0, 150, 0.3),
+                transparent 40%),
+            radial-gradient(circle at 70% 70%,
+                rgba(0, 200, 255, 0.2),
+                transparent 50%),
+            radial-gradient(circle at 50% 80%,
+                rgba(255, 165, 0, 0.2),
+                transparent 50%),
+            #0f0f0f;
+        /* dark base background */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .gradient-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(80px);
+        z-index: -1;
     }
 
     .orbit-center {
@@ -417,7 +458,7 @@ body {
         background-color: #ffffff;
         padding: 18px;
         position: absolute;
-        top: 50%;
+        top: 57%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2.5rem;
@@ -615,6 +656,13 @@ body {
     }
 }
 
+.center-badge-two {
+    display: none;
+    color: white !important;
+    padding: 3px 12px !important;
+
+}
+
 .centered-card {
 
 
@@ -630,5 +678,87 @@ body {
             width: 100px;
         }
 
+        .center-badge-one {
+            display: none;
+            transition: all ease-in-out 1s;
+
+        }
+
+        .center-badge-two {
+            display: block !important;
+            transition: all ease-in-out 1s;
+
+        }
+
     }
 }
+
+.last-card {
+    transition: all 0.3s ease-in-out;
+
+    .pills-wrapper {
+        .icons-wrapper {
+            position: relative;
+            height: 20px;
+            width: 25px;
+            overflow: hidden;
+
+            .first-icon {
+                position: absolute;
+                top: 0;
+                transform: translateY(0);
+                opacity: 1;
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
+
+            .second-icon {
+                position: absolute;
+                bottom: 0;
+                opacity: 0;
+                transform: translateY(100%);
+                transition: transform 0.5s ease, opacity 0.5s ease;
+            }
+
+
+        }
+    }
+
+    .after {
+        display: none;
+    }
+
+    &:hover {
+
+        .icons-wrapper {
+
+            .first-icon {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            .second-icon {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+
+
+        }
+
+        .content {
+            .afterBefore {
+                .before {
+                    transition: opacity 0.3s ease, visibility 0.3s ease;
+                    display: none;
+                }
+
+                .after {
+                    transition: opacity 0.3s ease, visibility 0.3s ease;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+ 
