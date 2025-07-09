@@ -37,15 +37,15 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="teamWorkFlow pt-120">
+        <section className="teamWorkFlow">
             <div className="bg-black text-white px-3">
-                <div className="container text-center teamWorkFlow-container">
+                <div className="container text-center teamWorkFlow-container pt-120 position-relative">
                     <h1 className="teamWorkFlow-heading mb-20">
                         Frequently Asked <br /> Questions
                     </h1>
 
                     <div className="faq">
-                        <p className="mb-70">Have questions about Taam AI ? Here are some of the most common inquiries we receive from our users. If you don’t find the answer you’re looking for, feel free to contact us.</p>
+                        <p className="mb-70 px-20">Have questions about Taam AI ? Here are some of the most common inquiries we receive from our users. If you don’t find the answer you’re looking for, feel free to contact us.</p>
                         {faqData.map((item, index) => (
                             <div
                                 key={index}

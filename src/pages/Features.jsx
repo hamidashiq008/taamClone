@@ -15,9 +15,7 @@ import img7 from "../assets/images/circleAnimationImg7.svg";
 import img8 from "../assets/images/circleAnimationImg8.svg";
 import img9 from "../assets/images/centerAnimation.png";
 
-
-
-
+import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
 import {
     IconDatabase,
     IconCloudUpload,
@@ -40,7 +38,7 @@ const Features = () => {
                     <section className="feature-hero-section">
                         <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
                         <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
-                        <button className='free-credit-btn mb-3'>Start Free With 500K Credits</button>
+                        <GradientButton text={'Start Free With 500K Credits'} className={'mx-auto d-flex my-20'} />
                         <div className="feature-hero-img-wrapper pt-4">
                             <img src={FeatureHeroImg} alt="" />
                         </div>
