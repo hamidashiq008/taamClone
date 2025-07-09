@@ -155,7 +155,22 @@ const Features = () => {
                                                     <IconFileText size={20} stroke={1} className='' />
 
                                                 </div>
-                                                <div className="center-icons d-flex justify-content-center gap-2 align-items-center">
+                                                <div className="center-icons center-icon-one d-flex justify-content-center gap-2 align-items-center">
+                                                    <div className="left icon">
+                                                        <IconWaveSine size={20} stroke={1} className='' />
+                                                    </div>
+                                                    <div className="center-badge mt-2">
+                                                        <IconLoader size={15} stroke={1} className="loading-icon me-2" />
+                                                        CONNECTIONG
+                                                    </div>
+                                                    <div className="right icon">
+                                                        <IconCode size={20} stroke={1} className='' />
+                                                    </div>
+
+
+
+                                                </div>
+                                                     <div className="center-icons center-icon-two d-flex justify-content-center gap-2 align-items-center">
                                                     <div className="left icon">
                                                         <IconWaveSine size={20} stroke={1} className='' />
                                                     </div>
