@@ -21,7 +21,21 @@ body {
     transform: translateY(0);
   }
 }
-
+.developer-btn {
+  background: linear-gradient(90deg, #121d22, #312b2c, #2b2245);
+    color: white;
+    padding: 7px 56px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
 .pricing-cotianer {
   max-width: 1200px;
   margin: 0 auto;
