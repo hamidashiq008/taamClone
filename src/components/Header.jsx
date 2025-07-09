@@ -12,15 +12,17 @@ const Header = () => {
   const location = useLocation(); // 👈 Get current route path
 
   return (
-    <header >
-      <div className="header-container" data-aos='fade-down'>
+    <header>
+      <div className="header-container" data-aos="fade-down">
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
             <div className="img-wrapper d-flex">
               <div className="me-2">
                 <img src={logoImg} alt="Logo" width={30} height={30} />
               </div>
-              <div><h5>TAAM AI</h5></div>
+              <div>
+                <h5>TAAM AI</h5>
+              </div>
             </div>
             <button
               className="navbar-toggler"
@@ -77,41 +79,87 @@ const Header = () => {
                   >
                     Resources
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className="dropdown-menu px-3">
+                    <li
+                      className={`${
+                        location.pathname === "/download"
+                          ? "active"
+                          : ""
+                      }`}
+                    >
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-download text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            style={{ fontSize: "13px" }}
+                            to="/download"
+                          >
+                            Downloads
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Download Taam AI Code-ai to boost your app with
+                              AI.
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
+                    </li>
                     <li
                       className={`${
                         location.pathname === "/Blogs" ? "active" : ""
                       }`}
                     >
-                      <NavLink className="dropdown-item" to="/Blogs">
-                        Blogs
-                      </NavLink>
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-file-text text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            to="/Blogs"
+                            style={{ fontSize: "13px" }}
+                          >
+                            Blogs
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Read our blog for AI coding insights and tips..
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
                     </li>
                     <li
                       className={`${
                         location.pathname === "/Observability" ? "active" : ""
                       }`}
                     >
-                      <NavLink className="dropdown-item" to="/Observability">
-                        Observability
-                      </NavLink>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li
-                      className={`${
-                        location.pathname === "/resources/something"
-                          ? "active"
-                          : ""
-                      }`}
-                    >
-                      <NavLink
-                        className="dropdown-item"
-                        to="/resources/something"
-                      >
-                        Something else
-                      </NavLink>
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-file-text text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            to="/Observability"
+                            style={{ fontSize: "13px" }}
+                          >
+                            Observability
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Real-time visibility, actionable metrics
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
                     </li>
                   </ul>
                 </li>
