@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ButtonBg from '../assets/buttonBg.png';
 import Blog1 from '../assets/blog1.png'
 import Blog2 from '../assets/blog2.png'
@@ -19,7 +20,7 @@ const Blogs = () => {
                 <div className="container">
                     <h2 className='text-center hero-heading'>Explore and Learn AI With Taam AI Blogs</h2>
                     <p className='text-center hero-desc'>A collection of the latest insights, product enhancements, important bugfixes and more. </p>
-                    <div className="d-flex gap-2 justify-content-center align-items-center">
+                    <div className="d-flex gap-2 justify-content-center align-items-center flex-column flex-lg-row">
                         <input
                             type="email"
                             placeholder="jane@gmail.com"
@@ -48,7 +49,7 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
+                                <div className="article-meta col-12 col-md-8">
                                     <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
@@ -78,7 +79,7 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
+                                <div className="article-meta col-12 col-md-8">
                                     <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
@@ -108,7 +109,7 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
+                                <div className="article-meta col-12 col-md-8">
                                     <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
@@ -138,7 +139,7 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
+                                <div className="article-meta col-12 col-md-8">
                                     <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
@@ -168,7 +169,7 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
+                                <div className="article-meta col-12 col-md-8">
                                     <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
@@ -192,7 +193,7 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-
+            <Footer/>             
         </div>
     )
 }
