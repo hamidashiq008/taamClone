@@ -28,6 +28,12 @@
  //   background-repeat: no-repeat;
  //   color: white;
  // }
+ .nav-item.active > .nav-link,
+.dropdown-item.active {
+  font-weight: bold;
+  color: #9f9fa1 !important; /* Your brand color */
+  text-decoration: underline;
+}
  body {
    background-color: black !important;
    color: white !important;
