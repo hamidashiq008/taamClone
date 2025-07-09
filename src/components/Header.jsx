@@ -1,7 +1,12 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logoImg from "../assets/images/logo.svg";
-import { SimpleButton, SimpleLink, GradientButton, GradientLink } from "../Partials/CustomButton";
+import logoImg from "../assets/images/logo1.svg";
+import {
+  SimpleButton,
+  SimpleLink,
+  GradientButton,
+  GradientLink,
+} from "../Partials/CustomButton";
 
 const Header = () => {
   const location = useLocation(); // 👈 Get current route path
@@ -31,17 +36,29 @@ const Header = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/">
                     AI Gateway
                   </NavLink>
                 </li>
-                <li className={`nav-item ${location.pathname === '/Features' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/Features" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/Features">
                     Features
                   </NavLink>
                 </li>
-                <li className={`nav-item ${location.pathname === '/pricing' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/pricing" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/pricing">
                     Pricing
                   </NavLink>
@@ -58,19 +75,38 @@ const Header = () => {
                     Resources
                   </a>
                   <ul className="dropdown-menu">
-                    <li className={`${location.pathname === '/Blogs' ? 'active' : ''}`}>
+                    <li
+                      className={`${
+                        location.pathname === "/Blogs" ? "active" : ""
+                      }`}
+                    >
                       <NavLink className="dropdown-item" to="/Blogs">
                         Blogs
                       </NavLink>
                     </li>
-                    <li className={`${location.pathname === '/Observability' ? 'active' : ''}`}>
+                    <li
+                      className={`${
+                        location.pathname === "/Observability" ? "active" : ""
+                      }`}
+                    >
                       <NavLink className="dropdown-item" to="/Observability">
                         Observability
                       </NavLink>
                     </li>
-                    <li><hr className="dropdown-divider" /></li>
-                    <li className={`${location.pathname === '/resources/something' ? 'active' : ''}`}>
-                      <NavLink className="dropdown-item" to="/resources/something">
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li
+                      className={`${
+                        location.pathname === "/resources/something"
+                          ? "active"
+                          : ""
+                      }`}
+                    >
+                      <NavLink
+                        className="dropdown-item"
+                        to="/resources/something"
+                      >
                         Something else
                       </NavLink>
                     </li>
@@ -79,7 +115,7 @@ const Header = () => {
               </ul>
 
               <form className="d-flex" role="search">
-                <GradientLink text={'Start for free'} to="/login" />
+                <GradientLink text={"Start for free"} to="/login" />
               </form>
             </div>
           </div>
