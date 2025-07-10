@@ -68,11 +68,14 @@
     }
 
     .aiStack {
+        height: 100vh;
         .top-heading-area {
             & h2 {
                 font-size: 40px;
                 font-weight: 600;
                 margin-bottom: 20px;
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+
             }
 
             & p {
@@ -91,7 +94,10 @@
                 border-radius: 20px;
 
                 & h4 {
+                    font-weight: 700;
                     font-size: 24px;
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+
 
                 }
 
