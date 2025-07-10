@@ -123,7 +123,7 @@ const Observability = () => {
                 </p>
               </div>
               <div className="row aiStackRow">
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>Full Visibility with Deep Logging</h4>
                     <p>
@@ -134,7 +134,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>Simplified Tracing for Faster Debugging</h4>
                     <p>
@@ -144,7 +144,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>Optimize AI Costs with FinOps</h4>
                     <p>
@@ -155,7 +155,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>Instant Observability Without Complexity</h4>
                     <p>
@@ -165,7 +165,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>End-to-End Tracing for Every Request</h4>
                     <p>
@@ -176,7 +176,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                   <div className="col-inner">
                     <h4>Response Evaluation & Feedback Collection</h4>
                     <p>
@@ -193,14 +193,14 @@ const Observability = () => {
           <section className="gate-way-section">
             <div className="backgroundGradient"></div>
             <div className="bg-black text-white ">
-              <div className="container gate-way-container">
+              <div className="  gate-way-container-observability">
                 {/* Heading */}
                 <p className="top-intro">\\ AI API GATEWAY \\</p>
-                <div className="text-center d-flex justify-content-between">
+                <div className="text-center d-flex justify-content-between heading-para-wrapper">
                   <h1 className="top-heading m-0 ">
                     Enterprise-grade AI Gateway
                   </h1>
-                  <p className="text-secondary  m-0 top-desc">
+                  <p className="m-0 top-desc-intro">
                     Connect, Manage, And Secure AI Interactions Across 1k+ LLMs
                     — With Control, Monitoring
                   </p>
@@ -303,7 +303,8 @@ const Observability = () => {
           </section>
           <section className="getStarted">
             <div className="container">
-              <h3>Get Started with Taam AI Today!​</h3>
+              <div className="inner-content">
+                <h3>Get Started with Taam AI Today!​</h3>
               <p>
                 Power up your applications with cutting-edge Artificial
                 Intelligence models, a seamless API gateway, and
@@ -313,6 +314,7 @@ const Observability = () => {
                 <button className="subscribe-btn">
                   Get Started Now <IconChevronRight size={"15px"} />
                 </button>
+              </div>
               </div>
             </div>
           </section>

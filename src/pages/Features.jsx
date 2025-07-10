@@ -35,7 +35,7 @@ const Features = () => {
         <div>
             <Header />
             <div className="features-page-content">
-                <div className="container" data-aos="fade-up">
+                <div className="container main-container" data-aos="fade-up">
                     <section className="feature-hero-section">
                         <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
                         <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
@@ -45,7 +45,7 @@ const Features = () => {
                         </div>
                     </section>
                     <section className="teamWorkFlow">
-                        <div className="bg-black text-white  px-3 min-vh-100">
+                        <div className="bg-black text-white  px-3 min-vh-100 inner-wrapper">
                             <div className="container text-center teamWorkFlow-container">
                                 {/* Tag button */}
                                 <div className="badge-div  mb-3 ">
@@ -60,9 +60,9 @@ const Features = () => {
                                 </h1>
 
                                 {/* Card Section */}
-                                <div className="row g-4">
+                                <div className="row g-4 border-line animated-card-wrapper">
                                     {/* Card 1 */}
-                                    <div className="col-md-4 ">
+                                    <div className="col-md-12 col-lg-4 ">
                                         <div className="card-wrapper first-card-wrapper h-100">
                                             <p className="card-heading">Scalable AI solutions</p>
                                             <p className="text-secondary card-desc me-4">
@@ -71,18 +71,20 @@ const Features = () => {
 
                                             <div className="tiles-main-wrapper">
                                                 <div className="tile-wrapper d-flex align-items-center justify-content-between first-tile">
-                                                    <div className="logo-wrapper">
-                                                        <IconCode style={{ color: 'rgb(127 127 127)' }} />
+                                                    <div className="left-content d-flex align-items-center justify-content-start   ">
+                                                        <div className="logo-wrapper">
+                                                            <IconCode style={{ color: 'rgb(127 127 127)' }} />
 
-                                                    </div>
-                                                    <div className="content-wrapper">
-                                                        <div className="top-heading">
-                                                            Try the latest Modal
-                                                            <span>Model-3</span>
                                                         </div>
-                                                        <div className="bottom-desc">
-                                                            <p className='inner-top-p m-0'>TOP </p>
-                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                        <div className="content-wrapper">
+                                                            <div className="top-heading">
+                                                                Try the latest Modal
+                                                                <span>Model-3</span>
+                                                            </div>
+                                                            <div className="bottom-desc">
+                                                                <p className='inner-top-p m-0'>TOP </p>
+                                                                <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div className="arrow-svg-wrapper">
@@ -91,20 +93,22 @@ const Features = () => {
                                                     </div>
                                                 </div>
                                                 <div className="tile-wrapper d-flex align-items-center justify-content-between mt-3 ms-4 second-tile">
-                                                    <div className="logo-wrapper ">
-                                                        <IconWaveSine style={{ color: 'rgb(127 127 127)' }} />
+                                                    <div className="left-content  d-flex align-items-center justify-content-start    ">
+                                                        <div className="logo-wrapper ">
+                                                            <IconWaveSine style={{ color: 'rgb(127 127 127)' }} />
 
-                                                    </div>
-                                                    <div className="content-wrapper">
-                                                        <div className="top-heading">
-                                                            Create new asset
-
-
-                                                            <span>new</span>
                                                         </div>
-                                                        <div className="bottom-desc">
-                                                            <p className='inner-top-p m-0'>TOP </p>
-                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                        <div className="content-wrapper">
+                                                            <div className="top-heading">
+                                                                Create new asset
+
+
+                                                                <span>new</span>
+                                                            </div>
+                                                            <div className="bottom-desc">
+                                                                <p className='inner-top-p m-0'>TOP </p>
+                                                                <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div className="arrow-svg-wrapper">
@@ -144,7 +148,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 2 */}
-                                    <div className="col-md-4 ">
+                                    <div className="col-md-12 col-lg-4 ">
                                         <div className="card-wrapper centered-card h-100">
                                             <p className="card-heading mx-3">API & integrations</p>
                                             <p className="text-secondary card-desc mx-3">
@@ -205,7 +209,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 3 */}
-                                    <div className="col-md-4 ">
+                                    <div className="col-md-12 col-lg-4 ">
                                         <div className="card-wrapper last-card h-100">
                                             <p className="card-heading mx-3">Integrated workflow</p>
                                             <p className="text-secondary card-desc mb-5 mx-3">
@@ -303,7 +307,8 @@ const Features = () => {
                         <div className="bg-black text-white ">
                             <div className="container gate-way-container">
                                 {/* Heading */}
-                                <div className="text-center d-flex justify-content-between">
+                                <p className="top-intro">\\ AI API GATEWAY \\</p>
+                                <div className="text-center d-flex justify-content-between top-content-wrap">
                                     <h1 className="top-heading m-0 ">Enterprise-grade AI Gateway</h1>
                                     <p className="text-secondary  m-0 top-desc">
                                         Connect, Manage, And Secure AI Interactions Across 1k+ LLMs — With Control, Monitoring
