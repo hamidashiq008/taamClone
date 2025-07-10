@@ -7,6 +7,7 @@ import gatewayImg1 from "../assets/images/gateway1.png";
 import gatewayImg2 from "../assets/images/gateway2.png";
 import gatewayImg3 from "../assets/images/gateway3.png";
 import AiModals from "../components/AiModals";
+import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
 
 import {
   IconDatabase,
@@ -85,9 +86,11 @@ const Observability = () => {
                       avoidable errors in applications consuming LLM APIs
                     </p>
                     <div className="buttons-wrapper  gap-4   ">
-                      <button className="subscribe-btn">
+                      {/* <button className="subscribe-btn">
                         Get Started <IconChevronRight size={"15px"} />
-                      </button>
+                      </button> */}
+                                              <SimpleButton text={'Get Started'} />
+
                     </div>
                   </div>
                 </div>
@@ -102,9 +105,8 @@ const Observability = () => {
                       Generation (RAG) support directly in the gateway
                     </p>
                     <div className="buttons-wrapper  gap-4   ">
-                      <button className="subscribe-btn">
-                        Get Started <IconChevronRight size={"15px"} />
-                      </button>
+                                                              <SimpleButton text={'Get Started'} />
+
                     </div>
                   </div>
                 </div>
