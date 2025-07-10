@@ -166,7 +166,7 @@ body {
 }
 .adjutst-bg-card {
   background: rgba(0, 0, 0, 0.48);
-  box-shadow: 0 0 3px 0px rgb(185 185 185 / 52%),
+  box-shadow: 0 0 6px 0px rgb(185 185 185 / 52%),
     0 0px 3px 0px rgba(0, 0, 0, 0.06);
   z-index: 9;
   transition: transform 0.2s;
@@ -327,11 +327,13 @@ body {
 .enterprise-link a {
   text-decoration: none;
   font-size: 14px;
-  color: #b5b5b5 !important;
+  color: #b5b5b5;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .enterprise-link a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer {

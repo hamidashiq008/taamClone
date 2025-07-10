@@ -178,10 +178,10 @@ const PricingPage = () => {
         </div>
 
         <div className="enterprise-link mx-auto py-2 px-1">
-          <a href="#">
-            Want enterprise features?{" "}
-            <span className="text-white ms-1">Contact Us →</span>
-          </a>
+          <div href="#">
+           <span style={{color:'#d9d9d9',fontSize:'14px'}}> Want enterprise features?{" "} </span>
+            <a className="text-white ms-1">Contact Us <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
         </div>
       </div>
     </div>
