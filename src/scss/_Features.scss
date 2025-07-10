@@ -479,7 +479,7 @@ body {
         align-items: center;
         justify-content: center;
         animation: orbit 60s linear infinite;
-        transform-origin: 230px;
+        transform-origin: 275px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -493,15 +493,24 @@ body {
         }
     }
 
-    @keyframes orbit {
-        from {
-            transform: rotate(calc(var(--i) * 45deg)) translateX(230px) rotate(calc(var(--i) * -45deg));
-        }
+    // @keyframes orbit {
 
-        to {
-            transform: rotate(calc(360deg + var(--i) * 45deg)) translateX(230px) rotate(calc(-360deg - var(--i) * 45deg));
-        }
-    }
+    //     from {
+    //         transform: rotate(calc(var(--i) * 45deg)) translateX(275px) rotate(calc(var(--i) * -45deg));
+    //     }
+
+    //     to {
+    //         transform: rotate(calc(360deg + var(--i) * 45deg)) translateX(275px) rotate(calc(-360deg - var(--i) * 45deg));
+    //     }
+    // }
+@keyframes orbit {
+  0% {
+    transform: rotate(calc(var(--i) * 45deg)) translateX(275px) rotate(calc(var(--i) * -45deg));
+  }
+  100% {
+    transform: rotate(calc(360deg + var(--i) * 45deg)) translateX(275px) rotate(calc(-360deg - var(--i) * 45deg));
+  }
+}
 
 
 }

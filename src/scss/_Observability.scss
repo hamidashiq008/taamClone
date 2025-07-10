@@ -8,7 +8,7 @@
 
         .hero-heading {
             font-size: 40px;
-            // letter-spacing: -2px;
+            letter-spacing: -1px;
             font-family: "Inter", "Inter Placeholder", sans-serif;
             margin-bottom: 20px;
             color: #D9D9D9;
@@ -51,28 +51,7 @@
                 margin-bottom: 20px;
             }
 
-            .subscribe-btn {
-                background: linear-gradient(90deg, rgb(36, 57, 73) 0%, rgb(81, 127, 164) 100%);
-                color: white;
-                padding: 7px 56px;
-
-                border: none;
-                border-radius: 12px;
-                // font-weight: 500;
-                font-size: 14px;
-
-                gap: 10px;
-                transition: all 0.3s ease;
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(8px);
-                cursor: pointer;
-            }
-
-            .subscribe-btn:hover {
-                // transform: translateY(-2px);
-                background: linear-gradient(90deg, #0f2027, #2c5364, #654ea3);
-
-            }
+           
         }
 
         .card-2 {
@@ -89,11 +68,14 @@
     }
 
     .aiStack {
+        height: 100vh;
         .top-heading-area {
             & h2 {
                 font-size: 40px;
                 font-weight: 600;
                 margin-bottom: 20px;
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+
             }
 
             & p {
@@ -112,7 +94,10 @@
                 border-radius: 20px;
 
                 & h4 {
+                    font-weight: 700;
                     font-size: 24px;
+            font-family: "Inter", "Inter Placeholder", sans-serif;
+
 
                 }
 
