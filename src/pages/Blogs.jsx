@@ -37,8 +37,9 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
-                                    <div className="meta-section">
+                                <div className="row article-meta">
+                                  <div className="col-6">
+                                      <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
                                             <img
@@ -49,10 +50,13 @@ const Blogs = () => {
                                             Risky Adongan
                                         </div>
                                     </div>
+                                  </div>
 
-                                    <div className="meta-section">
+                                    <div className="col-6">
+                                        <div className="meta-section">
                                         <span className="meta-label">Published</span>
                                         <div className="meta-value">Apr 8, 2022</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -67,8 +71,9 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
-                                    <div className="meta-section">
+                          <div className="row article-meta">
+                                  <div className="col-6">
+                                      <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
                                             <img
@@ -79,10 +84,13 @@ const Blogs = () => {
                                             Risky Adongan
                                         </div>
                                     </div>
+                                  </div>
 
-                                    <div className="meta-section">
+                                    <div className="col-6">
+                                        <div className="meta-section">
                                         <span className="meta-label">Published</span>
                                         <div className="meta-value">Apr 8, 2022</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -97,8 +105,9 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
-                                    <div className="meta-section">
+                            <div className="row article-meta">
+                                  <div className="col-6">
+                                      <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
                                             <img
@@ -109,10 +118,13 @@ const Blogs = () => {
                                             Risky Adongan
                                         </div>
                                     </div>
+                                  </div>
 
-                                    <div className="meta-section">
+                                    <div className="col-6">
+                                        <div className="meta-section">
                                         <span className="meta-label">Published</span>
                                         <div className="meta-value">Apr 8, 2022</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +139,9 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
-                                    <div className="meta-section">
+                              <div className="row article-meta">
+                                  <div className="col-6">
+                                      <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
                                             <img
@@ -139,10 +152,13 @@ const Blogs = () => {
                                             Risky Adongan
                                         </div>
                                     </div>
+                                  </div>
 
-                                    <div className="meta-section">
+                                    <div className="col-6">
+                                        <div className="meta-section">
                                         <span className="meta-label">Published</span>
                                         <div className="meta-value">Apr 8, 2022</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -157,8 +173,9 @@ const Blogs = () => {
                                     Maximizing Productivity with AI-Powered Code Suggestions
                                 </h2>
 
-                                <div className="article-meta">
-                                    <div className="meta-section">
+                           <div className="row article-meta">
+                                  <div className="col-6">
+                                      <div className="meta-section">
                                         <span className="meta-label">Writer</span>
                                         <div className="meta-value left-side">
                                             <img
@@ -169,10 +186,13 @@ const Blogs = () => {
                                             Risky Adongan
                                         </div>
                                     </div>
+                                  </div>
 
-                                    <div className="meta-section">
+                                    <div className="col-6">
+                                        <div className="meta-section">
                                         <span className="meta-label">Published</span>
                                         <div className="meta-value">Apr 8, 2022</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
