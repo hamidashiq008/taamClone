@@ -1,18 +1,24 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logoImg from "../assets/images/logo.svg";
-import { SimpleButton, SimpleLink, GradientButton, GradientLink } from "../Partials/CustomButton";
+import logoImg from "../assets/images/logo1.svg";
+import {
+  SimpleButton,
+  SimpleLink,
+  GradientButton,
+  GradientLink,
+} from "../Partials/CustomButton";
 
 const Header = () => {
   const location = useLocation(); // 👈 Get current route path
 
   return (
     <header>
-      <div className="header-container">
+      <div className="header-container" data-aos="fade-down">
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
-            <div className="img-wrapper">
-              <img src={logoImg} alt="Logo" />
+            <div className="img-wrapper d-flex gap-2">
+              <img src={logoImg} alt="Logo" width={25} height={25}/>
+              <span>TAAM AI</span>
             </div>
             <button
               className="navbar-toggler"
@@ -31,17 +37,29 @@ const Header = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/">
                     AI Gateway
                   </NavLink>
                 </li>
-                <li className={`nav-item ${location.pathname === '/Features' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/Features" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/Features">
                     Features
                   </NavLink>
                 </li>
-                <li className={`nav-item ${location.pathname === '/pricing' ? 'active' : ''}`}>
+                <li
+                  className={`nav-item ${
+                    location.pathname === "/pricing" ? "active" : ""
+                  }`}
+                >
                   <NavLink className="nav-link" to="/pricing">
                     Pricing
                   </NavLink>
@@ -57,29 +75,94 @@ const Header = () => {
                   >
                     Resources
                   </a>
-                  <ul className="dropdown-menu">
-                    <li className={`${location.pathname === '/Blogs' ? 'active' : ''}`}>
-                      <NavLink className="dropdown-item" to="/Blogs">
-                        Blogs
-                      </NavLink>
+                  <ul className="dropdown-menu px-3">
+                    <li
+                      className={`${
+                        location.pathname === "/download"
+                          ? "active"
+                          : ""
+                      }`}
+                    >
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-download text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            style={{ fontSize: "13px" }}
+                            to="/download"
+                          >
+                            Downloads
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Download Taam AI Code-ai to boost your app with
+                              AI.
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
                     </li>
-                    <li className={`${location.pathname === '/Observability' ? 'active' : ''}`}>
-                      <NavLink className="dropdown-item" to="/Observability">
-                        Observability
-                      </NavLink>
+                    <li
+                      className={`${
+                        location.pathname === "/Blogs" ? "active" : ""
+                      }`}
+                    >
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-file-text text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            to="/Blogs"
+                            style={{ fontSize: "13px" }}
+                          >
+                            Blogs
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Read our blog for AI coding insights and tips..
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
                     </li>
-                    <li><hr className="dropdown-divider" /></li>
-                    <li className={`${location.pathname === '/resources/something' ? 'active' : ''}`}>
-                      <NavLink className="dropdown-item" to="/resources/something">
-                        Something else
-                      </NavLink>
+                    <li
+                      className={`${
+                        location.pathname === "/Observability" ? "active" : ""
+                      }`}
+                    >
+                      <div className="d-flex">
+                        <div className="mt-1 me-1">
+                          <i class="bi bi-file-text text-white"></i>
+                        </div>
+                        <div>
+                          <NavLink
+                            className="dropdown-item text-decoration-none p-1"
+                            to="/Observability"
+                            style={{ fontSize: "13px" }}
+                          >
+                            Observability
+                            <p
+                              className="py-0 m-0"
+                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                            >
+                              Real-time visibility, actionable metrics
+                            </p>
+                          </NavLink>
+                        </div>
+                      </div>
                     </li>
                   </ul>
                 </li>
               </ul>
 
               <form className="d-flex" role="search">
-                <GradientLink text={'Start for free'} to="/login" />
+                <GradientLink text={"Start for free"} to="/login" />
               </form>
             </div>
           </div>

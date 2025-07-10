@@ -166,3 +166,25 @@
         }
     }
 }
+@media only screen and (max-width: 767px) { 
+    .blogs-page-wrapper .container .hero-heading {
+        font-size: 30px;
+    }
+    .blogs-page-wrapper .container {
+        max-width: 100%;
+        padding: 32px 50px;
+    }
+    .blogs-page-wrapper .container input {
+        max-width: 100%;
+    }
+    .simpleBgBtn  {
+        width: 75%;
+        margin-top: 10px;
+    }
+    .simpleBgBtn .inner-content {
+        justify-content: center;
+    }
+    .blogs-page-wrapper .container .content-area .article-title {
+        font-size: 14px;
+    }
+}
