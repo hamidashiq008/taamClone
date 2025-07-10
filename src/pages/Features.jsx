@@ -397,7 +397,7 @@ const Features = () => {
                                 </div>
                                 <div className="orbit-container ">
                                     <div className="orbit-center">
-                                <div className="gradient-bg"></div>
+                                {/* <div className="gradient-bg"></div> */}
                                         <div className="center-object">
                                             <div className="img-wrapper">
                                                 <img src={img9} alt="" />
