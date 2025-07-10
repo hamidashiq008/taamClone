@@ -2,7 +2,7 @@ import React from "react";
 import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
 
 
-import heroImg from "../assets/images/hero-img.avif";
+import heroImg from "../assets/images/TAAM-IMG.avif";
 const Hero = () => {
   return (
     <div>

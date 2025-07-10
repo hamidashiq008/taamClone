@@ -333,8 +333,21 @@
      margin: 0 auto;
    }
  }
-
+.custom-gap {
+    gap: 3rem;
+  }
+  .logo-title { 
+    color: #919191;
+  }
  @media only screen and (max-width: 767px) {
+  .logo-title {
+    color: #919191;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .custom-gap {
+    gap: 5rem;
+  }
    .navbar-toggler {
      background-color: #fff !important;
    }

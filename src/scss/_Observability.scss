@@ -35,6 +35,7 @@
 
             .img-wrapper {
                 margin-top: 30px;
+
                 & img {
                     width: 100%;
                 }
@@ -51,7 +52,7 @@
                 margin-bottom: 20px;
             }
 
-           
+
         }
 
         .card-2 {
@@ -68,13 +69,14 @@
     }
 
     .aiStack {
-        height: 100vh;
+        min-height: 100vh;
+
         .top-heading-area {
             & h2 {
                 font-size: 40px;
                 font-weight: 600;
                 margin-bottom: 20px;
-            font-family: "Inter", "Inter Placeholder", sans-serif;
+                font-family: "Inter", "Inter Placeholder", sans-serif;
 
             }
 
@@ -96,7 +98,7 @@
                 & h4 {
                     font-weight: 700;
                     font-size: 24px;
-            font-family: "Inter", "Inter Placeholder", sans-serif;
+                    font-family: "Inter", "Inter Placeholder", sans-serif;
 
 
                 }
@@ -114,12 +116,14 @@
         // z-index: -2333;
         overflow: hidden;
 
-        .gate-way-container {
+        .gate-way-container-observability {
             max-width: 1000px !important;
             width: 100% !important;
-            padding: 56px 0 !important;
+            padding: 56px 0;
             position: relative;
             z-index: 3;
+            margin: 0 auto;
+
 
             .top-intro {
                 font-size: 14px;
@@ -160,13 +164,13 @@
                 color: #121215;
             }
 
-            .top-desc {
+            .top-desc-intro {
                 // font-size: ;
                 max-width: 300px;
                 width: 100%;
                 text-align: left;
                 font-weight: 500;
-                color: #868686 !important;
+                color: #868686;
             }
 
             .styled-text {
@@ -219,55 +223,161 @@
 
     }
 
-    .getStarted{
-      .container{
-        padding: 80px 0 !important;
-          & h3{
-            font-size: 30px;
-            color: #D9D9D9;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-        & p{
-            font-size: 18px;
-            margin-bottom: 24px !important;
-            text-align: center;
-            margin: 0 auto;
-            width: 650px;
-        }
-          .subscribe-btn {
-                background: linear-gradient(90deg, rgb(46 64 63) 0%, rgb(67 50 75) 100%);
-                color: white;
-                margin: 0 auto;
-                display: flex;
-                padding: 7px 56px;
+    .getStarted {
+        .container {
+            padding: 32px !important;
 
-                border: none;
-                border-radius: 12px;
-                // font-weight: 500;
-                font-size: 14px;
+            .inner-content {
+                padding: 0 20px;
 
-                gap: 10px;
-                transition: all 0.3s ease;
-                box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(8px);
-                cursor: pointer;
+                & h3 {
+                    font-size: 30px;
+                    color: #D9D9D9;
+                    margin-bottom: 24px;
+                    text-align: center;
+                }
+
+                & p {
+                    font-size: 18px;
+                    margin-bottom: 24px !important;
+                    text-align: center;
+                    margin: 0 auto;
+                    max-width: 650px;
+                    width: 100%;
+                }
+
+                .subscribe-btn {
+                    background: linear-gradient(90deg, rgb(46 64 63) 0%, rgb(67 50 75) 100%);
+                    color: white;
+                    margin: 0 auto;
+                    display: flex;
+                    padding: 7px 56px;
+
+                    border: none;
+                    border-radius: 12px;
+                    // font-weight: 500;
+                    font-size: 14px;
+
+                    gap: 10px;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(8px);
+                    cursor: pointer;
+                }
+
+                .subscribe-btn:hover {
+                    // transform: translateY(-2px);
+                    background: linear-gradient(90deg, #0f2027, #2c5364, #654ea3);
+
+                }
             }
-
-            .subscribe-btn:hover {
-                // transform: translateY(-2px);
-                background: linear-gradient(90deg, #0f2027, #2c5364, #654ea3);
-
-            }
-      }
+        }
     }
 }
+
 .code-parent {
     background-color: #d8e0e7;
     border-radius: 20px;
-    padding: 30px !important; 
-    & pre{
+    padding: 30px !important;
+
+    & pre {
         font-size: 11px;
         color: rgb(3, 47, 98);
     }
+}
+
+
+@media (max-width: 1200px) {
+    .gate-way-container-observability {
+        padding: 56px 20px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .fullStack-observability {
+        .hero-heading {
+            font-size: 26px !important;
+        }
+
+        .custom-row {
+            .card-2 {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .aiStack {
+        .top-heading-area {
+            & h2 {
+                font-size: 26px !important;
+            }
+        }
+
+        .aiStackRow {
+            & h4 {
+                font-size: 15px !important;
+            }
+        }
+    }
+
+    .gate-way-container-observability {
+        padding: 56px 20px !important;
+
+        .top-intro {
+            text-align: center;
+        }
+
+        .heading-para-wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .top-heading {
+                max-width: 100% !important;
+                font-size: 16px;
+                color: #000000 !important;
+                text-align: center !important;
+
+            }
+
+            .top-desc-intro {
+                max-width: 100% !important;
+                margin-top: 16px !important;
+                color: #000000 !important;
+                text-align: center !important;
+                font-weight: 400 !important;
+            }
+        }
+    }
+
+    .getStarted {
+        .container {
+
+            & h3 {
+                font-size: 19px !important;
+            }
+
+            & p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .hero-slider .hero-container {
+        padding: 0 32px 10px !important;
+    }
+
+    .black-and-white-text {
+
+        font-size: 25px !important;
+        line-height: 2.5rem !important;
+        letter-spacing: -1px !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 375px) {
+.observability-page-wrapper .container .card-2 h4, .observability-page-wrapper .container .card-1 h4 {
+    font-size: 23px;  
+}
 }

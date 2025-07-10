@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import CardImage1 from "../assets/images/pricing.avif";
 import '../assets/css/price.css'
 import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
@@ -184,6 +185,7 @@ const PricingPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
