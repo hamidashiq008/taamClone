@@ -8,6 +8,8 @@ import {
   GradientLink,
 } from "../Partials/CustomButton";
 
+import BlackImage from '../assets/images/images.jpeg';
+
 const Header = () => {
   const location = useLocation(); // 👈 Get current route path
 
@@ -75,13 +77,14 @@ const Header = () => {
                   >
                     Resources
                   </a>
-                  <ul className="dropdown-menu px-3">
+                  <ul className="dropdown-menu p-3 px-4" style={{top: 65, borderRadius: '16px !important', background: '#343434d1'}}>
+                    <img src={BlackImage} alt='' style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', opacity: '0.7', filter: 'blur(20px)', backdropFilter: 'blur(20px)',}} />
                     <li
                       className={`${
                         location.pathname === "/download"
                           ? "active"
                           : ""
-                      }`}
+                      } mb-10 position-relative`}
                     >
                       <div className="d-flex">
                         <div className="mt-1 me-1">
@@ -90,13 +93,13 @@ const Header = () => {
                         <div>
                           <NavLink
                             className="dropdown-item text-decoration-none p-1"
-                            style={{ fontSize: "13px" }}
+                            style={{ fontSize: "14px" }}
                             to="/download"
                           >
                             Downloads
                             <p
                               className="py-0 m-0"
-                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                              style={{ fontSize: '9px', color: 'rgb(217, 217, 217)', fontWeight: '300'}}
                             >
                               Download Taam AI Code-ai to boost your app with
                               AI.
@@ -108,7 +111,7 @@ const Header = () => {
                     <li
                       className={`${
                         location.pathname === "/Blogs" ? "active" : ""
-                      }`}
+                      } mb-10 position-relative`}
                     >
                       <div className="d-flex">
                         <div className="mt-1 me-1">
@@ -118,12 +121,12 @@ const Header = () => {
                           <NavLink
                             className="dropdown-item text-decoration-none p-1"
                             to="/Blogs"
-                            style={{ fontSize: "13px" }}
+                            style={{ fontSize: "14px" }}
                           >
                             Blogs
                             <p
                               className="py-0 m-0"
-                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                              style={{ fontSize: '9px', color: 'rgb(217, 217, 217)', fontWeight: '300'}}
                             >
                               Read our blog for AI coding insights and tips..
                             </p>
@@ -134,7 +137,7 @@ const Header = () => {
                     <li
                       className={`${
                         location.pathname === "/Observability" ? "active" : ""
-                      }`}
+                      } mb-10 position-relative`}
                     >
                       <div className="d-flex">
                         <div className="mt-1 me-1">
@@ -144,12 +147,12 @@ const Header = () => {
                           <NavLink
                             className="dropdown-item text-decoration-none p-1"
                             to="/Observability"
-                            style={{ fontSize: "13px" }}
+                            style={{ fontSize: "14px" }}
                           >
                             Observability
                             <p
                               className="py-0 m-0"
-                              style={{ fontSize: "10px", color: "#d9d9d9" }}
+                              style={{ fontSize: '9px', color: 'rgb(217, 217, 217)', fontWeight: '300'}}
                             >
                               Real-time visibility, actionable metrics
                             </p>

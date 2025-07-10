@@ -12,7 +12,7 @@ const AiAgentsSection = () => {
           <span className="badge rounded-pill px-3 py-2">AI Agents</span>
         </div>
 
-        <h2 className="section-title   mb-3">
+        <h2 className="section-title mb-3">
           Autonomous AI Agents That Work <br />
           Together
         </h2>
@@ -28,43 +28,27 @@ const AiAgentsSection = () => {
           {/* Left Card */}
           <div className="col-md-6">
             <div className="custom-card h-100">
-              <p className=" mb-2 heading-para">Ready Agentic AI Solutions</p>
-              <p className="small mb-4 description-para">
-                Supercharge AI applications with global large language models,
-                RAG pipelines, tools, agent strategies, and more.
-              </p>
-              <div className="first-icon-circle icon-circle mb-3">
-                <i className="bi bi-lightning-charge-fill text-warning"></i>
-              </div>
-
-              <div className="chat-box ">
-                <p className="text-white heading">
-                  ✨ What’s the best model for summarizing legal documents?
+              <div className="custom-card-body">
+                <p className=" mb-2 heading-para">Ready Agentic AI Solutions</p>
+                <p className="small mb-4 description-para">
+                  Supercharge AI applications with global large language models,
+                  RAG pipelines, tools, agent strategies, and more.
                 </p>
-                <p className=" description">
-                  <Typewriter
-                    options={{
-                      strings: [`The AI explains, suggests models, and can even refine responses based on feedback.`],
-                      autoStart: true,
-                      loop: true,
-                      delay: 20,
-                      deleteSpeed: 0,
-                    }}
-                  />
-                </p>
-
-                <div className="d-flex gap-2 mt-3 btns-wrapper ">
-                  <button className="btn btn-outline-light btn-sm">
-                    Add details
-                  </button>
-                  <button className="btn btn-outline-light btn-sm">
-                    Suggest something else
-                  </button>
+                <div className="first-icon-circle icon-circle mb-2">
+                  <div className="inner-icon-div">
+                    <div className="border-div">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" color="rgb(255, 150, 75)" style={{ userSelect: 'none', width: '100%', height: '100%', display: 'inline-block', fill: 'rgb(255, 150, 75)', color: 'rgb(255, 150, 75)', flexShrink: 0 }}><g color="rgb(255, 150, 75)" weight="regular"><path d="M132,24A100.11,100.11,0,0,0,32,124v84.33A15.69,15.69,0,0,0,47.67,224H132a100,100,0,0,0,0-200Zm0,184H48V124a84,84,0,1,1,84,84Zm12-80a12,12,0,1,1-12-12A12,12,0,0,1,144,128Zm-44,0a12,12,0,1,1-12-12A12,12,0,0,1,100,128Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,188,128Z"></path></g></svg>
+                    </div>
+                  </div>
+                  <div class="icon-bottom-line" ></div>
                 </div>
-                <hr className="my-4" />
-                <p className="mt-3 ask-question small ">
-                  Ask another question ➝
-                </p>
+
+                <div className="chat-box ">
+                  <div className="chat-box-bg">
+                    <div className="bottom-gradient"></div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>

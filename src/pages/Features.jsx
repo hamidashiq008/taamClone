@@ -240,36 +240,36 @@ const Features = () => {
                                                 <div className="center-content d-flex gap-2  my-2">
                                                     <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Simplify <span>code.</span></span>
                                                     {/* <span className="badge fourth">  <IconCode size={20} stroke={1} className='' /> Improve <span> slides.</span></span> */}
-                                                     <span className="badge first d-flex align-items-center">
-                                                    <div className="icons-wrapper" >
-                                                        <div className="first-icon d-block">
-                                                            <IconCode size={20} stroke={1} className='' />
-                                                        </div>
-                                                        <div className="second-icon  d-block">
-                                                            <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
-                                                        </div>
-                                                    </div>
-                                                    <div className="content d-flex">
-                                                        <div className="afterBefore">
-                                                            <div className="before">
-                                                                Improve
+                                                    <span className="badge first d-flex align-items-center">
+                                                        <div className="icons-wrapper" >
+                                                            <div className="first-icon d-block">
+                                                                <IconCode size={20} stroke={1} className='' />
                                                             </div>
-                                                            <div className="after">
-                                                                Improved
+                                                            <div className="second-icon  d-block">
+                                                                <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
                                                             </div>
                                                         </div>
-                                                        <div className="spna-div">
-                                                            <span className='ms-2'>  slides.</span>
+                                                        <div className="content d-flex">
+                                                            <div className="afterBefore">
+                                                                <div className="before">
+                                                                    Improve
+                                                                </div>
+                                                                <div className="after">
+                                                                    Improved
+                                                                </div>
+                                                            </div>
+                                                            <div className="spna-div">
+                                                                <span className='ms-2'>  slides.</span>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </span>
+                                                    </span>
                                                     <div className="icon">
                                                         <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
                                                     </div>
 
                                                 </div>
                                                 {/* <span className="badge fifth">  <IconCode size={20} stroke={1} className='' /> Create <span> a podcast draft.</span></span> */}
-                                                 <span className="badge first d-flex align-items-center">
+                                                <span className="badge first d-flex align-items-center">
                                                     <div className="icons-wrapper" >
                                                         <div className="first-icon d-block">
                                                             <IconCode size={20} stroke={1} className='' />
@@ -396,24 +396,28 @@ const Features = () => {
                                     </div>
                                 </div>
                                 <div className="orbit-container ">
-                                    <div className="orbit-center">
-                                <div className="gradient-bg"></div>
-                                        <div className="center-object">
-                                            <div className="img-wrapper">
-                                                <img src={img9} alt="" />
-                                            </div>
+                                    {/* <div className="gradient-bg"></div> */}
+                                    <div className="center-object">
+                                        <div class="framer-143kh33"></div>
+                                        <div class="framer-8jf8ke"></div>
+                                        <div class="framer-a9uzhz"></div>
+                                        <div class="framer-ppd9z0"></div>
+                                        <div class="framer-12hpzgp"></div>
+                                        <div class="framer-6li7ng"></div>
+                                        <div class="framer-1n0mvn2"></div>
+                                        <div className="img-wrapper">
+                                            <img src={img9} alt="" />
                                         </div>
-                                        {items.map((imgSrc, index) => (
-                                            <div
-                                                key={index}
-                                                className="orbiting-object"
-                                                style={{ "--i": index }}
-                                            >
-                                                <img src={imgSrc} alt={`orbit-img-${index}`} className="orbit-image" />
-                                            </div>
-                                        ))}
-
                                     </div>
+                                    {items.map((imgSrc, index) => (
+                                        <div
+                                            key={index}
+                                            className="orbiting-object"
+                                            style={{ "--i": index }}
+                                        >
+                                            <img src={imgSrc} alt={`orbit-img-${index}`} className="orbit-image" />
+                                        </div>
+                                    ))}
                                 </div>
 
                             </div>
