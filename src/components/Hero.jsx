@@ -1,9 +1,7 @@
 import React from "react";
 import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
 
-
-import heroImg from "../assets/images/TAAM-IMG.avif";
-const Hero = () => {
+const Hero = ({heading, heroImage}) => {
   return (
     <div>
       <section className="hero-section position-relative">
@@ -27,7 +25,7 @@ const Hero = () => {
                   </div>
                 </a>
               </div>
-              <h1 className="mb-3">Unify Your AI Workflow with Taam AI</h1>
+              <h1 className="mb-3">{heading}</h1>
               <p className="mb-4 text-gray">
                 Effortlessly access 1200+ AI models through a single API
                 gateway. Build smarter, ship faster, and scale AI applications
@@ -40,7 +38,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-image">
-              <img src={heroImg} alt="Hero Image" className="img-fluid" />
+              <img src={heroImage} alt="Hero Image" className="img-fluid" />
             </div>
           </div>
         </div>
