@@ -13,14 +13,12 @@ import ContactUs from '../components/ContactUsSection';
 import Footer from '../components/Footer'
 import BGImage from '../assets/images/BG-Image-2.avif';
 
-import heroImg from "../assets/images/hero-img.avif";
-
-const Home = () => {
+const AiGateway = () => {
   return (
     <>
       <img className='hero-background' src={BGImage} alt="" />
       <Header />
-      <Hero heading={'Unify Your AI Workflow with Taam AI'} heroImage={heroImg} />
+      <Hero />
       <HeroSlider />
       <AiModals />
       <Cards />
@@ -34,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AiGateway;

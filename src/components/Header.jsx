@@ -19,8 +19,10 @@ const Header = () => {
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
             <div className="img-wrapper d-flex gap-2">
+              <NavLink className="nav-link" to="/">
               <img src={logoImg} alt="Logo" width={25} height={25}/>
               <span>TAAM AI</span>
+              </NavLink>
             </div>
             <button
               className="navbar-toggler"
@@ -41,10 +43,10 @@ const Header = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li
                   className={`nav-item ${
-                    location.pathname === "/" ? "active" : ""
+                    location.pathname === "/ai-gateway" ? "active" : ""
                   }`}
                 >
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/ai-gateway">
                     AI Gateway
                   </NavLink>
                 </li>
@@ -164,8 +166,8 @@ const Header = () => {
                 </li>
               </ul>
 
-              <form className="d-flex" role="search">
-                <GradientLink text={"Start for free"} to="/login" />
+              <form className="d-flex" role="search" onClick={() => window.location.href = "https://app.taam.ai/auth/login"}>
+                <GradientLink text={"Start for free"} to="https://app.taam.ai/auth/login" />
               </form>
             </div>
           </div>
