@@ -189,8 +189,38 @@ const AiAgentsSection = () => {
                   <div className="bg-hover-shadow"></div>
                   <div className="inner-chat-box">
                     <div className="d-flex flex-column gap-0 h-100">
-                      <div className="d-flex flex-column p-3 flex-grow-1"></div>
-                      <div className="p-3  border-light-2"></div>
+                      <div className="d-flex flex-column p-25 pt-30 flex-grow-1">
+                        <div class="content-inner-heading">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+                            <path d="M 15.036 6.148 C 14.652 3.467 12.532 1.346 9.851 0.963 L 9.851 6.148 Z" fill="transparent" stroke-width="0.8888888888888888" stroke="rgb(181,127,247)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path>
+                            <path d="M 13.554 8.741 C 13.554 12.218 10.735 15.037 7.258 15.037 C 3.781 15.037 0.962 12.218 0.962 8.741 C 0.962 5.263 3.781 2.444 7.258 2.444 C 7.382 2.444 7.506 2.448 7.628 2.455 L 7.628 8.37 L 13.544 8.37 C 13.551 8.493 13.554 8.616 13.554 8.741 Z" fill="transparent" stroke-width="0.8888888888888888" stroke="rgb(181,127,247)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path>
+                          </svg>
+                          <h2 class="heading">TIme spent</h2>
+                        </div>
+                        <div className="row g-3">
+                          <div className="col-4 list-content d-flex flex-column gap-0">
+                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <div className="d-flex gap-3 justify-content-start align-items-center">
+                              <div className="moveable-div">.</div>
+                              <span style={{fontSize: 16}}>Hours</span>
+                            </div>
+                          </div>
+                          <div className="col-4 list-content d-flex flex-column gap-0">
+                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <div className="d-flex gap-3 justify-content-start align-items-center">
+                              <div className="moveable-div">.</div>
+                              <span style={{fontSize: 16}}>Hours</span>
+                            </div>
+                          </div>
+                          <div className="col-4 list-content d-flex flex-column gap-0">
+                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <div className="d-flex gap-3 justify-content-start align-items-center">
+                              <div className="moveable-div">.</div>
+                              <span style={{fontSize: 16}}>Hours</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
