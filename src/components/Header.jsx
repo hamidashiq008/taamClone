@@ -41,10 +41,10 @@ const Header = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li
                   className={`nav-item ${
-                    location.pathname === "/" ? "active" : ""
+                    location.pathname === "/ai-gateway" ? "active" : ""
                   }`}
                 >
-                  <NavLink className="nav-link" to="/">
+                  <NavLink className="nav-link" to="/ai-gateway">
                     AI Gateway
                   </NavLink>
                 </li>

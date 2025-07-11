@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import FeatureHeroImg from "../assets/images/FeatureHeroImg.png";
 import CpuImg from "../assets/images/cpu.png";
 import gatewayImg1 from "../assets/images/gateway1.png";
@@ -430,7 +431,7 @@ const Features = () => {
                     </section>
                 </div>
             </div>
-
+            {/* <Footer /> */}
         </div>
     )
 }
