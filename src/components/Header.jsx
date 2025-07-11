@@ -166,8 +166,8 @@ const Header = () => {
                 </li>
               </ul>
 
-              <form className="d-flex" role="search">
-                <GradientLink text={"Start for free"} to="/login" />
+              <form className="d-flex" role="search" onClick={() => window.location.href = "https://app.taam.ai/auth/login"}>
+                <GradientLink text={"Start for free"} to="https://app.taam.ai/auth/login" />
               </form>
             </div>
           </div>
