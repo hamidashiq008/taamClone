@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const faqData = [
     {
@@ -21,7 +23,7 @@ const faqData = [
     },
     {
         question: "How do I get started",
-        answer: "Sign up at Taam AI  Developer Portal Get your API key from the Developer Settings Start making API requests using our documentation",
+        answer: "Sign up at Taam AI Developer Portal Get your API key from the Developer Settings Start making API requests using our documentation",
     },
     {
         question: "Which AI models does it support?",
@@ -32,6 +34,13 @@ const faqData = [
 const FAQSection = () => {
     const [activeIndex, setActiveIndex] = useState(0); // First FAQ open by default
 
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            once: true
+        });
+    }, []);
+
     const toggleFaq = (index) => {
         setActiveIndex(index === activeIndex ? null : index);
     };
@@ -40,17 +49,28 @@ const FAQSection = () => {
         <section className="teamWorkFlow">
             <div className="bg-black text-white px-3">
                 <div className="container text-center teamWorkFlow-container pt-120 position-relative">
-                    <h1 className="teamWorkFlow-heading mb-20">
+                    <h1 
+                        className="teamWorkFlow-heading mb-20"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
                         Frequently Asked <br /> Questions
                     </h1>
 
                     <div className="faq">
-                        <p className="mb-70 px-20">Have questions about Taam AI ? Here are some of the most common inquiries we receive from our users. If you don’t find the answer you’re looking for, feel free to contact us.</p>
+                        <p 
+                            className="mb-70 px-20"
+                            data-aos="fade-up"
+                            data-aos-delay="150"
+                        >
+                            Have questions about Taam AI? Here are some of the most common inquiries we receive from our users. If you don't find the answer you're looking for, feel free to contact us.
+                        </p>
                         {faqData.map((item, index) => (
                             <div
                                 key={index}
-                                className={`faq-item ${index === 0 ? "first" : ""} ${activeIndex === index ? "active" : ""
-                                    }`}
+                                className={`faq-item ${index === 0 ? "first" : ""} ${activeIndex === index ? "active" : ""}`}
+                                data-aos="fade-up"
+                                data-aos-delay={200 + (index * 50)}
                             >
                                 <div
                                     className="faq-question"
@@ -61,7 +81,13 @@ const FAQSection = () => {
                                     <span className={`arrow me-4 ${activeIndex === index ? "open" : ""}`}></span>
                                 </div>
                                 {activeIndex === index && item.answer && (
-                                    <div className="faq-answer col-11">{item.answer}</div>
+                                    <div 
+                                        className="faq-answer col-11"
+                                        data-aos="fade-up"
+                                        data-aos-delay="100"
+                                    >
+                                        {item.answer}
+                                    </div>
                                 )}
                             </div>
                         ))}

@@ -1,9 +1,22 @@
-import React from "react";
-import {SimpleButton} from '../Partials/CustomButton';
+import React, { useEffect } from "react";
+import { SimpleButton } from '../Partials/CustomButton';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TaamAILanding = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }, []);
+
     return (
-        <section className="simplified-subscription-section pb-80">
+        <section 
+            className="simplified-subscription-section pb-80"
+            data-aos="fade-up"
+            data-aos-delay="100"
+        >
             <div className="simplified-content d-flex gap-2">
                 <div className="d-flex flex-column gap-0 align-items-start flex-grow-1">
                     <h3 className="simplified-heading">Subscribe to our newsletter</h3>
@@ -21,12 +34,6 @@ const TaamAILanding = () => {
                                 placeholder="jane@gmail.com"
                                 className="simplified-input flex-grow-1"
                             />
-                            {/* <button className="simplified-subscribe-button">
-                                Subscribe
-                                <svg className="arrow-icon" viewBox="0 0 256 256" focusable="false">
-                                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
-                                </svg>
-                            </button> */}
                             <SimpleButton text={'Subscribe'} />
                         </div>
 

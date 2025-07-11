@@ -48,7 +48,7 @@ const Features = () => {
                     </section>
                     <section className="teamWorkFlow">
                         <div className="bg-black text-white  px-3 min-vh-100 inner-wrapper">
-                            <div className="container text-center teamWorkFlow-container">
+                            <div className="container text-center">
                                 {/* Tag button */}
                                 <div className="badge-div  mb-3 ">
                                     <button className="btn btn-outline-light rounded-pill smallpx-3 py-1 main-badge">
