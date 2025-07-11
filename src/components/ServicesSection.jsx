@@ -90,7 +90,7 @@ const ServiceCard = ({ iconSrc, title, description, imageSrc }) => {
                         </div>
                     </div>
                     <div className="card-content px-30">
-                        <h4>{title}</h4>
+                        <h4 className='ellipes ellipes-1'>{title}</h4>
                         <p>{description}</p>
                     </div>
                     <div className="learn-more-container px-30 pb-20">

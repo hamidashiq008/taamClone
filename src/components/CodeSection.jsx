@@ -71,7 +71,7 @@ const Cards = () => {
       <div className="integrate-in-minutes-container">
         <div className="inner-wrapper">
           <div className=" text-center justify-content-center mt-5">
-            <h3 className="fw-600 display-6 mb-3">Integrate in Minutes</h3>
+            <h3 className="fw-500 display-6 mb-3">Integrate in Minutes</h3>
             <p
               style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9", fontFamily: 'inter', fontSize: '15px' }}
               className="mx-auto  mb-5"
