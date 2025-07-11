@@ -19,8 +19,10 @@ const Header = () => {
         <nav className="navbar navbar-expand-md p-0">
           <div className="container-fluid" style={{ maxWidth: 840 }}>
             <div className="img-wrapper d-flex gap-2">
+              <NavLink className="nav-link" to="/">
               <img src={logoImg} alt="Logo" width={25} height={25}/>
               <span>TAAM AI</span>
+              </NavLink>
             </div>
             <button
               className="navbar-toggler"
