@@ -7,6 +7,8 @@ import ContactUs from "../pages/ContactUs";
 import Features from '../pages/Features';
 import Downloads from '../pages/Downloads';
 import Blogs from '../pages/Blogs';
+import BlogsDetail from '../pages/BlogsDetail';
+
 
 import Observability from '../pages/Observability';
 const CustomRouter = () => {
@@ -20,6 +22,8 @@ const CustomRouter = () => {
             <Route path="/Blogs" element={<Blogs />} />
 
             <Route path="/Observability" element={<Observability />} />
+            <Route path="/BlogsDetail" element={<BlogsDetail />} />
+
 
         </Routes>
     )
