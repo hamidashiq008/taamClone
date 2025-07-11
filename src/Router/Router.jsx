@@ -3,7 +3,7 @@ import React from 'react'
 import Pricing from "../pages/PricingPage";
 import { Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
-import AiGateway from "../components/AiGateway";
+import AiGateway from "../pages/AIGateway";
 import ContactUs from "../pages/ContactUs";
 import Features from '../pages/Features';
 import Downloads from '../pages/Downloads';
