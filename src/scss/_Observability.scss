@@ -293,6 +293,12 @@
     }
 }
 
+@media(max-width: 1100px) {
+    .black-and-white-text {
+        font-size: 32px !important;
+    }
+}
+
 @media (max-width: 750px) {
     .fullStack-observability {
         .hero-heading {
@@ -368,7 +374,6 @@
     }
 
     .black-and-white-text {
-
         font-size: 25px !important;
         line-height: 2.5rem !important;
         letter-spacing: -1px !important;
@@ -377,7 +382,9 @@
 }
 
 @media (max-width: 375px) {
-.observability-page-wrapper .container .card-2 h4, .observability-page-wrapper .container .card-1 h4 {
-    font-size: 23px;  
-}
+
+    .observability-page-wrapper .container .card-2 h4,
+    .observability-page-wrapper .container .card-1 h4 {
+        font-size: 23px;
+    }
 }

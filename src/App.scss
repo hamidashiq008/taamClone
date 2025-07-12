@@ -1975,7 +1975,7 @@
 
 
  .faq {
-   max-width: 800px;
+   max-width: 730px !important;
    margin: 0px auto 40px;
  }
 
@@ -2437,3 +2437,8 @@
    color: #868686cf;
  }
 
+@media(max-width: 1199px){
+  .main-hero-content{
+    flex-direction: column !important;
+  }
+}

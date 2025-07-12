@@ -16,7 +16,7 @@ const Hero = ({ heading, heroImage }) => {
     <div>
       <section className="hero-section position-relative">
         <div className="hero-container">
-          <div className="d-flex gap-2 align-items-center justify-content-between">
+          <div className="d-flex gap-2 align-items-center justify-content-between main-hero-content">
             <div className="d-flex flex-column gap-2 align-items-start text-section">
               <div
                 className="whats-new-component"

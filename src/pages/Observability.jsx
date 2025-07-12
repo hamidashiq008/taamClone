@@ -49,8 +49,8 @@ const Observability = () => {
                 quality with tools designed to optimize AI workflows.
               </p>
 
-              <div className="row custom-row">
-                <div className="col-md-6">
+              <div className="row custom-row g-4">
+                <div className="col-lg-6">
                   <div className="card-1 h-100">
                     <div className="code-wrapper">
                       <div className=" code-parent" data-aos="fade-up"
@@ -108,7 +108,7 @@ const Observability = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="card-2 h-100">
                     <div className="img-wrapper">
                       <img src={ObsImg} alt="" />
@@ -137,7 +137,7 @@ const Observability = () => {
                 </p>
               </div>
               <div className="row aiStackRow">
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>Full Visibility with Deep Logging</h4>
                     <p>
@@ -148,7 +148,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>Simplified Tracing for Faster Debugging</h4>
                     <p>
@@ -158,7 +158,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>Optimize AI Costs with FinOps</h4>
                     <p>
@@ -169,7 +169,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>Instant Observability Without Complexity</h4>
                     <p>
@@ -179,7 +179,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>End-to-End Tracing for Every Request</h4>
                     <p>
@@ -190,7 +190,7 @@ const Observability = () => {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-lg-6">
                   <div className="col-inner">
                     <h4>Response Evaluation & Feedback Collection</h4>
                     <p>
@@ -211,7 +211,7 @@ const Observability = () => {
                 {/* Heading */}
                 <p className="top-intro" data-aos="fade-up"
                   data-aos-delay="100">\\ AI API GATEWAY \\</p>
-                <div className="text-center d-flex justify-content-between heading-para-wrapper" data-aos="fade-up"
+                <div className="text-center d-flex justify-content-between heading-para-wrapper flex-column flex-lg-row" data-aos="fade-up"
                   data-aos-delay="200">
                   <h1 className="top-heading m-0 ">
                     Enterprise-grade AI Gateway

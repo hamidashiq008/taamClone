@@ -15,7 +15,7 @@ const AiModals = () => {
   }, []);
 
   return (
-    <section className="ai-modals-container text-white position-relative">
+    <section className="ai-modals-container text-white position-relative mt-90 pt-120">
       <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
         <h2 className="fw-600 display-6">
           200+ AI Models with a Single Unified AI API
