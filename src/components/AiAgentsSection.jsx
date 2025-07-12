@@ -30,7 +30,7 @@ const AiAgentsSection = () => {
           get things done—faster and smarter.
         </p>
 
-        <div className="row justify-content-center g-4">
+        <div className="row justify-content-center g-4 px-4">
           {/* Left Card */}
           <div className="col-lg-6">
             <div className="solution-card h-100">
@@ -75,7 +75,7 @@ const AiAgentsSection = () => {
                               strings: [`The AI explains, suggests models, and can even refine responses based on feedback.`],
                               autoStart: true,
                               loop: true,
-                              delay: 20,
+                              delay: 40,
                               deleteSpeed: 0,
                             }}
                           />

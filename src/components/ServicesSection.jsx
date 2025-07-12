@@ -110,12 +110,12 @@ const ServiceCard = ({ iconSrc, title, description, imageSrc, delay }) => {
                     
                     {/* Content with animations */}
                     <div className="card-content px-30">
-                        <h4 className='ellipes ellipes-1' data-aos="fade-up" data-aos-delay={String(Number(delay) + 50)}>{title}</h4>
-                        <p data-aos="fade-up" data-aos-delay={String(Number(delay) + 100)}>{description}</p>
+                        <h4 className=''>{title}</h4>
+                        <p>{description}</p>
                     </div>
                     
                     {/* Learn more button with animation */}
-                    <div className="learn-more-container px-30 pb-20" data-aos="fade-up" data-aos-delay={String(Number(delay) + 150)}>
+                    <div className="learn-more-container px-30 pb-20">
                         <div className="learn-more-button">
                             <p>Learn More</p>
                             <div className="arrow-container">

@@ -6,10 +6,12 @@
 }
 
 .services-top-line {
-  background: linear-gradient(270deg,
-      #dee0e300,
-      #dee0e3 23.783778285121056% 81.62159962697072%,
-      #dee0e300);
+  background: linear-gradient(
+    270deg,
+    #dee0e300,
+    #dee0e3 23.783778285121056% 81.62159962697072%,
+    #dee0e300
+  );
   flex: none;
   height: 1px;
   overflow: hidden;
@@ -116,10 +118,13 @@
 }
 
 .card-content h4 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   margin-bottom: 12px;
   color: #000;
+  font-family: "Inter";
+  letter-spacing: -0.05em;
+  line-height: 110%;
 }
 
 .card-content p {
@@ -184,8 +189,6 @@
   }
 }
 
-
-
 .card-image {
   width: 100%;
   height: 100%;
@@ -201,7 +204,6 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-
   .top-row,
   .bottom-row {
     flex-direction: column;
