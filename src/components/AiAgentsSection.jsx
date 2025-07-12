@@ -4,7 +4,6 @@ import Typewriter from 'typewriter-effect';
 import AOS from 'aos';
 
 
-
 const AiAgentsSection = () => {
   useEffect(() => {
     AOS.init({
@@ -205,28 +204,69 @@ const AiAgentsSection = () => {
                         </div>
                         <div className="row g-3">
                           <div className="col-4 list-content d-flex flex-column gap-0">
-                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <p className="mb-1" style={{ color: '#c9c9c9', fontSize: '13px', textAlign: 'left' }}>person</p>
                             <div className="d-flex gap-3 justify-content-start align-items-center">
-                              <div className="moveable-div">.</div>
-                              <span style={{fontSize: 16}}>Hours</span>
+                              <div className="moveable-div">
+                                <div className="top-move">.</div>
+                                <div className="bottom-move">
+                                  2.5
+                                </div>
+                              </div>
+                              <span style={{ fontSize: 16 }}>Hours</span>
                             </div>
                           </div>
                           <div className="col-4 list-content d-flex flex-column gap-0">
-                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <p className="mb-1" style={{ color: '#c9c9c9', fontSize: '13px', textAlign: 'left' }}>person</p>
                             <div className="d-flex gap-3 justify-content-start align-items-center">
-                              <div className="moveable-div">.</div>
-                              <span style={{fontSize: 16}}>Hours</span>
+                              <div className="moveable-div ">
+                                <div className="top-move">.</div>
+                                <div className="bottom-move">
+                                  2.5
+                                </div>
+                              </div>
+                              <span style={{ fontSize: 16 }}>Hours</span>
                             </div>
                           </div>
                           <div className="col-4 list-content d-flex flex-column gap-0">
-                            <p className="mb-1" style={{color: '#c9c9c9', fontSize: '13px', textAlign: 'left'}}>person</p>
+                            <p className="mb-1" style={{ color: '#c9c9c9', fontSize: '13px', textAlign: 'left' }}>person</p>
                             <div className="d-flex gap-3 justify-content-start align-items-center">
-                              <div className="moveable-div">.</div>
-                              <span style={{fontSize: 16}}>Hours</span>
+                              <div className="moveable-div">
+                                <div className="top-move">.</div>
+                                <div className="bottom-move">
+                                  2.5
+                                </div>
+                              </div>
+                              <span style={{ fontSize: 16 }}>Hours</span>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
+
+                  </div>
+                  <div className="bottom-area">
+
+                    <div className="first-line d-flex align-items-center justify-content-between">
+                      <div className="left"> .
+                        {` John <> Studio Meet`}
+                      </div>
+                      <div className="right">Today 12:00pm</div>
+                    </div>
+                    <div className="second-line d-flex align-items-center justify-content-between">
+                      <div className="left">
+                        .  Engineering All-Hands
+                      </div>
+                      <div className="right">Today 12:00pm</div>
+                    </div>
+                    <div className="button-wrapper">
+                      <button>
+                        <div className="moveable-div last">
+                          <div className="top-move">Analysing time</div>
+                          <div className="bottom-move">
+                            Resechude
+                          </div>
+                        </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -262,14 +302,22 @@ const AiAgentsSection = () => {
                   <div className="bg-hover-shadow"></div>
                   <div className="inner-chat-box">
                     <div className="d-flex flex-column gap-0 h-100">
-                      <div className="d-flex flex-column p-3 flex-grow-1"></div>
-                      <div className="p-3  border-light-2"></div>
+                      <div className="d-flex flex-column connecting flex-grow-1">
+
+                        connecting
+                      </div>
+
+                      {/* <div className="p-3  border-light-2"></div> */}
                     </div>
                   </div>
                 </div>
+{/* <AiAgentBoxSlider/> */}
+
 
               </div>
+
             </div>
+
           </div>
 
         </div>

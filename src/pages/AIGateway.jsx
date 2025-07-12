@@ -24,7 +24,6 @@ const Home = () => {
       <HeroSlider />
       <AiModals />
       <Cards />
-      <AiAgentsSection />
       <Services />
       <FaqSection />
       <CTA />
