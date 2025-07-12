@@ -1973,7 +1973,7 @@
 
 
  .faq {
-   max-width: 800px;
+   max-width: 730px;
    margin: 0px auto 40px;
  }
 
@@ -2435,3 +2435,8 @@
    color: #868686cf;
  }
 
+.services-section{ 
+  & .container{
+    max-width: 1130px !important;
+  }
+}
