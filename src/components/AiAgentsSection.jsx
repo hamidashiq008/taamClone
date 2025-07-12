@@ -244,30 +244,29 @@ const AiAgentsSection = () => {
                     </div>
 
                   </div>
-                  <div className="bottom-area">
-
-                    <div className="first-line d-flex align-items-center justify-content-between">
-                      <div className="left"> .
-                        {` John <> Studio Meet`}
-                      </div>
-                      <div className="right">Today 12:00pm</div>
+                </div>
+                <div className="bottom-area">
+                  <div className="first-line d-flex align-items-center justify-content-between">
+                    <div className="left"> .
+                      {` John <> Studio Meet`}
                     </div>
-                    <div className="second-line d-flex align-items-center justify-content-between">
-                      <div className="left">
-                        .  Engineering All-Hands
-                      </div>
-                      <div className="right">Today 12:00pm</div>
+                    <div className="right">Today 12:00pm</div>
+                  </div>
+                  <div className="second-line d-flex align-items-center justify-content-between">
+                    <div className="left">
+                      .  Engineering All-Hands
                     </div>
-                    <div className="button-wrapper">
-                      <button>
-                        <div className="moveable-div last">
-                          <div className="top-move">Analysing time</div>
-                          <div className="bottom-move">
-                            Resechude
-                          </div>
+                    <div className="right">Today 12:00pm</div>
+                  </div>
+                  <div className="button-wrapper">
+                    <button>
+                      <div className="moveable-div last">
+                        <div className="top-move">Analysing time</div>
+                        <div className="bottom-move">
+                          Resechude
                         </div>
-                      </button>
-                    </div>
+                      </div>
+                    </button>
                   </div>
                 </div>
 
@@ -312,14 +311,9 @@ const AiAgentsSection = () => {
                   </div>
                 </div>
                 <AiAgentBoxSlider />
-
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
