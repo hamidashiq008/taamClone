@@ -325,9 +325,9 @@ const Features = () => {
                                 </div>
 
                                 {/* Feature Cards */}
-                                <div className="row g-4 mt-5 mb-3">
+                                <div className="row g-4 mt-5 mb-3  ">
                                     {/* Card 1 */}
-                                    <div className="col-md-4  mt-3">
+                                    <div className="col-md-12 col-lg-4  mt-3">
                                         <div className=" cards-main-wrapper h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg1} alt="Integrate" className="img-fluid rounded mb-3" />
@@ -341,7 +341,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 2 */}
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-12 col-lg-4 mt-3">
                                         <div className="cards-main-wrapper  h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg2} alt="Models Access" className="img-fluid rounded mb-3" />
@@ -355,7 +355,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 3 */}
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-12 col-lg-4 mt-3">
                                         <div className="cards-main-wrapper h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg3} alt="Build Agents" className="img-fluid rounded mb-3" />
@@ -402,7 +402,7 @@ const Features = () => {
                                         </div>
                                     </div>
                                     <h3 className='heading'>Connect to the Models You Need</h3>
-                                    <p className='desc'>Seamlessly integrate with 200+ leading AI models across providers—LLMs, vision, voice, and more. Power your workflows with unified API access to the models that fit your use case.</p>
+                                    <p className='desc'>Connect effortlessly with popular third-party apps, expanding functionality and enabling smooth workflows between tools you already use.    </p>
                                     <div className="badge-wrapper-2">
                                         <div className="badge-2">
                                             See all <IconChevronRight stroke={2} size={'15px'} />
@@ -439,7 +439,11 @@ const Features = () => {
                     </section>
                 </div>
             </div>
-            <CTA />
+            <section className="cta-section-main">
+                <div className="container">
+                    <CTA />
+                </div>
+            </section>
             <Footer />
         </div>
     )
