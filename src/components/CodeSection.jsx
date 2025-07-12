@@ -78,7 +78,7 @@ const Cards = () => {
         <div className="inner-wrapper">
           <div className="text-center justify-content-center mt-5">
             <h3
-              className="fw-500 display-6 mb-3"
+              className="fw-700 display-6 mb-3"
               data-aos="fade-up"
               data-aos-delay="100"
             >

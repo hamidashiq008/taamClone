@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import CTA from "../components/CTASection";
 import ObsImg from "../assets/images/obsPageImg.png";
 import gatewayImg1 from "../assets/images/gateway1.png";
 import gatewayImg2 from "../assets/images/gateway2.png";
 import gatewayImg3 from "../assets/images/gateway3.png";
 import AiModals from "../components/AiModals";
 import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   IconDatabase,
@@ -20,6 +23,14 @@ import {
   IconCpu,
 } from "@tabler/icons-react";
 const Observability = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
+
   return (
     <div>
       <div>
@@ -27,10 +38,12 @@ const Observability = () => {
         <div className="observability-page-wrapper">
           <section className="fullStack-observability">
             <div className="container">
-              <h2 className="text-center hero-heading">
+              <h2 className="text-center hero-heading" data-aos="fade-up"
+                data-aos-delay="100">
                 Full-stack AI logs & Observability
               </h2>
-              <p className="text-center hero-desc">
+              <p className="text-center hero-desc" data-aos="fade-up"
+                data-aos-delay="100">
                 Real-time visibility, actionable metrics, and built-in debugging
                 for every LLM request Stay on top of performance, cost, and
                 quality with tools designed to optimize AI workflows.
@@ -40,7 +53,8 @@ const Observability = () => {
                 <div className="col-md-6">
                   <div className="card-1 h-100">
                     <div className="code-wrapper">
-                      <div className=" code-parent">
+                      <div className=" code-parent" data-aos="fade-up"
+                        data-aos-delay="100">
                         {/* <p>
                             <strong>User:</strong> What is artificial
                             intelligence?
@@ -53,30 +67,30 @@ const Observability = () => {
                             self-correction.
                           </p> */}
                         <pre className="m-0">
-                        <code>
-        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
-        {` os \n`}
+                          <code>
+                            <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
+                            {` os \n`}
 
-        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>from</span>
-        {` taam_cloud `}
-        
-        <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
-        {` TaamCloud\n\n`}
+                            <span style={{ color: '#D73A49', fontWeight: 'bold' }}>from</span>
+                            {` taam_cloud `}
+
+                            <span style={{ color: '#D73A49', fontWeight: 'bold' }}>import</span>
+                            {` TaamCloud\n\n`}
 
 
-        {`# Initialize the client\n`}
-        {`client = TaamCloud(api_key=`}
-        <span >os</span>
-        {`.environ.get("TAAM_API_KEY"))\n\n`}
-        {`# Chat completion\n`}
-        {`response = client.chat.create(\n`}
-        {`    model="gpt-4-turbo",\n`}
-        {`    messages=[\n`}
-        {`        {"role": "system", "content": "You are a helpful assistant."},\n`}
-        {`        {"role": "user", "content": "What is artificial intelligence?"}\n`}
-        {`    ]\n`}
-        {`)`}
-      </code>
+                            {`# Initialize the client\n`}
+                            {`client = TaamCloud(api_key=`}
+                            <span >os</span>
+                            {`.environ.get("TAAM_API_KEY"))\n\n`}
+                            {`# Chat completion\n`}
+                            {`response = client.chat.create(\n`}
+                            {`    model="gpt-4-turbo",\n`}
+                            {`    messages=[\n`}
+                            {`        {"role": "system", "content": "You are a helpful assistant."},\n`}
+                            {`        {"role": "user", "content": "What is artificial intelligence?"}\n`}
+                            {`    ]\n`}
+                            {`)`}
+                          </code>
                         </pre>
                       </div>
                     </div>
@@ -89,7 +103,7 @@ const Observability = () => {
                       {/* <button className="subscribe-btn">
                         Get Started <IconChevronRight size={"15px"} />
                       </button> */}
-                                              <SimpleButton text={'Get Started'} />
+                      <SimpleButton text={'Get Started'} />
 
                     </div>
                   </div>
@@ -105,7 +119,7 @@ const Observability = () => {
                       Generation (RAG) support directly in the gateway
                     </p>
                     <div className="buttons-wrapper  gap-4   ">
-                                                              <SimpleButton text={'Get Started'} />
+                      <SimpleButton text={'Get Started'} />
 
                     </div>
                   </div>
@@ -195,8 +209,10 @@ const Observability = () => {
             <div className="bg-black text-white ">
               <div className="  gate-way-container-observability">
                 {/* Heading */}
-                <p className="top-intro">\\ AI API GATEWAY \\</p>
-                <div className="text-center d-flex justify-content-between heading-para-wrapper">
+                <p className="top-intro" data-aos="fade-up"
+                  data-aos-delay="100">\\ AI API GATEWAY \\</p>
+                <div className="text-center d-flex justify-content-between heading-para-wrapper" data-aos="fade-up"
+                  data-aos-delay="200">
                   <h1 className="top-heading m-0 ">
                     Enterprise-grade AI Gateway
                   </h1>
@@ -210,7 +226,8 @@ const Observability = () => {
                 <div className="row g-4 mt-5 mb-3">
                   {/* Card 1 */}
                   <div className="col-md-4  mt-3">
-                    <div className=" cards-main-wrapper h-100">
+                    <div className=" cards-main-wrapper h-100" data-aos="fade-up"
+                      data-aos-delay="300">
                       <div className="img-wrapper">
                         <img
                           src={gatewayImg1}
@@ -233,7 +250,8 @@ const Observability = () => {
 
                   {/* Card 2 */}
                   <div className="col-md-4 mt-3">
-                    <div className="cards-main-wrapper  h-100">
+                    <div className="cards-main-wrapper  h-100" data-aos="fade-up"
+                      data-aos-delay="400">
                       <div className="img-wrapper">
                         <img
                           src={gatewayImg2}
@@ -254,7 +272,8 @@ const Observability = () => {
 
                   {/* Card 3 */}
                   <div className="col-md-4 mt-3">
-                    <div className="cards-main-wrapper h-100">
+                    <div className="cards-main-wrapper h-100" data-aos="fade-up"
+                      data-aos-delay="500">
                       <div className="img-wrapper">
                         <img
                           src={gatewayImg3}
@@ -276,21 +295,25 @@ const Observability = () => {
 
                 {/* Stats Row */}
                 <div className="row text-center text-white mt-5 updates-section">
-                  <div className="col-6 col-md-3">
+                  <div className="col-6 col-md-3" data-aos="fade-up"
+                    data-aos-delay="600">
                     <div className="modal-updates">5M+</div>
                     <div className="text-secondary names mt-2">
                       Tokens Processed Daily
                     </div>
                   </div>
-                  <div className="col-6 col-md-3 mb-3">
+                  <div className="col-6 col-md-3 mb-3" data-aos="fade-up"
+                    data-aos-delay="700">
                     <div className="modal-updates">99%</div>
                     <div className="text-secondary names mt-2">Uptime</div>
                   </div>
-                  <div className="col-6 col-md-3 mb-3">
+                  <div className="col-6 col-md-3 mb-3" data-aos="fade-up"
+                    data-aos-delay="800">
                     <div className="modal-updates">24/7</div>
                     <div className="text-secondary names mt-2">Support</div>
                   </div>
-                  <div className="col-6 col-md-3 mb-3">
+                  <div className="col-6 col-md-3 mb-3" data-aos="fade-up"
+                    data-aos-delay="900">
                     <div className="modal-updates">1200+</div>
                     <div className="text-secondary names mt-2">AI Models</div>
                   </div>
@@ -301,24 +324,8 @@ const Observability = () => {
           <section className="aiModalSection">
             <AiModals />
           </section>
-          <section className="getStarted">
-            <div className="container">
-              <div className="inner-content">
-                <h3>Get Started with Taam AI Today!​</h3>
-              <p>
-                Power up your applications with cutting-edge Artificial
-                Intelligence models, a seamless API gateway, and
-                enterprise-grade scalability.
-              </p>
-              <div className="buttons-wrapper  gap-4   ">
-                <button className="subscribe-btn">
-                  Get Started Now <IconChevronRight size={"15px"} />
-                </button>
-              </div>
-              </div>
-            </div>
-          </section>
         </div>
+        <CTA />
         <Footer />
       </div>
     </div>

@@ -72,7 +72,7 @@
         }
 
         .border-line {
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 34% 66%, rgba(255, 255, 255, 0) 100%);
             flex: 0 0 auto;
             gap: 0px;
             height: 1px;
@@ -94,6 +94,7 @@
                 margin: auto;
                 overflow: hidden;
                 margin-bottom: 64px;
+                cursor: pointer;
             }
 
             .main-img-wrapper {
@@ -186,5 +187,14 @@
     }
     .blogs-page-wrapper .container .content-area .article-title {
         font-size: 14px;
+    }
+}
+
+
+.blogs-page-wrapper{
+    & .simplified-input{
+        width: 250px !important;
+        max-width: 25px !important;
+        min-width: 250px !important;
     }
 }

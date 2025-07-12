@@ -1,18 +1,36 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BlogsDetailImg from '../assets/images/blogDetail.png'
 import BlogsDetailBottom1 from '../assets/images/blogsDetailBottom1.png'
 
+import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const BlogsDetail = () => {
+
+  const navigate = useNavigate();
+
+  const pageChange = () => {
+    navigate('/BlogsDetail')
+  }
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
   return (
     <div>
       <Header />
       <div className="blogs-detail-page">
         <section className="top-section">
           <div className="container">
-            <h1>Maximizing <span className='h-iner-spain'>Productivity</span> with AI-Powered <span className='h-iner-spain'> Code Suggestions </span></h1>
-            <p>Apr 8, 2022</p>
+            <h1 data-aos="fade-up"
+              data-aos-delay="100">Maximizing <span className='h-iner-spain'>Productivity</span> with AI-Powered <span className='h-iner-spain'> Code Suggestions </span></h1>
+            <p data-aos="fade-up"
+              data-aos-delay="100">Apr 8, 2022</p>
             <div className="img-wrapper">
               <img src={BlogsDetailImg} className='img' alt="" />
             </div>
@@ -37,7 +55,7 @@ const BlogsDetail = () => {
             <h2 className='intro-heading'>Latest Article</h2>
             <div className="row">
               <div className="col-md-4 ">
-                <div className="card-wrapper">
+                <div className="card-wrapper" onClick={pageChange}>
                   <div className="content-wrapper">
                     <div className="img-wrapper">
                       <img src={BlogsDetailBottom1} alt="" />
@@ -50,7 +68,7 @@ const BlogsDetail = () => {
                 </div>
               </div>
               <div className="col-md-4 ">
-                <div className="card-wrapper">
+                <div className="card-wrapper" onClick={pageChange}>
                   <div className="content-wrapper">
                     <div className="img-wrapper">
                       <img src={BlogsDetailBottom1} alt="" />
@@ -63,7 +81,7 @@ const BlogsDetail = () => {
                 </div>
               </div>
               <div className="col-md-4 ">
-                <div className="card-wrapper">
+                <div className="card-wrapper" onClick={pageChange}>
                   <div className="content-wrapper">
                     <div className="img-wrapper">
                       <img src={BlogsDetailBottom1} alt="" />
@@ -79,7 +97,7 @@ const BlogsDetail = () => {
           </div>
         </section>
       </div>
-      <Footer className="p-0"/>
+      <Footer className="p-0" />
     </div>
   )
 }

@@ -25,6 +25,8 @@ body {
                 margin: 0 auto;
                 margin-top: 20px;
                 font-family: "Inter", "Inter Placeholder", sans-serif;
+                font-size: 16px;
+                font-weight: 300;
             }
 
             .free-credit-btn {
@@ -932,7 +934,7 @@ body {
 
 @media (max-width: 769px) {
     .container {
-        padding: 96px 24px !important;
+        padding: 96px 28px !important;
     }
 
     .feature-hero-section {

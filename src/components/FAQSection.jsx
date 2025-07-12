@@ -61,7 +61,7 @@ const FAQSection = () => {
                         <p 
                             className="mb-70 px-20"
                             data-aos="fade-up"
-                            data-aos-delay="150"
+                            data-aos-delay="400"
                         >
                             Have questions about Taam AI? Here are some of the most common inquiries we receive from our users. If you don't find the answer you're looking for, feel free to contact us.
                         </p>
@@ -69,8 +69,6 @@ const FAQSection = () => {
                             <div
                                 key={index}
                                 className={`faq-item ${index === 0 ? "first" : ""} ${activeIndex === index ? "active" : ""}`}
-                                data-aos="fade-up"
-                                data-aos-delay={200 + (index * 50)}
                             >
                                 <div
                                     className="faq-question"
@@ -83,8 +81,6 @@ const FAQSection = () => {
                                 {activeIndex === index && item.answer && (
                                     <div 
                                         className="faq-answer col-11"
-                                        data-aos="fade-up"
-                                        data-aos-delay="100"
                                     >
                                         {item.answer}
                                     </div>

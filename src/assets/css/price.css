@@ -165,9 +165,8 @@ body {
   padding: 30px 50px;
 }
 .adjutst-bg-card {
-  background: rgba(0, 0, 0, 0.48);
-  box-shadow: 0 0 6px 0px rgb(185 185 185 / 52%),
-    0 0px 3px 0px rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.56);
+  border: 1px solid #393737bd;
   z-index: 9;
   transition: transform 0.2s;
 }
