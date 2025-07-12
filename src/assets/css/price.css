@@ -16,31 +16,35 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .developer-btn {
   background: linear-gradient(90deg, #121d22, #312b2c, #2b2245);
-    color: white;
-    padding: 7px 56px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px);
-    cursor: pointer;
+  color: white;
+  padding: 7px 56px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
 }
+
 .pricing-cotianer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 32px 64px;
 }
+
 .adjust-border .card-header-image::after {
   content: "";
   position: absolute;
@@ -49,12 +53,10 @@ body {
   width: 100%;
   height: 1px;
   pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .adjust-border1 .card-header-image::after {
@@ -65,13 +67,12 @@ body {
   width: 30%;
   height: 2px;
   pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
 }
+
 .card-3 .card-header-image::after {
   content: "";
   position: absolute;
@@ -80,13 +81,12 @@ body {
   width: 30%;
   height: 2px;
   pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
 }
+
 .header-pricing {
   text-align: center;
   margin-bottom: 48px;
@@ -111,12 +111,15 @@ body {
   gap: 0px;
   /* flex-wrap: wrap; */
 }
+
 .adjust-border {
   padding: 25px 50px 0px 50px;
 }
+
 .adjust-border2 {
   padding: 25px 50px 0px 50px;
 }
+
 .card-price.card-1 {
   margin-top: 75px;
   border-top-left-radius: 24px !important;
@@ -125,6 +128,7 @@ body {
   height: 550px;
   z-index: 999;
 }
+
 .card-price.card-3 {
   margin-top: 75px;
   border-top-right-radius: 24px !important;
@@ -133,6 +137,7 @@ body {
   height: 540px;
   z-index: 9;
 }
+
 .addon {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5px 10px;
@@ -146,41 +151,46 @@ body {
   align-items: center;
   gap: 6px;
 }
+
 .workflow {
   font-size: 16px;
   color: #d9d9d9;
 }
+
 .addon-price {
   color: #919191;
   font-size: 14px;
 }
+
 .card-price.card-2 {
   border: 2px solid rgb(87, 254, 254) !important;
   height: 750px;
   border-radius: 20px;
   width: 650px;
 }
+
 .adjust-border1 {
   box-shadow: unset !important;
   padding: 30px 50px;
 }
+
 .adjutst-bg-card {
   background: rgba(0, 0, 0, 0.56);
   border: 1px solid #393737bd;
   z-index: 9;
   transition: transform 0.2s;
 }
+
 .pro-text {
-  background-image: linear-gradient(
-    782deg,
-    rgb(87, 254, 254) 0%,
-    rgb(255, 255, 255) 100%
-  );
+  background-image: linear-gradient(782deg,
+      rgb(87, 254, 254) 0%,
+      rgb(255, 255, 255) 100%);
   display: inline-block;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px !important;
 }
+
 .pricing-title {
   font-size: 40px;
   font-weight: bold;
@@ -191,14 +201,17 @@ body {
   margin-bottom: 20px;
   position: relative;
 }
+
 .card-header-image h2 {
   font-size: 22px;
   font-weight: 600;
   margin: -10px 0 8px 0;
 }
+
 .card-1 p {
   line-height: 1.5;
 }
+
 .price {
   font-size: 32px;
   font-weight: 700;
@@ -206,9 +219,11 @@ body {
   display: flex;
   align-items: center;
 }
+
 .months {
   font-size: 14px;
 }
+
 .price span.discount {
   font-size: 14px;
   color: #000;
@@ -225,16 +240,20 @@ body {
   color: #6366f1;
   font-family: "Inter", "Inter Placeholder", sans-serif;
 }
+
 .card-description-detail {
   font-size: 17px;
 }
+
 .included-title {
   color: #d9d9d9;
   font-size: 16px;
 }
+
 .feature-item-1 span {
   color: #d9d9d9;
 }
+
 .features {
   margin-bottom: 24px;
 }
@@ -259,6 +278,7 @@ body {
   margin-right: 15px;
   margin-top: 2px;
 }
+
 .feature-item-1:before {
   content: "✓";
   color: #fff;
@@ -271,6 +291,7 @@ body {
   margin-right: 15px;
   margin-top: 2px;
 }
+
 .feature-item-3:before {
   content: "✓";
   color: #fff;
@@ -283,6 +304,7 @@ body {
   margin-right: 15px;
   margin-top: 2px;
 }
+
 .btn {
   display: inline-block;
   width: 100%;
@@ -323,6 +345,7 @@ body {
   border-radius: 8px;
   width: 28%;
 }
+
 .enterprise-link a {
   text-decoration: none;
   font-size: 14px;
@@ -368,11 +391,14 @@ body {
   color: #6366f1;
   text-decoration: underline;
 }
+
 @media only screen and (max-width: 767px) {
+
   /* Your mobile styles here */
   .pricing-cards {
     display: block;
   }
+
   .card-price.card-1 {
     border-top-left-radius: 24px !important;
     border-bottom-left-radius: 24px !important;
@@ -383,10 +409,12 @@ body {
     height: 600px;
     z-index: 9;
   }
+
   .card-price.card-2 {
     width: 100%;
     height: 800px;
   }
+
   .card-price.card-3 {
     border-top-left-radius: 24px !important;
     border-bottom-left-radius: 24px !important;
@@ -397,9 +425,11 @@ body {
     height: 600px;
     z-index: 9;
   }
+
   .enterprise-link {
     width: 100%;
   }
+
   .adjust-border1 .card-header-image::after {
     content: "";
     position: absolute;
@@ -408,13 +438,12 @@ body {
     width: 75%;
     height: 2px;
     pointer-events: none;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%);
   }
+
   .card-3 .card-header-image::after {
     content: "";
     position: absolute;
@@ -423,25 +452,26 @@ body {
     width: 75%;
     height: 2px;
     pointer-events: none;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%);
   }
-  
+
   .pricing-title {
     font-size: 30px;
     font-weight: bold;
   }
+
   .price-enterprise {
     font-size: 30px;
   }
-  .header-pricing h1 { 
+
+  .header-pricing h1 {
     font-size: 2em;
     font-weight: 500;
   }
+
   .workflow {
     font-size: 11px;
   }

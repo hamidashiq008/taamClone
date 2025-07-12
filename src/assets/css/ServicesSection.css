@@ -6,12 +6,10 @@
 }
 
 .services-top-line {
-  background: linear-gradient(
-    270deg,
-    #dee0e300,
-    #dee0e3 23.783778285121056% 81.62159962697072%,
-    #dee0e300
-  );
+  background: linear-gradient(270deg,
+      #dee0e300,
+      #dee0e3 23.783778285121056% 81.62159962697072%,
+      #dee0e300);
   flex: none;
   height: 1px;
   overflow: hidden;
@@ -204,6 +202,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
   .top-row,
   .bottom-row {
     flex-direction: column;
@@ -283,8 +282,8 @@
 }
 
 
-.services-section{
-  & .container{
+.services-section {
+  & .container {
     max-width: 1130px !important;
   }
 }
