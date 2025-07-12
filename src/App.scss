@@ -35,6 +35,7 @@
    color: #9f9fa1 !important;
    /* Your brand color */
    text-decoration: underline;
+   background: transparent !important;
  }
 
  body {
@@ -55,7 +56,7 @@
      max-width: 200px;
 
      & img {
-      //  width: 100%;
+       //  width: 100%;
      }
    }
 
@@ -334,21 +335,26 @@
      margin: 0 auto;
    }
  }
-.custom-gap {
-    gap: 3rem;
-  }
-  .logo-title { 
-    color: #919191;
-  }
+
+ .custom-gap {
+   gap: 3rem;
+ }
+
+ .logo-title {
+   color: #919191;
+ }
+
  @media only screen and (max-width: 767px) {
-  .logo-title {
-    color: #919191;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .custom-gap {
-    gap: 5rem;
-  }
+   .logo-title {
+     color: #919191;
+     font-size: 14px;
+     font-weight: bold;
+   }
+
+   .custom-gap {
+     gap: 5rem;
+   }
+
    .navbar-toggler {
      background-color: #fff !important;
    }
@@ -489,7 +495,7 @@
    .container-sm,
    .container-xl,
    .container-xxl {
-     max-width: 1220px !important;
+     max-width: 1200px !important;
    }
  }
 
@@ -2010,10 +2016,12 @@
    margin: 0 auto;
    padding: 2rem;
  }
+
  .dropdown-menu.show {
-backdrop-filter: blur(40px);
-    background-color: rgba(209, 209, 209, 0.15);
+   backdrop-filter: blur(40px);
+   background-color: rgba(209, 209, 209, 0.15);
  }
+
  /* Original CTA Section Styles (unchanged) */
  .cta-section {
    margin-bottom: 4rem;
@@ -2333,7 +2341,7 @@ backdrop-filter: blur(40px);
  }
 
  .gradientBgBtn {
-   padding: 6px 16px !important;
+   padding: 6px 16px 8px !important;
    border: 1px solid #ffffff00 !important;
    border-radius: 8px !important;
    text-decoration: none !important;
@@ -2395,9 +2403,17 @@ backdrop-filter: blur(40px);
    position: relative;
    z-index: 9;
  }
+
  .header-container .navbar-nav .nav-item a:hover {
-  background-color: transparent;
+   background-color: transparent;
  }
+
  .dropdown-item.active {
-  background-color: transparent;
+   background-color: transparent;
  }
+
+ .text-secondary {
+   --bs-text-opacity: 1;
+   color: #868686cf;
+ }
+

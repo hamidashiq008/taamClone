@@ -1,14 +1,29 @@
-import React from "react";
-import {SimpleButton, SimpleLink, GradientButton, GradientLink} from '../Partials/CustomButton';
+import React, { useEffect } from "react";
+import { SimpleButton, GradientButton } from '../Partials/CustomButton';
+import AOS from 'aos';
 
-const Hero = ({heading, heroImage}) => {
+const Hero = ({ heading, heroImage }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Longer animation duration
+      easing: 'ease-in-out',
+      mirror: false
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div>
       <section className="hero-section position-relative">
         <div className="hero-container">
           <div className="d-flex gap-2 align-items-center justify-content-between">
             <div className="d-flex flex-column gap-2 align-items-start text-section">
-              <div className="whats-new-component" style={{ backdropFilter: 'blur(4px)', backgroundColor: 'rgba(0, 0, 0, 0.1)', borderRadius: '1000px', border: '1px solid rgba(145, 145, 145, 0.1)' }}>
+              <div
+                className="whats-new-component"
+                style={{ backdropFilter: 'blur(4px)', backgroundColor: 'rgba(0, 0, 0, 0.1)', borderRadius: '1000px', border: '1px solid rgba(145, 145, 145, 0.1)' }}
+                data-aos="zoom-in"
+                data-aos-delay="200"  // Increased from 100
+              >
                 <a href="./" className="text-link">
                   <div className="badge" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', borderRadius: '45px' }}>
                     <div className="label" style={{ color: 'rgb(255, 255, 255)' }}>
@@ -25,19 +40,22 @@ const Hero = ({heading, heroImage}) => {
                   </div>
                 </a>
               </div>
-              <h1 className="mb-3">{heading}</h1>
-              <p className="mb-4 text-gray">
+
+              <h1 className="mb-3" data-aos="zoom-in" data-aos-delay="400">{heading}</h1>  {/* Increased from 200 */}
+
+              <p className="mb-4 text-gray" data-aos="zoom-in" data-aos-delay="600">  {/* Increased from 300 */}
                 Effortlessly access 1200+ AI models through a single API
                 gateway. Build smarter, ship faster, and scale AI applications
                 without the complexity.
               </p>
-              <div className="">
+
+              <div className="d-flex" data-aos="zoom-in" data-aos-delay="800">  {/* Increased from 400 */}
                 <GradientButton text={'Start Free'} className={'me-2'} />
                 <SimpleButton text={'See All Features'} />
               </div>
             </div>
 
-            <div className="hero-image">
+            <div className="hero-image" data-aos="fade-uo" data-aos-duration='500' data-aos-delay="700">  {/* Increased from 500 */}
               <img src={heroImage} alt="Hero Image" className="img-fluid" />
             </div>
           </div>

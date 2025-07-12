@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CardImage1 from "../assets/images/pricing.avif";
 import '../assets/css/price.css'
-import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
+import { SimpleButton, SimpleLink } from '../Partials/CustomButton';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PricingPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
+
   return (
-    <div classNameName="bg-black">
+    <div className="bg-black">
       <Header />
       <div className="pricing-cotianer mt-3">
-        <div className="header-pricing">
+        {/* Header Section */}
+        <div 
+          className="header-pricing"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <h1 className="text-white display-6">
             AI API Pricing That Suits Every Need
           </h1>
@@ -21,11 +35,17 @@ const PricingPage = () => {
           </p>
         </div>
 
-        <div className="pricing-cards position-relative">
+        {/* Pricing Cards - Container Only */}
+        <div 
+          className="pricing-cards position-relative"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          {/* Background elements without animation */}
           <img
             loading="lazy"
             src={CardImage1}
-            alt=""
+            alt="Pricing background"
             style={{
               display: "block",
               width: "511px",
@@ -53,8 +73,11 @@ const PricingPage = () => {
               zIndex: "0",
             }}
           ></div>
+
+          {/* Developer Card - Only button animated */}
           <div className="adjutst-bg-card card-price card-1">
-            <div className=" adjust-border">
+            <div className="adjust-border">
+              {/* Inner card content without animation */}
               <div className="card-header-image border-0">
                 <h2 className="text-white">Developer</h2>
                 <p className="text-white py-2 mb-0 card-description-detail">
@@ -68,7 +91,7 @@ const PricingPage = () => {
               </div>
 
               <div className="features">
-                <div className="included-title mt-5">What’s included</div>
+                <div className="included-title mt-5">What's included</div>
                 <div className="feature-item feature-item-1 text-white">
                   <span>Fully pay as you go</span>
                 </div>
@@ -84,13 +107,17 @@ const PricingPage = () => {
               </div>
             </div>
 
-            <div className="d-flex justify-content-center mt-3">
+            <div 
+              className="d-flex justify-content-center mt-3"
+            >
               <SimpleLink to={'/'} text={'Try Now'} className={'px-20 mx-auto'} />
             </div>
           </div>
 
-          <div className="adjutst-bg-card card-price card-2 ">
+          {/* Pro Card - Only button animated */}
+          <div className="adjutst-bg-card card-price card-2">
             <div className="adjust-border1">
+              {/* Inner card content without animation */}
               <div className="card-header-image border-0">
                 <h2 className="pro-text">Pro</h2>
                 <p className="text-white py-2 mb-0 card-description-detail">
@@ -104,7 +131,7 @@ const PricingPage = () => {
               </div>
 
               <div className="features w-100 my-3 mt-5">
-                <div className="included-title ">What’s included</div>
+                <div className="included-title">What's included</div>
                 <div className="feature-item">
                   <span>Everything in Free</span>
                 </div>
@@ -128,24 +155,24 @@ const PricingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="mx-4  addon-wrapper">
-              {/* <a href="#" className="btn btn-primary">
-                Get Started
-              </a> */}
+            <div className="mx-4 addon-wrapper">
               <div className="addon py-2">
                 <input type="checkbox" />
                 <span className="workflow">All workflow & advance</span>{" "}
                 <span className="addon-price">+ $8 / month</span>
               </div>
-              <div className="d-flex justify-content-center mt-4">
+              <div 
+                className="d-flex justify-content-center mt-4"
+              >
                 <SimpleLink to={'/'} text={'Get Started'} className={'px-20 mx-auto'} />
               </div>
-
             </div>
           </div>
 
-          <div className="adjutst-bg-card card-price card-3 ">
+          {/* Enterprise Card - Only button animated */}
+          <div className="adjutst-bg-card card-price card-3">
             <div className="adjust-border2">
+              {/* Inner card content without animation */}
               <div className="card-header-image border-0">
                 <h2 className="text-white">Enterprise</h2>
                 <p className="text-white py-2 mb-0 card-description-detail">
@@ -157,7 +184,7 @@ const PricingPage = () => {
               </div>
 
               <div className="features">
-                <div className="included-title my-3 mt-5">What’s included</div>
+                <div className="included-title my-3 mt-5">What's included</div>
                 <div className="feature-item feature-item-3">
                   <span>Everything in Pro</span>
                 </div>
@@ -172,16 +199,23 @@ const PricingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="d-flex justify-content-center mt-3">
+            <div 
+              className="d-flex justify-content-center mt-3"
+            >
               <SimpleLink to={'/'} text={'Get Started'} className={'px-20 mx-auto'} />
             </div>
           </div>
         </div>
 
-        <div className="enterprise-link mx-auto py-2 px-1">
+        {/* Enterprise Link */}
+        <div 
+          className="enterprise-link mx-auto py-2 px-1"
+          data-aos="fade-up"
+          data-aos-delay="350"
+        >
           <div href="#">
-           <span style={{color:'#d9d9d9',fontSize:'14px'}}> Want enterprise features?{" "} </span>
-            <a className="text-white ms-1">Contact Us <i class="bi bi-arrow-right ms-1"></i></a>
+            <span style={{color:'#d9d9d9',fontSize:'14px'}}>Want enterprise features?{" "}</span>
+            <a className="text-white ms-1">Contact Us <i className="bi bi-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>
