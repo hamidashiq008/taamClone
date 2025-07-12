@@ -339,6 +339,9 @@
   .logo-title { 
     color: #919191;
   }
+  .dropdown-item.active {
+    background:transparent !important;
+  }
  @media only screen and (max-width: 767px) {
   .logo-title {
     color: #919191;
