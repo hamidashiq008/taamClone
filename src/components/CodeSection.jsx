@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../assets/css/Cards.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CodeBg from '../assets/images/Code-bg.png';
 import '../assets/css/code.css';
+import AOS from 'aos';
 
 
 
@@ -65,21 +66,35 @@ const Cards = () => {
     marginBottom: "100px",
   };
 
+    useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
   return (
     <section className={styles.cards} style={{ padding: "0px" }}>
       <div className="integrate-in-minutes-container">
         <div className="inner-wrapper">
-          <div className=" text-center justify-content-center mt-5">
-            <h3 className="fw-600 display-6 mb-3">Integrate in Minutes</h3>
+          <div className="text-center justify-content-center mt-5">
+            <h3
+              className="fw-500 display-6 mb-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Integrate in Minutes
+            </h3>
             <p
               style={{ maxWidth: "100%", width: "360px", color: "#d9d9d9", fontFamily: 'inter', fontSize: '15px' }}
-              className="mx-auto  mb-5"
+              className="mx-auto mb-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               Add Taam AI to your stack with just 3 lines of code — no
               restructuring, no delays, just instant power.
             </p>
           </div>
+
           <div style={boxStyle}>
             <pre className="tokyo-night-dark" style={{ margin: 0 }}>
               <code

@@ -8,10 +8,17 @@ import Blog3 from '../assets/blog3.png'
 import Blog4 from '../assets/blog4.png'
 import Blog5 from '../assets/blog5.png'
 import User1 from '../assets/user1.png'
+import { useNavigate } from 'react-router-dom';
+
 
 import { SimpleButton, SimpleLink, GradientButton, GradientLink } from '../Partials/CustomButton';
 
 const Blogs = () => {
+    const navigate = useNavigate();
+
+    const pageChange = () => {
+        navigate('/BlogsDetail')
+    }
     return (
         <div>
             <Header />
@@ -39,7 +46,7 @@ const Blogs = () => {
                     </div>
 
                     <div className="content-area">
-                        <div className="article-card ">
+                        <div className="article-card " onClick={pageChange}>
                             <div className="main-img-wrapper">
                                 <img src={Blog1} alt="Preview" className="article-image" />
                             </div>
@@ -69,7 +76,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="article-card ">
+                        <div className="article-card "  onClick={pageChange}>
                             <div className="main-img-wrapper">
                                 <img src={Blog2} alt="Preview" className="article-image" />
                             </div>
@@ -99,7 +106,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="article-card ">
+                        <div className="article-card "  onClick={pageChange}>
                             <div className="main-img-wrapper">
                                 <img src={Blog3} alt="Preview" className="article-image" />
                             </div>
@@ -129,7 +136,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="article-card ">
+                        <div className="article-card "  onClick={pageChange}>
                             <div className="main-img-wrapper">
                                 <img src={Blog4} alt="Preview" className="article-image" />
                             </div>
@@ -159,7 +166,7 @@ const Blogs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="article-card ">
+                        <div className="article-card "  onClick={pageChange}>
                             <div className="main-img-wrapper">
                                 <img src={Blog5} alt="Preview" className="article-image" />
                             </div>
@@ -193,7 +200,7 @@ const Blogs = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>             
+            <Footer />
         </div>
     )
 }

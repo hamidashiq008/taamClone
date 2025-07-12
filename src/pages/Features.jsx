@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CTA from '../components/CTASection'
 import FeatureHeroImg from "../assets/images/FeatureHeroImg.png";
 import CpuImg from "../assets/images/cpu.png";
 import gatewayImg1 from "../assets/images/gateway1.png";
@@ -47,7 +48,7 @@ const Features = () => {
                     </section>
                     <section className="teamWorkFlow">
                         <div className="bg-black text-white  px-3 min-vh-100 inner-wrapper">
-                            <div className="container text-center teamWorkFlow-container">
+                            <div className="container text-center">
                                 {/* Tag button */}
                                 <div className="badge-div  mb-3 ">
                                     <button className="btn btn-outline-light rounded-pill smallpx-3 py-1 main-badge">
@@ -308,7 +309,7 @@ const Features = () => {
                         <div className="bg-black text-white ">
                             <div className="container gate-way-container">
                                 {/* Heading */}
-                                <p className="top-intro">\\ AI API GATEWAY \\</p>
+                                {/* <p className="top-intro">\\ AI API GATEWAY \\</p> */}
                                 <div className="text-center d-flex justify-content-between top-content-wrap">
                                     <h1 className="top-heading m-0 ">Enterprise-grade AI Gateway</h1>
                                     <p className="text-secondary  m-0 top-desc">
@@ -324,7 +325,7 @@ const Features = () => {
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg1} alt="Integrate" className="img-fluid rounded mb-3" />
                                             </div>
-                                            <p className="text-purple small fw-bold styled-text">EASILY SETUP</p>
+                                            <p className="text-purple small fw-500 f-kode styled-text">EASILY SETUP</p>
                                             <h5 className="heading-tile mb-2">Integrate in a minute</h5>
                                             <p className="text-secondary small desc-text">
                                                 Integrate Taam AI In Just 3 Lines Of Code - No Changes To Your Existing Stack.
@@ -338,7 +339,7 @@ const Features = () => {
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg2} alt="Models Access" className="img-fluid rounded mb-3" />
                                             </div>
-                                            <p className="text-purple small fw-bold styled-text">AI MODELS</p>
+                                            <p className="text-purple small fw-500 f-kode styled-text">AI MODELS</p>
                                             <h5 className="heading-tile mb-2">AI Models Access</h5>
                                             <p className="text-secondary small desc-text">
                                                 Taam AI Lets You Access 1,600+ LLMs Via A Unified API, So You Can Focus On Building, Not Managing.
@@ -352,7 +353,7 @@ const Features = () => {
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg3} alt="Build Agents" className="img-fluid rounded mb-3" />
                                             </div>
-                                            <p className="text-purple small fw-bold styled-text">AI AGENTS</p>
+                                            <p className="text-purple small fw-500 f-kode styled-text">AI AGENTS</p>
                                             <h5 className="heading-tile mb-2">Build AI Agents</h5>
                                             <p className="text-secondary small desc-text">
                                                 Build AI Agents That Can Use 1000+ Tools With Taam's Model Context Protocol Client.
@@ -386,7 +387,7 @@ const Features = () => {
                     <section className="circle-animation">
                         <div className="container">
 
-                            <div className="  vh-100">
+                            <div className="h-750">
                                 <div className="top-content">
                                     <div className="badge-wrapper">
                                         <div className="badge">
@@ -431,7 +432,8 @@ const Features = () => {
                     </section>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <CTA />
+            <Footer />
         </div>
     )
 }

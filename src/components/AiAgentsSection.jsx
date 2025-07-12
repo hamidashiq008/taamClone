@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AiAgentBoxSlider from "./AiAgentBoxSlider";
 import Typewriter from 'typewriter-effect';
+import AOS from 'aos';
 
 
 
 const AiAgentsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
   return (
     <section className="ai-agents-section text-white">
       <div className="container text-center">
-        <div className="badge-section mb-4">
+        <div className="badge-section mb-4" data-aos="fade-up" data-aos-delay="100">
           <span className="badge rounded-pill px-3 py-2">AI Agents</span>
         </div>
 
-        <h2 className="section-title mb-3">
+        <h2 className="section-title mb-3" data-aos="fade-up" data-aos-delay="200">
           Autonomous AI Agents That Work <br />
           Together
         </h2>
 
-        <p className="section-description lead mx-auto mb-5">
+        <p className="section-description lead mx-auto mb-5" data-aos="fade-up" data-aos-delay="300">
           Deploy and orchestrate intelligent agents that can think, decide, and
           collaborate across tasks. Whether it's running workflows, calling
           tools, or chaining decisions, our AI agents operate autonomously to

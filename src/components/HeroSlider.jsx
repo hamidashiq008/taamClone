@@ -4,8 +4,7 @@ import silderImg1 from "../assets/images/slider1.svg";
 import silderImg2 from "../assets/images/slider2.svg";
 import silderImg3 from "../assets/images/slider3.svg";
 import silderImg4 from "../assets/images/slider4.svg";
-import silderImg5 from "../assets/images/slider5.svg";
-import silderImg6 from "../assets/images/slider6.svg";
+import silderImg5 from "../assets/images/slider5.svg"; 
 const HeroSlider = () => {
   return (
     <div>
@@ -30,9 +29,7 @@ const HeroSlider = () => {
                 <div className="img-wrapper">
                   <img src={silderImg5} alt="" />
                 </div>
-                <div className="img-wrapper">
-                  <img src={silderImg6} alt="" />
-                </div>
+            
               </div>
               {/* Duplicate for seamless scroll */}
               <div className="ticker-content">
@@ -51,9 +48,7 @@ const HeroSlider = () => {
                 <div className="img-wrapper">
                   <img src={silderImg5} alt="" />
                 </div>
-                <div className="img-wrapper">
-                  <img src={silderImg6} alt="" />
-                </div>
+              
               </div>
             </div>
           </div>
