@@ -311,7 +311,7 @@ const AiAgentsSection = () => {
                     </div>
                   </div>
                 </div>
-{/* <AiAgentBoxSlider/> */}
+                <AiAgentBoxSlider />
 
 
               </div>
