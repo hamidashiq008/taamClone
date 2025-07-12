@@ -76,17 +76,26 @@
 
 
 
-   .header-navbar-collapse {
-     .navbar-nav {
-       backdrop-filter: blur(40px);
+  //  .header-navbar-collapse {
+  //    .navbar-collapse {
+  //      backdrop-filter: blur(40px);
+  //      background-color: rgba(255, 255, 255, 0.1);
+  //      border-radius: 33px;
+  //      // display: flex;
+  //      opacity: 1;
+  //      margin: 0 auto;
+  //      padding: 0 10px;
+  //    }
+  //  }
+  .header-navbar-collapse {
+         backdrop-filter: blur(40px);
        background-color: rgba(255, 255, 255, 0.1);
        border-radius: 33px;
        // display: flex;
        opacity: 1;
        margin: 0 auto;
        padding: 0 10px;
-     }
-   }
+  }
  }
 
  .hero-section {
@@ -343,14 +352,23 @@
  .logo-title {
    color: #919191;
  }
-
+.header-logo-title {
+   font-size: 15px; 
+  }
  @media only screen and (max-width: 767px) {
+  .navbar-toggler-icon
+  {
+    height: 1em !important;
+    width: 1em !important;
+  }
    .logo-title {
      color: #919191;
      font-size: 14px;
      font-weight: bold;
    }
-
+  .header-logo-title {
+   font-size: 20px; 
+  }
    .custom-gap {
      gap: 5rem;
    }
