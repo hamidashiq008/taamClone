@@ -76,26 +76,17 @@
 
 
 
-  //  .header-navbar-collapse {
-  //    .navbar-collapse {
-  //      backdrop-filter: blur(40px);
-  //      background-color: rgba(255, 255, 255, 0.1);
-  //      border-radius: 33px;
-  //      // display: flex;
-  //      opacity: 1;
-  //      margin: 0 auto;
-  //      padding: 0 10px;
-  //    }
-  //  }
-  .header-navbar-collapse {
-         backdrop-filter: blur(40px);
+   .header-navbar-collapse {
+     .navbar-nav {
+       backdrop-filter: blur(40px);
        background-color: rgba(255, 255, 255, 0.1);
        border-radius: 33px;
        // display: flex;
        opacity: 1;
        margin: 0 auto;
        padding: 0 10px;
-  }
+     }
+   }
  }
 
  .hero-section {
@@ -356,10 +347,22 @@
    font-size: 15px; 
   }
  @media only screen and (max-width: 767px) {
+  .header-container .img-wrapper {
+    max-width: 100%;
+    width: 100%;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  }
+  .header-container {
+    padding: 0px 0 16px;
+  }
   .navbar-toggler-icon
   {
     height: 1em !important;
     width: 1em !important;
+  }
+  .header-container .header-navbar-collapse .navbar-nav {
+    border-radius: 0px !important;
   }
    .logo-title {
      color: #919191;
@@ -379,7 +382,7 @@
 
    /* Your mobile styles here */
    .hero-section .hero-container {
-     padding: 90px 28px 60px;
+     padding: 0px 28px 60px;
    }
 
    .hero-section .hero-container .badge-inner-wrapper .feature-badge {
@@ -1973,7 +1976,7 @@
 
 
  .faq {
-   max-width: 730px;
+   max-width: 800px;
    margin: 0px auto 40px;
  }
 
@@ -2435,8 +2438,3 @@
    color: #868686cf;
  }
 
-.services-section{ 
-  & .container{
-    max-width: 1130px !important;
-  }
-}
