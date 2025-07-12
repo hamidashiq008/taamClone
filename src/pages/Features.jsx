@@ -37,20 +37,22 @@ const Features = () => {
         <div>
             <Header />
             <div className="features-page-content">
-                <div className="container main-container" data-aos="fade-up">
+                <div data-aos="fade-up">
                     <section className="feature-hero-section">
-                        <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
-                        <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
-                        <GradientButton text={'Start Free With 500K Credits'} className={'mx-auto d-flex my-20'} />
-                        <div className="feature-hero-img-wrapper pt-4">
-                            <img src={FeatureHeroImg} alt="" />
+                        <div className="container main-container" >
+                            <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
+                            <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
+                            <GradientButton text={'Start Free With 500K Credits'} className={'mx-auto d-flex my-20'} />
+                            <div className="feature-hero-img-wrapper pt-4">
+                                <img src={FeatureHeroImg} alt="" />
+                            </div>
                         </div>
                     </section>
                     <section className="teamWorkFlow">
-                        <div className="bg-black text-white  px-3 min-vh-100 inner-wrapper">
+                        <div className="bg-black text-white  px-3 inner-wrapper">
                             <div className="container text-center">
                                 {/* Tag button */}
-                                <div className="badge-div  mb-3 ">
+                                <div className="badge-div  mb-4 ">
                                     <button className="btn btn-outline-light rounded-pill smallpx-3 py-1 main-badge">
                                         Taam AI Workflow
                                     </button>
@@ -62,219 +64,196 @@ const Features = () => {
                                 </h1>
 
                                 {/* Card Section */}
-                                <div className="row g-4 border-line animated-card-wrapper">
-                                    {/* Card 1 */}
-                                    <div className="col-md-12 col-lg-4 ">
-                                        <div className="card-wrapper first-card-wrapper h-100">
-                                            <p className="card-heading">Scalable AI solutions</p>
-                                            <p className="text-secondary card-desc me-4">
-                                                Experience the enchanting magic of AI as it transforms data into insights.
-                                            </p>
 
-                                            <div className="tiles-main-wrapper">
-                                                <div className="tile-wrapper d-flex align-items-center justify-content-between first-tile">
-                                                    <div className="left-content d-flex align-items-center justify-content-start   ">
-                                                        <div className="logo-wrapper">
-                                                            <IconCode style={{ color: 'rgb(127 127 127)' }} />
+                            </div>
+                        </div>
+                    </section>
+                    <section className="teamWorkFlow ai-animation-section">
+                        <div className="container">
+                            <div className="row  border-line animated-card-wrapper">
+                                {/* Card 1 */}
+                                <div className="col-md-12 col-lg-4 ">
+                                    <div className="card-wrapper first-card-wrapper h-100">
+                                        <p className="card-heading">Scalable AI solutions</p>
+                                        <p className="text-secondary card-desc me-4">
+                                            Experience the enchanting magic of AI as it transforms data into insights.
+                                        </p>
 
-                                                        </div>
-                                                        <div className="content-wrapper">
-                                                            <div className="top-heading">
-                                                                Try the latest Modal
-                                                                <span>Model-3</span>
-                                                            </div>
-                                                            <div className="bottom-desc">
-                                                                <p className='inner-top-p m-0'>TOP </p>
-                                                                <p className='inner-bottom-p m-0'>BOTTOM </p>
-                                                            </div>
-                                                        </div>
+                                        <div className="tiles-main-wrapper">
+                                            <div className="tile-wrapper d-flex align-items-center justify-content-between first-tile">
+                                                <div className="left-content d-flex align-items-center justify-content-start   ">
+                                                    <div className="logo-wrapper">
+                                                        <IconCode style={{ color: 'rgb(127 127 127)' }} />
+
                                                     </div>
-                                                    <div className="arrow-svg-wrapper">
-                                                        <IconChevronRight size={20} stroke={1} className='chevron  chev-right' />
-
+                                                    <div className="content-wrapper">
+                                                        <div className="top-heading">
+                                                            Try the latest Modal
+                                                            <span>Model-3</span>
+                                                        </div>
+                                                        <div className="bottom-desc">
+                                                            <p className='inner-top-p m-0'>TOP </p>
+                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="tile-wrapper d-flex align-items-center justify-content-between mt-3 ms-4 second-tile">
-                                                    <div className="left-content  d-flex align-items-center justify-content-start    ">
-                                                        <div className="logo-wrapper ">
-                                                            <IconWaveSine style={{ color: 'rgb(127 127 127)' }} />
+                                                <div className="arrow-svg-wrapper">
+                                                    <IconChevronRight size={20} stroke={1} className='chevron  chev-right' />
 
+                                                </div>
+                                            </div>
+                                            <div className="tile-wrapper d-flex align-items-center justify-content-between mt-3 ms-4 second-tile">
+                                                <div className="left-content  d-flex align-items-center justify-content-start    ">
+                                                    <div className="logo-wrapper ">
+                                                        <IconWaveSine style={{ color: 'rgb(127 127 127)' }} />
+
+                                                    </div>
+                                                    <div className="content-wrapper">
+                                                        <div className="top-heading">
+                                                            Create new asset
+
+
+                                                            <span>new</span>
                                                         </div>
-                                                        <div className="content-wrapper">
-                                                            <div className="top-heading">
+                                                        <div className="bottom-desc">
+                                                            <p className='inner-top-p m-0'>TOP </p>
+                                                            <p className='inner-bottom-p m-0'>BOTTOM </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="arrow-svg-wrapper">
+                                                    <IconChevronRight size={20} stroke={1} className='chevron chev-right' />
+
+                                                </div>
+                                            </div>
+                                            <div className="tile-wrapper d-flex align-items-center justify-content-between mt-3 ms-5 third-tile">
+
+                                                <div className="content-wrapper w-100 ">
+                                                    <div className="top-heading d-flex justify-content-between">
+                                                        <div className="logo-heding d-flex gap-2">
+                                                            <div className="arrow-svg-wrapper">
+                                                                <IconWaveSine size={20} stroke={2} className='chevron' />
+
+                                                            </div>
+                                                            <div className="heading">
                                                                 Create new asset
-
-
-                                                                <span>new</span>
-                                                            </div>
-                                                            <div className="bottom-desc">
-                                                                <p className='inner-top-p m-0'>TOP </p>
-                                                                <p className='inner-bottom-p m-0'>BOTTOM </p>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div className="arrow-svg-wrapper">
-                                                        <IconChevronRight size={20} stroke={1} className='chevron chev-right' />
 
+
+                                                        <div className="span-div">
+                                                            <span>Updated</span>
+                                                        </div>
                                                     </div>
+                                                    <div className="text-to-audio text-start">
+                                                        Text to Audio
+                                                    </div>
+                                                    <p className='text-start '>Quick create an Audio message</p>
                                                 </div>
-                                                <div className="tile-wrapper d-flex align-items-center justify-content-between mt-3 ms-5 third-tile">
-
-                                                    <div className="content-wrapper w-100 ">
-                                                        <div className="top-heading d-flex justify-content-between">
-                                                            <div className="logo-heding d-flex gap-2">
-                                                                <div className="arrow-svg-wrapper">
-                                                                    <IconWaveSine size={20} stroke={2} className='chevron' />
-
-                                                                </div>
-                                                                <div className="heading">
-                                                                    Create new asset
-                                                                </div>
-                                                            </div>
 
 
-                                                            <div className="span-div">
-                                                                <span>Updated</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="text-to-audio text-start">
-                                                            Text to Audio
-                                                        </div>
-                                                        <p className='text-start '>Quick create an Audio message</p>
-                                                    </div>
-
-
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    {/* Card 2 */}
-                                    <div className="col-md-12 col-lg-4 ">
-                                        <div className="card-wrapper centered-card h-100">
-                                            <p className="card-heading mx-3">API & integrations</p>
-                                            <p className="text-secondary card-desc mx-3">
-                                                Connect with different services to automate your product.
-                                            </p>
+                                {/* Card 2 */}
+                                <div className="col-md-12 col-lg-4 ">
+                                    <div className="card-wrapper centered-card h-100">
+                                        <p className="card-heading mx-3">API & integrations</p>
+                                        <p className="text-secondary card-desc mx-3">
+                                            Connect with different services to automate your product.
+                                        </p>
 
-                                            <div className="logo-wrapper mt-5">
-                                                <div className="top-icon icon">
-                                                    <IconFileText size={20} stroke={1} className='' />
+                                        <div className="logo-wrapper mt-5">
+                                            <div className="top-icon icon">
+                                                <IconFileText size={20} stroke={1} className='' />
 
+                                            </div>
+                                            <div className="center-icons d-flex justify-content-center gap-2 align-items-center">
+                                                <div className="left icon">
+                                                    <IconWaveSine size={20} stroke={1} className='' />
                                                 </div>
-                                                <div className="center-icons d-flex justify-content-center gap-2 align-items-center">
-                                                    <div className="left icon">
-                                                        <IconWaveSine size={20} stroke={1} className='' />
-                                                    </div>
-                                                    <div className="center-badge center-badge-one mt-2">
-                                                        <IconLoader size={15} stroke={1} className="loading-icon me-2" />
-                                                        CONNECTIONG
-                                                    </div>
-                                                    <div className="center-badge center-badge-two mt-2">
-                                                        <IconLink size={15} stroke={1} className="loading-icon me-2" />
-                                                        CONNECTED
-                                                    </div>
-                                                    <div className="right icon">
-                                                        <IconCode size={20} stroke={1} className='' />
-                                                    </div>
-
-
-
+                                                <div className="center-badge center-badge-one mt-2">
+                                                    <IconLoader size={15} stroke={1} className="loading-icon me-2" />
+                                                    CONNECTIONG
+                                                </div>
+                                                <div className="center-badge center-badge-two mt-2">
+                                                    <IconLink size={15} stroke={1} className="loading-icon me-2" />
+                                                    CONNECTED
+                                                </div>
+                                                <div className="right icon">
+                                                    <IconCode size={20} stroke={1} className='' />
                                                 </div>
 
-                                                <div className="d-flex justify-content-center  align-items-start  gap-4 ">
-                                                    <div className="left icon mt-3">
-                                                        <IconWaveSine size={20} stroke={1} className='' />
-                                                    </div>
-                                                    <div className="center-image-wrapper mb-2">
-                                                        <div className='d1'></div>
-                                                        <div className='d2'></div>
-                                                        <div className='d3'></div>
-                                                        <div className='d4'></div>
-                                                        <div className='d5'></div>
-
-                                                        <div className="img-wrapper">
-
-                                                            <img src={CpuImg} alt="" />
-                                                        </div>
-                                                    </div>
-                                                    <div className="right icon mt-3">
-                                                        <IconCode size={20} stroke={1} className='' />
-                                                    </div>
 
 
-
-                                                </div>
                                             </div>
 
+                                            <div className="d-flex justify-content-center  align-items-start  gap-4 ">
+                                                <div className="left icon mt-3">
+                                                    <IconWaveSine size={20} stroke={1} className='' />
+                                                </div>
+                                                <div className="center-image-wrapper mb-2">
+                                                    <div className='d1'></div>
+                                                    <div className='d2'></div>
+                                                    <div className='d3'></div>
+                                                    <div className='d4'></div>
+                                                    <div className='d5'></div>
+
+                                                    <div className="img-wrapper">
+
+                                                        <img src={CpuImg} alt="" />
+                                                    </div>
+                                                </div>
+                                                <div className="right icon mt-3">
+                                                    <IconCode size={20} stroke={1} className='' />
+                                                </div>
+
+
+
+                                            </div>
                                         </div>
+
                                     </div>
+                                </div>
 
-                                    {/* Card 3 */}
-                                    <div className="col-md-12 col-lg-4 ">
-                                        <div className="card-wrapper last-card h-100">
-                                            <p className="card-heading mx-3">Integrated workflow</p>
-                                            <p className="text-secondary card-desc mb-5 mx-3">
-                                                Enhance productivity with AI that connects your systems and automates complex workflows.
-                                            </p>
+                                {/* Card 3 */}
+                                <div className="col-md-12 col-lg-4 ">
+                                    <div className="card-wrapper last-card h-100">
+                                        <p className="card-heading mx-3">Integrated workflow</p>
+                                        <p className="text-secondary card-desc mb-5 mx-3">
+                                            Enhance productivity with AI that connects your systems and automates complex workflows.
+                                        </p>
 
-                                            <div className="d-flex flex-wrap gap-2 pt-4 pills-wrapper">
-                                                <span className="badge first d-flex align-items-center">
-                                                    <div className="icons-wrapper" >
-                                                        <div className="first-icon d-block">
-                                                            <IconCode size={20} stroke={1} className='' />
-                                                        </div>
-                                                        <div className="second-icon  d-block">
-                                                            <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
-                                                        </div>
+                                        <div className="d-flex flex-wrap gap-2 pt-4 pills-wrapper">
+                                            <span className="badge first d-flex align-items-center">
+                                                <div className="icons-wrapper" >
+                                                    <div className="first-icon d-block">
+                                                        <IconCode size={20} stroke={1} className='' />
                                                     </div>
-                                                    <div className="content d-flex">
-                                                        <div className="afterBefore">
-                                                            <div className="before">
-                                                                Edit
-                                                            </div>
-                                                            <div className="after">
-                                                                Edited
-                                                            </div>
-                                                        </div>
-                                                        <div className="spna-div">
-                                                            <span>  page.</span>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                                <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Transcribe <span>voiceclips.</span></span>
-                                                <div className="center-content d-flex gap-2  my-2">
-                                                    <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Simplify <span>code.</span></span>
-                                                    {/* <span className="badge fourth">  <IconCode size={20} stroke={1} className='' /> Improve <span> slides.</span></span> */}
-                                                    <span className="badge first d-flex align-items-center">
-                                                        <div className="icons-wrapper" >
-                                                            <div className="first-icon d-block">
-                                                                <IconCode size={20} stroke={1} className='' />
-                                                            </div>
-                                                            <div className="second-icon  d-block">
-                                                                <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
-                                                            </div>
-                                                        </div>
-                                                        <div className="content d-flex">
-                                                            <div className="afterBefore">
-                                                                <div className="before">
-                                                                    Improve
-                                                                </div>
-                                                                <div className="after">
-                                                                    Improved
-                                                                </div>
-                                                            </div>
-                                                            <div className="spna-div">
-                                                                <span className='ms-2'>  slides.</span>
-                                                            </div>
-                                                        </div>
-                                                    </span>
-                                                    <div className="icon">
+                                                    <div className="second-icon  d-block">
                                                         <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
                                                     </div>
-
                                                 </div>
-                                                {/* <span className="badge fifth">  <IconCode size={20} stroke={1} className='' /> Create <span> a podcast draft.</span></span> */}
+                                                <div className="content d-flex">
+                                                    <div className="afterBefore">
+                                                        <div className="before">
+                                                            Edit
+                                                        </div>
+                                                        <div className="after">
+                                                            Edited
+                                                        </div>
+                                                    </div>
+                                                    <div className="spna-div">
+                                                        <span>  page.</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                            <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Transcribe <span>voiceclips.</span></span>
+                                            <div className="center-content d-flex gap-2  my-2">
+                                                <span className="badge ">  <IconCode size={20} stroke={1} className='' /> Simplify <span>code.</span></span>
+                                                {/* <span className="badge fourth">  <IconCode size={20} stroke={1} className='' /> Improve <span> slides.</span></span> */}
                                                 <span className="badge first d-flex align-items-center">
                                                     <div className="icons-wrapper" >
                                                         <div className="first-icon d-block">
@@ -287,18 +266,46 @@ const Features = () => {
                                                     <div className="content d-flex">
                                                         <div className="afterBefore">
                                                             <div className="before">
-                                                                Create
+                                                                Improve
                                                             </div>
                                                             <div className="after">
-                                                                Created
+                                                                Improved
                                                             </div>
                                                         </div>
                                                         <div className="spna-div">
-                                                            <span className='ms-2'>  a podcast draft.</span>
+                                                            <span className='ms-2'>  slides.</span>
                                                         </div>
                                                     </div>
                                                 </span>
+                                                <div className="icon">
+                                                    <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
+                                                </div>
+
                                             </div>
+                                            {/* <span className="badge fifth">  <IconCode size={20} stroke={1} className='' /> Create <span> a podcast draft.</span></span> */}
+                                            <span className="badge first d-flex align-items-center">
+                                                <div className="icons-wrapper" >
+                                                    <div className="first-icon d-block">
+                                                        <IconCode size={20} stroke={1} className='' />
+                                                    </div>
+                                                    <div className="second-icon  d-block">
+                                                        <IconCpu size={20} stroke={1} className='' color='rgb(127 247 189)' />
+                                                    </div>
+                                                </div>
+                                                <div className="content d-flex">
+                                                    <div className="afterBefore">
+                                                        <div className="before">
+                                                            Create
+                                                        </div>
+                                                        <div className="after">
+                                                            Created
+                                                        </div>
+                                                    </div>
+                                                    <div className="spna-div">
+                                                        <span className='ms-2'>  a podcast draft.</span>
+                                                    </div>
+                                                </div>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -318,9 +325,9 @@ const Features = () => {
                                 </div>
 
                                 {/* Feature Cards */}
-                                <div className="row g-4 mt-5 mb-3">
+                                <div className="row g-4 mt-5 mb-3  ">
                                     {/* Card 1 */}
-                                    <div className="col-md-4  mt-3">
+                                    <div className="col-md-12 col-lg-4  mt-3">
                                         <div className=" cards-main-wrapper h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg1} alt="Integrate" className="img-fluid rounded mb-3" />
@@ -334,7 +341,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 2 */}
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-12 col-lg-4 mt-3">
                                         <div className="cards-main-wrapper  h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg2} alt="Models Access" className="img-fluid rounded mb-3" />
@@ -348,7 +355,7 @@ const Features = () => {
                                     </div>
 
                                     {/* Card 3 */}
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-12 col-lg-4 mt-3">
                                         <div className="cards-main-wrapper h-100">
                                             <div className="img-wrapper">
                                                 <img src={gatewayImg3} alt="Build Agents" className="img-fluid rounded mb-3" />
@@ -395,7 +402,7 @@ const Features = () => {
                                         </div>
                                     </div>
                                     <h3 className='heading'>Connect to the Models You Need</h3>
-                                    <p className='desc'>Seamlessly integrate with 200+ leading AI models across providers—LLMs, vision, voice, and more. Power your workflows with unified API access to the models that fit your use case.</p>
+                                    <p className='desc'>Connect effortlessly with popular third-party apps, expanding functionality and enabling smooth workflows between tools you already use.    </p>
                                     <div className="badge-wrapper-2">
                                         <div className="badge-2">
                                             See all <IconChevronRight stroke={2} size={'15px'} />
@@ -432,7 +439,11 @@ const Features = () => {
                     </section>
                 </div>
             </div>
-            <CTA />
+            <section className="cta-section-main">
+                <div className="container">
+                    <CTA />
+                </div>
+            </section>
             <Footer />
         </div>
     )
