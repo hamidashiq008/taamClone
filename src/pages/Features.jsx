@@ -36,20 +36,24 @@ const Features = () => {
         <div>
             <Header />
             <div className="features-page-content">
-                <div className="container main-container" data-aos="fade-up">
+                <div className="" data-aos="fade-up">
                     <section className="feature-hero-section">
-                        <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
-                        <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
-                        <GradientButton text={'Start Free With 500K Credits'} className={'mx-auto d-flex my-20'} />
-                        <div className="feature-hero-img-wrapper pt-4">
-                            <img src={FeatureHeroImg} alt="" />
+                        <div className="container main-container">
+                            <h2 className='text-center hero-heaeding'>All Your AI Build with  Taam AI</h2>
+                            <p className='text-center hero-desc'>The Enterprise AI API platform that unifies access to LLMs  Simplify development, reduce costs, and scale faster with one powerful API.</p>
+                            <GradientButton text={'Start Free With 500K Credits'} className={'mx-auto d-flex my-20'} />
+                            <div className="feature-hero-img-wrapper ">
+                                <img src={FeatureHeroImg} alt="" />
+                            </div>
                         </div>
                     </section>
                     <section className="teamWorkFlow">
-                        <div className="bg-black text-white  px-3 min-vh-100 inner-wrapper">
+
+
+                        <div className="bg-black text-white  px-3  inner-wrapper">
                             <div className="container text-center teamWorkFlow-container">
                                 {/* Tag button */}
-                                <div className="badge-div  mb-3 ">
+                                <div className="badge-div">
                                     <button className="btn btn-outline-light rounded-pill smallpx-3 py-1 main-badge">
                                         Taam AI Workflow
                                     </button>
@@ -303,6 +307,8 @@ const Features = () => {
                                 </div>
                             </div>
                         </div>
+
+
                     </section>
                     <section className="gate-way-section">
                         <div className="bg-black text-white ">
@@ -386,7 +392,7 @@ const Features = () => {
                     <section className="circle-animation">
                         <div className="container">
 
-                            <div className="  vh-100">
+                            <div className="custom-height">
                                 <div className="top-content">
                                     <div className="badge-wrapper">
                                         <div className="badge">
@@ -394,7 +400,7 @@ const Features = () => {
                                         </div>
                                     </div>
                                     <h3 className='heading'>Connect to the Models You Need</h3>
-                                    <p className='desc'>Seamlessly integrate with 200+ leading AI models across providers—LLMs, vision, voice, and more. Power your workflows with unified API access to the models that fit your use case.</p>
+                                    <p className='desc'>Connect effortlessly with popular third-party apps, expanding functionality and enabling smooth workflows between tools you already use.</p>
                                     <div className="badge-wrapper-2">
                                         <div className="badge-2">
                                             See all <IconChevronRight stroke={2} size={'15px'} />
@@ -429,9 +435,26 @@ const Features = () => {
                             </div>
                         </div>
                     </section>
+                    <section className='sec-last-section'>
+                     <div className="container">
+                           <div className="top-content with-bottom">
+                            
+                            <h3 className='heading'>Get Started with Taam AI Today!​</h3>
+                            <p className='desc'>Power up your applications with cutting-edge Artificial Intelligence models, a seamless API gateway, and enterprise-grade scalability.</p>
+                            <div className="badge-wrapper-2">
+                                {/* <div className="badge-2">
+                                            See all <IconChevronRight stroke={2} size={'15px'} />
+                                        </div> */}
+                                {/* <SimpleButton text={} }/> */}
+                                <SimpleButton text={'Get Started Now'} />
+
+                            </div>
+                        </div>
+                     </div>
+                    </section>
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }
