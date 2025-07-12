@@ -17,7 +17,7 @@ const Header = () => {
     <header>
       <div className="header-container" data-aos="fade-down">
         <nav className="navbar navbar-expand-md p-0">
-          <div className="container-fluid" style={{ maxWidth: 840 }}>
+          <div className="container-fluid justify-content-center parent-img-wrapper" style={{ maxWidth: 840 }}>
             <div
               className="img-wrapper d-flex gap-2 ms-0 md-ms-0 adjust-img-wrapper-head justify-content-between 
                py-4 px-2 py-md-0 px-md-0"
