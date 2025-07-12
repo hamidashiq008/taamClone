@@ -281,3 +281,10 @@
 .f-kode {
   font-family: "Kode Mono" !important;
 }
+
+
+.services-section{
+  & .container{
+    max-width: 1130px !important;
+  }
+}

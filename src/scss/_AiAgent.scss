@@ -260,7 +260,6 @@
     flex-wrap: nowrap;
     gap: 0px;
     height: 100%;
-    justify-content: center;
     overflow: hidden;
     padding: 70px 60px;
     position: relative;
@@ -281,6 +280,7 @@
       border-radius: 16px;
       will-change: auto;
       transition: all ease-in-out 0.3s;
+      padding-bottom: 2px;
 
       & .chat-box-bg {
         inset: 0 -89px -130px -88px;
@@ -386,13 +386,6 @@
               }
             }
           }
-
-          & .moveable-content {
-            font-size: 14px;
-            text-align: left;
-            color: #9c9c9c;
-          }
-
         }
       }
 
@@ -423,6 +416,13 @@
           transition: all ease-in-out 0.3s;
         }
       }
+    }
+
+    & .moveable-content {
+      font-size: 14px !important;
+      text-align: left !important;
+      color: #c9c9c9 !important;
+      font-weight: 300 !important;
     }
   }
 }
@@ -466,7 +466,6 @@
     flex-wrap: nowrap;
     gap: 0px;
     height: 100%;
-    justify-content: center;
     overflow: hidden;
     padding: 70px 60px;
     position: relative;
@@ -475,7 +474,7 @@
     & .chat-box {
       border-radius: 12px;
       padding: 1px;
-      margin-top: 20px;
+      margin-top: 19px;
       flex: none;
       gap: 0px;
       min-height: 240px;
@@ -654,6 +653,7 @@
   padding: 1px;
   position: relative;
   width: 100%;
+  padding-top: 2px;
 
   & .icon-bottom-line {
     background: linear-gradient(180.00000044209082deg, #373a3a00, rgb(181, 127, 247) 68.39456644144144%);
@@ -677,8 +677,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 0px;
-    height: 100%;
-    justify-content: center;
+    height: calc(100% - 0px);
     overflow: hidden;
     padding: 70px 60px;
     position: relative;
@@ -687,7 +686,7 @@
     & .chat-box {
       border-radius: 12px;
       padding: 1px;
-      margin-top: 28px;
+      margin-top: 27px;
       flex: none;
       gap: 0px;
       height: fit-content;
@@ -733,7 +732,7 @@
       & .inner-chat-box {
         align-items: center;
         overflow: hidden;
-        padding: 0;
+        padding: 1px;
         width: min-content;
         background-color: rgb(0, 0, 0);
         opacity: 1;
@@ -808,6 +807,7 @@
   padding: 1px;
   position: relative;
   width: 100%;
+  padding-top: 2px;
 
   & .icon-bottom-line {
     background: linear-gradient(180.00000044209082deg, #373a3a00, rgb(84, 158, 255) 68.39456644144144%);
@@ -832,7 +832,6 @@
     flex-wrap: nowrap;
     gap: 0px;
     height: 100%;
-    justify-content: center;
     overflow: hidden;
     padding: 70px 60px;
     position: relative;
@@ -842,12 +841,11 @@
       border-radius: 12px;
       padding: 1px;
       margin-top: 28px;
+      margin-bottom: 38px;
       flex: none;
       gap: 0px;
-      height: 300px;
       overflow: visible;
       position: relative;
-      width: 100%;
       background: radial-gradient(31% 23.398937404155735% at 49.99996793939629% -7.039230309757727e-11%, rgb(84, 158, 255) 0%, #343232 60%);
       opacity: 1;
       border-radius: 16px;
@@ -855,7 +853,7 @@
       transition: all ease-in-out 0.3s;
 
       & .chat-box-bg {
-        inset: 0 -89px -130px -88px;
+        inset: -19px -206px -275px -193px;
         overflow: hidden;
         position: absolute;
 
@@ -887,7 +885,7 @@
       & .inner-chat-box {
         align-items: center;
         overflow: hidden;
-        padding: 0;
+        padding: 4px 20px;
         width: min-content;
         background-color: rgb(0, 0, 0);
         opacity: 1;
@@ -934,19 +932,15 @@
 
 .bottom-area {
   padding: 0 16px;
-  margin: 0 auto;
+  margin: -1px auto 0;
   left: 0;
   right: 0;
-  position: absolute;
-  width: calc(100% - 50px);
+  width: calc(100% - 136px);
   overflow: hidden;
   background: #010101;
   top: 126px;
-  z-index: 999;
   border: 1px solid #343232;
   border-radius: 0 0 16px 16px;
-  border-top: none;
-
 
   .first-line {
     position: relative;
@@ -1040,12 +1034,13 @@
       opacity: 1;
 
     }
-    .button-wrapper{
-        & button { 
-      // background-color: rgb(178 125 243); 
-      background-color: hsla(267, 51%, 25%, 0.48);
-      color: hsla(267, 100%, 65%, 0.952);
-    }
+
+    .button-wrapper {
+      & button {
+        // background-color: rgb(178 125 243); 
+        background-color: hsla(267, 51%, 25%, 0.48);
+        color: hsla(267, 100%, 65%, 0.952);
+      }
     }
   }
 }
@@ -1056,7 +1051,7 @@
   .moveable-div.last {
     width: 100% !important;
 
-   
+
 
     .top-move {
       width: 100%;
@@ -1075,12 +1070,15 @@
 }
 
 
-  .integration-card{
-  .connecting{
+.integration-card {
+  .connecting {
     font-size: 10px;
   }
-  }
+}
 
-  .integration-card .custom-card-body .chat-box {
-    height: unset;
+
+@media(max-width: 768px) {
+  .custom-card-body{
+    padding: 50px 44px;
   }
+}
